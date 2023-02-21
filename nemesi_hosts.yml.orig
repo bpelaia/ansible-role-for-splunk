@@ -1,0 +1,45 @@
+all:
+  children:
+    nemesi:
+      vars:
+        ansible_user: gandalf
+        ansible_become: true
+      hosts:
+        nemesidx21:
+          ansible_host: 10.194.52.143
+        nemesidx22:
+          ansible_host: 10.194.52.144
+        nemesidx23:
+          ansible_host: 10.194.52.145
+        nemesidx24:
+          ansible_host: 10.194.52.146
+        nemesidx25:
+          #ansible_host: 10.194.52.147
+          ansible_host: 10.194.52.83
+        nemesidx26:
+          ansible_host: 10.194.52.148
+        nemesidx27:
+          #ansible_host: 10.194.52.149
+          ansible_host: 10.194.52.85
+        nemesidx28:
+          ansible_host: 10.194.52.150
+        nemesis21:
+          ansible_host: 10.195.193.57
+        nemesis22:
+          ansible_host: 10.195.193.58
+        nemesis23:
+          ansible_host: 10.195.193.59
+        nemesilb21:
+          ansible_host: 10.195.193.60
+        nemesicm21:
+          ansible_host: 10.194.52.151
+        nemesihf21:
+          ansible_host: 10.194.52.152
+        nemesihf22:
+          ansible_host: 10.194.52.153
+        nemesihf23:
+          ansible_host: 10.194.52.154
+        nemesiaudit:
+          ansible_host: 10.194.52.155
+        nemesisd21:
+          ansible_host: 10.194.52.156

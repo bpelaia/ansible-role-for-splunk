@@ -1,0 +1,10 @@
+- hosts:
+    - licensemaster
+    #- dmc
+    - clustermanager
+    - indexer
+    - nemesis4shc
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: configure_systemd.yml

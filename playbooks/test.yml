@@ -1,0 +1,29 @@
+---
+- name: Playbook di prova
+  connection: local
+  hosts: test2
+  gather_facts: no
+  tasks: 
+#    - name: Task di prova
+#      debug:
+#        msg:
+#          - "ip is {{ item }}"
+#      #loop: "{{ groups['indexer'] }}"
+#      loop: "{{ query('ansible_host', 'dmc') }}"
+#        #- uno
+#        #- due
+
+    - set_fact:
+            my_hosts: "{{ my_hosts|default([]) + [ hostvars[item]['ansible_host'] ] }}"
+      #loop: "{{ groups['example_hosts'] }}"
+      loop: "{{ query('inventory_hostnames', 'all:!indexer:!dmc:!standalone:!heavyForwarder:!heavyforwarder:!uf') }}"
+      run_once: true
+#    - debug:
+#        var: my_hosts
+    - name: Task di prova
+      debug:
+        msg: "ip is {{ item }}"
+        #loop: "{{ groups['indexer'] }}"
+      loop: "{{ my_hosts }}"
+        #- uno
+        #- due

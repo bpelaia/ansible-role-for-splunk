@@ -55,6 +55,8 @@ splunk_idxc_rf: 2
 splunk_idxc_sf: 2
 splunk_idxc_rep_port: 9887
 splunk_idxc_label: myidxc
+splunk_discovery_key: discoverypass4symmkey
+splunk_discovery_enabled: true
 splunk_apply_cluster_bundle_retries: 3 # How many times to retry indexer cluster bundle apply if it fails
 splunk_apply_cluster_bundle_delay: 60 # Delay in seconds between retries to apply indexer cluster bundle
 splunk_apply_shcluster_bundle_retries: 3 # How many times to retry SHC bundle apply if it fails
@@ -66,7 +68,8 @@ splunk_shc_rf: 3
 splunk_shc_rep_port: 8100
 splunk_shc_target_group: shc
 splunk_shc_deployer: "{{ groups['shdeployer'] | first }}" # If you manage multiple SHCs, configure the var value in group_vars
-splunk_shc_uri_list: "{% for h in groups[splunk_shc_target_group] %}https://{{ hostvars[h].ansible_fqdn }}:{{ splunkd_port }}{% if not loop.last %},{% endif %}{% endfor %}" # If you manage multiple SHCs, configure the var value in group_vars
+#splunk_shc_uri_list: "{% for h in groups[splunk_shc_target_group] %}https://{{ hostvars[h].ansible_fqdn }}:{{ splunkd_port }}{% if not loop.last %},{% endif %}{% endfor %}" # If you manage multiple SHCs, configure the var value in group_vars
+splunk_shc_uri_list: "{% for h in groups[splunk_shc_target_group] %}https://{{ hostvars[h].ansible_host }}:{{ splunkd_port }}{% if not loop.last %},{% endif %}{% endfor %}" # If you manage multiple SHCs, configure the var value in group_vars
 start_splunk_handler_fired: false # Do not change; used to prevent unnecessary splunk restarts
 # Linux and scripting related vars
 add_crashlog_script: false # Set to true to install a script and cron job to automatically cleanup splunk crash logs older than 7 days
@@ -77,11 +80,12 @@ install_utilities: false # Set to true to install the list of packages defined i
 use_tuned_thp: false
 # Firewall configs
 configure_firewall: false # Whether or not to configure the firewall service on your machine, if set to true, opens firewall ports using UFW (default) or Firewalld depending on OS
+splunk_tcpin_port: 9997 # The TCP input port to enable on indexer
 splunk_firewall_service: splunk # The name of the Splunk firewall service to install for firewalld
 # Firewall port presets - reference these in group_vars to assign them to splunk
 splunkweb_port: {desc: "Splunk Web", protocol: "tcp", number: 8000}
 splunkhec_port: {desc: "Splunk HEC", protocol: "tcp", number: 8088}
-splunktcpin_port: {desc: "Splunk TCPIN", protocol: "tcp", number: 9997}
+splunktcpin_port: {desc: "Splunk TCPIN", protocol: "tcp", number: "{{ splunk_tcpin_port }}"}
 splunkapi_port: {desc: "Splunk API", protocol: "tcp", number: "{{ splunkd_port }}"}
 splunkidxcrep_port: {desc: "Splunk Indexer Clustering Replication", protocol: "tcp", number: "{{ splunk_idxc_rep_port }}"}
 splunkshcrep_port: {desc: "Splunk Search Head Clustering Replication", protocol: "tcp", number: "{{ splunk_shc_rep_port }}"}

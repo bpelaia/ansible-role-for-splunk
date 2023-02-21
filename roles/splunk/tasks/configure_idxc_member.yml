@@ -2,6 +2,15 @@
 - name: Run splunk version command to check currently installed version
   include_tasks: check_splunk_version.yml
 
+- name: Enable listen port "{{ splunk_tcpin_port }}"
+  tags: idx_listen_port
+  command: "{{ splunk_home }}/bin/splunk enable listen {{ splunk_tcpin_port }} -auth {{ splunk_auth }}"
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  register: idx_tcp_input_result
+  changed_when: idx_tcp_input_result.rc == 0
+  failed_when: idx_tcp_input_result.rc != 0
+
 # Splunk version >= 8.1 supports mode=peer
 # https://docs.splunk.com/Documentation/Splunk/latest/Indexer/ConfigurepeerswithCLI
 # Splunk version < 8.1 supports mode=slave
@@ -9,16 +18,17 @@
 - name: Setting clustering mode based on Splunk version number
   set_fact:
     mode_value: "{% if splunk_version_release | float < 8.1 %}slave{% else %}peer{% endif %}"
+    master_value: "{% if splunk_version_release | float < 8.1 %}master{% else %}manager{% endif %}"
 
 - name: Configure idxc member
-  command: "{{ splunk_home }}/bin/splunk edit cluster-config -mode {{ mode_value }} -auth {{ splunk_auth }} -master_uri {{ splunk_uri_cm }} -replication_port {{ splunk_idxc_rep_port }} -secret {{ splunk_idxc_key }}"
+  command: "{{ splunk_home }}/bin/splunk edit cluster-config -mode {{ mode_value }} -auth {{ splunk_auth }} -{{ master_value }}_uri {{ splunk_uri_cm }} -replication_port {{ splunk_idxc_rep_port }} -secret {{ splunk_idxc_key }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
   register: idxc_peer_init_result
   changed_when: idxc_peer_init_result.rc == 0
   failed_when: idxc_peer_init_result.rc != 0
   notify: restart splunk
-  no_log: true
+  #no_log: true
   until: idxc_peer_init_result.rc == 0
   retries: 6
   delay: 5

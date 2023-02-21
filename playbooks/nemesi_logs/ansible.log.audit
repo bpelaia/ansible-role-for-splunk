@@ -1,0 +1,1490 @@
+2022-12-15 15:50:14,623 p=1160 u=user n=ansible | PLAY [standalone] ********************************************************************************************
+2022-12-15 15:50:14,634 p=1160 u=user n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-15 15:50:14,730 p=1164 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:14,970 p=1164 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:15,657 p=1164 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-15 15:50:17,697 p=1164 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-15 15:50:17,703 p=1160 u=user n=ansible | ok: [nemesiaudit]
+2022-12-15 15:50:17,716 p=1160 u=user n=ansible | TASK [../roles/splunk : include distribution vars] ***********************************************************
+2022-12-15 15:50:17,850 p=1160 u=user n=ansible | ok: [nemesiaudit] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-15 15:50:17,857 p=1160 u=user n=ansible | TASK [../roles/splunk : Reset value of start_splunk_handler_fired and configure_boot_start] ******************
+2022-12-15 15:50:17,869 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-15 15:50:17,885 p=1160 u=user n=ansible | TASK [../roles/splunk : Set boot-start method to systemd] ****************************************************
+2022-12-15 15:50:17,921 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-15 15:50:17,928 p=1160 u=user n=ansible | TASK [../roles/splunk : Set boot-start method to initd] ******************************************************
+2022-12-15 15:50:17,943 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:17,950 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure vars for full package] *****************************************************
+2022-12-15 15:50:18,033 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.195.193.140/splunk-9.0.2.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-15 15:50:18,041 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure var for splunk systemd service handler] ************************************
+2022-12-15 15:50:18,114 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-15 15:50:18,155 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure vars for uf package] *******************************************************
+2022-12-15 15:50:18,165 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:18,172 p=1160 u=user n=ansible | TASK [../roles/splunk : Setting least priviledged mode] ******************************************************
+2022-12-15 15:50:18,186 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:18,198 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure var for splunkforwarder systemd service handler] ***************************
+2022-12-15 15:50:18,225 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:18,244 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure var for splunk init.d service handler] *************************************
+2022-12-15 15:50:18,265 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:18,284 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if Splunk is installed] ********************************************************
+2022-12-15 15:50:18,376 p=1188 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:18,606 p=1188 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:19,055 p=1188 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:19,699 p=1188 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:19,702 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-15 15:50:19,710 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if active boot-start configuration is systemd] *********************************
+2022-12-15 15:50:19,722 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,729 p=1160 u=user n=ansible | TASK [../roles/splunk : Set current_start_method var to systemd if systemd is being used for splunk] *********
+2022-12-15 15:50:19,757 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,765 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if active boot-start method is init.d] *****************************************
+2022-12-15 15:50:19,785 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,792 p=1160 u=user n=ansible | TASK [../roles/splunk : Set current_start_method to initd if initd is being used for splunk] *****************
+2022-12-15 15:50:19,808 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,826 p=1160 u=user n=ansible | TASK [../roles/splunk : set current_start_method to disabled if boot-start is disabled] **********************
+2022-12-15 15:50:19,847 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,857 p=1160 u=user n=ansible | TASK [../roles/splunk : Set boot-start misconfigured var] ****************************************************
+2022-12-15 15:50:19,890 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-15 15:50:19,907 p=1160 u=user n=ansible | TASK [../roles/splunk : Fail the play if the currently configured boot-start method does match the expected state or boot-start is not enabled] ***
+2022-12-15 15:50:19,923 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,935 p=1160 u=user n=ansible | TASK [../roles/splunk : Send Slack messages] *****************************************************************
+2022-12-15 15:50:19,951 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:19,958 p=1160 u=user n=ansible | TASK [../roles/splunk : Include the specified task file] *****************************************************
+2022-12-15 15:50:20,014 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/check_splunk.yml for nemesiaudit
+2022-12-15 15:50:20,026 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if Splunk is installed] ********************************************************
+2022-12-15 15:50:20,098 p=1210 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:20,303 p=1210 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:20,705 p=1210 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:21,315 p=1210 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:21,317 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-15 15:50:21,325 p=1160 u=user n=ansible | TASK [../roles/splunk : Install Splunk if not installed] *****************************************************
+2022-12-15 15:50:21,349 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/install_splunk.yml for nemesiaudit
+2022-12-15 15:50:21,358 p=1160 u=user n=ansible | TASK [../roles/splunk : Add nix splunk group] ****************************************************************
+2022-12-15 15:50:21,446 p=1216 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:21,664 p=1216 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:22,063 p=1216 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:22,680 p=1216 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:22,682 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "gid": 997,
+    "name": "splunk",
+    "state": "present",
+    "system": true
+}
+2022-12-15 15:50:22,688 p=1160 u=user n=ansible | TASK [../roles/splunk : Add nix splunk user] *****************************************************************
+2022-12-15 15:50:22,760 p=1220 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:22,961 p=1220 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:23,376 p=1220 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:24,038 p=1220 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:24,041 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "comment": "",
+    "create_home": true,
+    "group": 997,
+    "home": "/opt/splunk",
+    "name": "splunk",
+    "shell": "/bin/bash",
+    "state": "present",
+    "system": true,
+    "uid": 995
+}
+
+STDERR:
+
+useradd: warning: the home directory /opt/splunk already exists.
+useradd: Not copying any file from skel directory into it.
+
+
+2022-12-15 15:50:24,049 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure .bash_profile and .bashrc for splunk user] *********************************
+2022-12-15 15:50:24,077 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_bash.yml for nemesiaudit
+2022-12-15 15:50:24,090 p=1160 u=user n=ansible | TASK [../roles/splunk : Install .bashrc and .bash_profile files] *********************************************
+2022-12-15 15:50:24,167 p=1226 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:24,369 p=1226 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:24,741 p=1226 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:25,365 p=1226 u=user n=paramiko.transport.sftp | [chan 5] Opened sftp connection (server version 3)
+2022-12-15 15:50:25,657 p=1226 u=user n=paramiko.transport.sftp | [chan 7] Opened sftp connection (server version 3)
+2022-12-15 15:50:26,583 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'bashtemplate': 'bashrc.j2', 'bashfilepath': '.bashrc'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "checksum": "65b562bc88a9aaf0dda5199efc8ad3b53113be86",
+    "dest": "/opt/splunk/.bashrc",
+    "gid": 997,
+    "group": "splunk",
+    "item": {
+        "bashfilepath": ".bashrc",
+        "bashtemplate": "bashrc.j2"
+    },
+    "md5sum": "af30ced2fedad25b8287a18754ea19c4",
+    "mode": "0644",
+    "owner": "splunk",
+    "size": 472,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115824.4927113-1226-155437673909927/source",
+    "state": "file",
+    "uid": 995
+}
+2022-12-15 15:50:26,927 p=1226 u=user n=paramiko.transport.sftp | [chan 13] Opened sftp connection (server version 3)
+2022-12-15 15:50:27,573 p=1226 u=user n=paramiko.transport.sftp | [chan 16] Opened sftp connection (server version 3)
+2022-12-15 15:50:27,863 p=1226 u=user n=paramiko.transport.sftp | [chan 18] Opened sftp connection (server version 3)
+2022-12-15 15:50:28,731 p=1226 u=user n=paramiko.transport.sftp | [chan 18] sftp session closed.
+2022-12-15 15:50:28,732 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'bashtemplate': 'bash_profile.j2', 'bashfilepath': '.bash_profile'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "checksum": "b5fdba5c81c797b7ce5027377b8fdf167109ad3e",
+    "dest": "/opt/splunk/.bash_profile",
+    "gid": 997,
+    "group": "splunk",
+    "item": {
+        "bashfilepath": ".bash_profile",
+        "bashtemplate": "bash_profile.j2"
+    },
+    "md5sum": "6f195c154d6ed600a797639d01b9b895",
+    "mode": "0644",
+    "owner": "splunk",
+    "size": 217,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115826.687263-1226-27079679862386/source",
+    "state": "file",
+    "uid": 995
+}
+2022-12-15 15:50:28,740 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure OS to disable THP and increase ulimits for splunk process] *****************
+2022-12-15 15:50:28,755 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_os.yml for nemesiaudit
+2022-12-15 15:50:28,765 p=1160 u=user n=ansible | TASK [../roles/splunk : Set ulimits for splunk] **************************************************************
+2022-12-15 15:50:28,773 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:28,788 p=1160 u=user n=ansible | TASK [../roles/splunk : Disable THP] *************************************************************************
+2022-12-15 15:50:28,837 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_thp.yml for nemesiaudit
+2022-12-15 15:50:28,850 p=1160 u=user n=ansible | TASK [../roles/splunk : Copy systemd disable-thp unit file] **************************************************
+2022-12-15 15:50:28,945 p=1236 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:29,147 p=1236 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:29,543 p=1236 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:30,150 p=1236 u=user n=paramiko.transport.sftp | [chan 5] Opened sftp connection (server version 3)
+2022-12-15 15:50:30,419 p=1236 u=user n=paramiko.transport.sftp | [chan 7] Opened sftp connection (server version 3)
+2022-12-15 15:50:31,601 p=1236 u=user n=paramiko.transport.sftp | [chan 7] sftp session closed.
+2022-12-15 15:50:31,604 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "checksum": "0eb0320872bcba95824374ce4a88b902a9827fea",
+    "dest": "/etc/systemd/system/disable-thp.service",
+    "gid": 0,
+    "group": "root",
+    "md5sum": "0bfd1b528505cb404c2dfc41869d054a",
+    "mode": "0644",
+    "owner": "root",
+    "size": 260,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115829.3081524-1236-33753884630231/source",
+    "state": "file",
+    "uid": 0
+}
+2022-12-15 15:50:31,612 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable disable-thp unit file] ********************************************************
+2022-12-15 15:50:31,680 p=1240 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:31,883 p=1240 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:32,447 p=1240 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:33,835 p=1240 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:33,838 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "enabled": true,
+    "name": "disable-thp",
+    "state": "started",
+    "status": {
+        "ActiveEnterTimestampMonotonic": "0",
+        "ActiveExitTimestampMonotonic": "0",
+        "ActiveState": "inactive",
+        "After": "sysinit.target systemd-journald.socket system.slice basic.target",
+        "AllowIsolate": "no",
+        "AllowedCPUs": "",
+        "AllowedMemoryNodes": "",
+        "AmbientCapabilities": "",
+        "AssertResult": "no",
+        "AssertTimestampMonotonic": "0",
+        "Before": "shutdown.target",
+        "BlockIOAccounting": "no",
+        "BlockIOWeight": "[not set]",
+        "CPUAccounting": "yes",
+        "CPUAffinity": "",
+        "CPUAffinityFromNUMA": "no",
+        "CPUQuotaPerSecUSec": "infinity",
+        "CPUQuotaPeriodUSec": "infinity",
+        "CPUSchedulingPolicy": "0",
+        "CPUSchedulingPriority": "0",
+        "CPUSchedulingResetOnFork": "no",
+        "CPUShares": "[not set]",
+        "CPUUsageNSec": "[not set]",
+        "CPUWeight": "[not set]",
+        "CacheDirectoryMode": "0755",
+        "CanFreeze": "yes",
+        "CanIsolate": "no",
+        "CanReload": "no",
+        "CanStart": "yes",
+        "CanStop": "yes",
+        "CapabilityBoundingSet": "cap_chown cap_dac_override cap_dac_read_search cap_fowner cap_fsetid cap_kill cap_setgid cap_setuid cap_setpcap cap_linux_immutable cap_net_bind_service cap_net_broadcast cap_net_admin cap_net_raw cap_ipc_lock cap_ipc_owner cap_sys_module cap_sys_rawio cap_sys_chroot cap_sys_ptrace cap_sys_pacct cap_sys_admin cap_sys_boot cap_sys_nice cap_sys_resource cap_sys_time cap_sys_tty_config cap_mknod cap_lease cap_audit_write cap_audit_control cap_setfcap cap_mac_override cap_mac_admin cap_syslog cap_wake_alarm cap_block_suspend cap_audit_read cap_perfmon cap_bpf cap_checkpoint_restore",
+        "CleanResult": "success",
+        "CollectMode": "inactive",
+        "ConditionResult": "no",
+        "ConditionTimestampMonotonic": "0",
+        "ConfigurationDirectoryMode": "0755",
+        "Conflicts": "shutdown.target",
+        "ControlPID": "0",
+        "CoredumpFilter": "0x33",
+        "DefaultDependencies": "yes",
+        "DefaultMemoryLow": "0",
+        "DefaultMemoryMin": "0",
+        "Delegate": "no",
+        "Description": "Disable Transparent Huge Pages (THP)",
+        "DevicePolicy": "auto",
+        "DynamicUser": "no",
+        "EffectiveCPUs": "",
+        "EffectiveMemoryNodes": "",
+        "ExecMainCode": "0",
+        "ExecMainExitTimestampMonotonic": "0",
+        "ExecMainPID": "0",
+        "ExecMainStartTimestampMonotonic": "0",
+        "ExecMainStatus": "0",
+        "ExecStart": "{ path=/bin/sh ; argv[]=/bin/sh -c echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled && echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "ExecStartEx": "{ path=/bin/sh ; argv[]=/bin/sh -c echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled && echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag ; flags= ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "FailureAction": "none",
+        "FileDescriptorStoreMax": "0",
+        "FinalKillSignal": "9",
+        "FragmentPath": "/etc/systemd/system/disable-thp.service",
+        "FreezerState": "running",
+        "GID": "[not set]",
+        "GuessMainPID": "yes",
+        "IOAccounting": "no",
+        "IOReadBytes": "18446744073709551615",
+        "IOReadOperations": "18446744073709551615",
+        "IOSchedulingClass": "0",
+        "IOSchedulingPriority": "0",
+        "IOWeight": "[not set]",
+        "IOWriteBytes": "18446744073709551615",
+        "IOWriteOperations": "18446744073709551615",
+        "IPAccounting": "no",
+        "IPEgressBytes": "[no data]",
+        "IPEgressPackets": "[no data]",
+        "IPIngressBytes": "[no data]",
+        "IPIngressPackets": "[no data]",
+        "Id": "disable-thp.service",
+        "IgnoreOnIsolate": "no",
+        "IgnoreSIGPIPE": "yes",
+        "InactiveEnterTimestampMonotonic": "0",
+        "InactiveExitTimestampMonotonic": "0",
+        "JobRunningTimeoutUSec": "infinity",
+        "JobTimeoutAction": "none",
+        "JobTimeoutUSec": "infinity",
+        "KeyringMode": "private",
+        "KillMode": "control-group",
+        "KillSignal": "15",
+        "LimitAS": "infinity",
+        "LimitASSoft": "infinity",
+        "LimitCORE": "infinity",
+        "LimitCORESoft": "0",
+        "LimitCPU": "infinity",
+        "LimitCPUSoft": "infinity",
+        "LimitDATA": "infinity",
+        "LimitDATASoft": "infinity",
+        "LimitFSIZE": "infinity",
+        "LimitFSIZESoft": "infinity",
+        "LimitLOCKS": "infinity",
+        "LimitLOCKSSoft": "infinity",
+        "LimitMEMLOCK": "65536",
+        "LimitMEMLOCKSoft": "65536",
+        "LimitMSGQUEUE": "819200",
+        "LimitMSGQUEUESoft": "819200",
+        "LimitNICE": "0",
+        "LimitNICESoft": "0",
+        "LimitNOFILE": "524288",
+        "LimitNOFILESoft": "1024",
+        "LimitNPROC": "47715",
+        "LimitNPROCSoft": "47715",
+        "LimitRSS": "infinity",
+        "LimitRSSSoft": "infinity",
+        "LimitRTPRIO": "0",
+        "LimitRTPRIOSoft": "0",
+        "LimitRTTIME": "infinity",
+        "LimitRTTIMESoft": "infinity",
+        "LimitSIGPENDING": "47715",
+        "LimitSIGPENDINGSoft": "47715",
+        "LimitSTACK": "infinity",
+        "LimitSTACKSoft": "8388608",
+        "LoadState": "loaded",
+        "LockPersonality": "no",
+        "LogLevelMax": "-1",
+        "LogRateLimitBurst": "0",
+        "LogRateLimitIntervalUSec": "0",
+        "LogsDirectoryMode": "0755",
+        "MainPID": "0",
+        "ManagedOOMMemoryPressure": "auto",
+        "ManagedOOMMemoryPressureLimitPercent": "0%",
+        "ManagedOOMSwap": "auto",
+        "MemoryAccounting": "yes",
+        "MemoryCurrent": "[not set]",
+        "MemoryDenyWriteExecute": "no",
+        "MemoryHigh": "infinity",
+        "MemoryLimit": "infinity",
+        "MemoryLow": "0",
+        "MemoryMax": "infinity",
+        "MemoryMin": "0",
+        "MemorySwapMax": "infinity",
+        "MountAPIVFS": "no",
+        "MountFlags": "",
+        "NFileDescriptorStore": "0",
+        "NRestarts": "0",
+        "NUMAMask": "",
+        "NUMAPolicy": "n/a",
+        "Names": "disable-thp.service",
+        "NeedDaemonReload": "no",
+        "Nice": "0",
+        "NoNewPrivileges": "no",
+        "NonBlocking": "no",
+        "NotifyAccess": "none",
+        "OOMPolicy": "stop",
+        "OOMScoreAdjust": "0",
+        "OnFailureJobMode": "replace",
+        "Perpetual": "no",
+        "PrivateDevices": "no",
+        "PrivateMounts": "no",
+        "PrivateNetwork": "no",
+        "PrivateTmp": "no",
+        "PrivateUsers": "no",
+        "ProcSubset": "all",
+        "ProtectClock": "no",
+        "ProtectControlGroups": "no",
+        "ProtectHome": "no",
+        "ProtectHostname": "no",
+        "ProtectKernelLogs": "no",
+        "ProtectKernelModules": "no",
+        "ProtectKernelTunables": "no",
+        "ProtectProc": "default",
+        "ProtectSystem": "no",
+        "RefuseManualStart": "no",
+        "RefuseManualStop": "no",
+        "ReloadResult": "success",
+        "RemainAfterExit": "no",
+        "RemoveIPC": "no",
+        "Requires": "sysinit.target system.slice",
+        "Restart": "no",
+        "RestartKillSignal": "15",
+        "RestartUSec": "100ms",
+        "RestrictNamespaces": "no",
+        "RestrictRealtime": "no",
+        "RestrictSUIDSGID": "no",
+        "Result": "success",
+        "RootDirectoryStartOnly": "no",
+        "RootHashSignature": "",
+        "RuntimeDirectoryMode": "0755",
+        "RuntimeDirectoryPreserve": "no",
+        "RuntimeMaxUSec": "infinity",
+        "SameProcessGroup": "no",
+        "SecureBits": "0",
+        "SendSIGHUP": "no",
+        "SendSIGKILL": "yes",
+        "Slice": "system.slice",
+        "StandardError": "inherit",
+        "StandardInput": "null",
+        "StandardInputData": "",
+        "StandardOutput": "journal",
+        "StartLimitAction": "none",
+        "StartLimitBurst": "5",
+        "StartLimitIntervalUSec": "10s",
+        "StartupBlockIOWeight": "[not set]",
+        "StartupCPUShares": "[not set]",
+        "StartupCPUWeight": "[not set]",
+        "StartupIOWeight": "[not set]",
+        "StateChangeTimestampMonotonic": "0",
+        "StateDirectoryMode": "0755",
+        "StatusErrno": "0",
+        "StopWhenUnneeded": "no",
+        "SubState": "dead",
+        "SuccessAction": "none",
+        "SyslogFacility": "3",
+        "SyslogLevel": "6",
+        "SyslogLevelPrefix": "yes",
+        "SyslogPriority": "30",
+        "SystemCallErrorNumber": "2147483646",
+        "TTYReset": "no",
+        "TTYVHangup": "no",
+        "TTYVTDisallocate": "no",
+        "TasksAccounting": "yes",
+        "TasksCurrent": "[not set]",
+        "TasksMax": "14314",
+        "TimeoutAbortUSec": "1min 30s",
+        "TimeoutCleanUSec": "infinity",
+        "TimeoutStartFailureMode": "terminate",
+        "TimeoutStartUSec": "1min 30s",
+        "TimeoutStopFailureMode": "terminate",
+        "TimeoutStopUSec": "1min 30s",
+        "TimerSlackNSec": "50000",
+        "Transient": "no",
+        "Type": "simple",
+        "UID": "[not set]",
+        "UMask": "0022",
+        "UnitFilePreset": "enabled",
+        "UnitFileState": "disabled",
+        "UtmpMode": "init",
+        "WatchdogSignal": "6",
+        "WatchdogTimestampMonotonic": "0",
+        "WatchdogUSec": "infinity"
+    }
+}
+2022-12-15 15:50:33,847 p=1160 u=user n=ansible | TASK [../roles/splunk : Install tuned package] ***************************************************************
+2022-12-15 15:50:33,854 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:33,864 p=1160 u=user n=ansible | TASK [../roles/splunk : Check active tuned profile] **********************************************************
+2022-12-15 15:50:33,878 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:33,897 p=1160 u=user n=ansible | TASK [../roles/splunk : Set active tuned profile variable] ***************************************************
+2022-12-15 15:50:33,908 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:33,919 p=1160 u=user n=ansible | TASK [../roles/splunk : Create /etc/tuned/splunk directory] **************************************************
+2022-12-15 15:50:33,942 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:33,954 p=1160 u=user n=ansible | TASK [../roles/splunk : Copy splunk profile tuned.conf] ******************************************************
+2022-12-15 15:50:33,964 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:33,981 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable tuned profile] ****************************************************************
+2022-12-15 15:50:34,000 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:34,011 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable read for dmesg] ***************************************************************
+2022-12-15 15:50:34,023 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:34,046 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure firewall service] **********************************************************
+2022-12-15 15:50:34,083 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:50:34,100 p=1160 u=user n=ansible | TASK [../roles/splunk : Include download and unarchive task] *************************************************
+2022-12-15 15:50:34,149 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/download_and_unarchive.yml for nemesiaudit
+2022-12-15 15:50:34,168 p=1160 u=user n=ansible | TASK [../roles/splunk : debug] *******************************************************************************
+2022-12-15 15:50:34,182 p=1160 u=user n=ansible | ok: [nemesiaudit] => {}
+
+MSG:
+
+The splunk_package_url is set to: http://10.195.193.140/splunk-9.0.2.tgz
+
+2022-12-15 15:50:34,192 p=1160 u=user n=ansible | TASK [../roles/splunk : debug] *******************************************************************************
+2022-12-15 15:50:34,238 p=1160 u=user n=ansible | ok: [nemesiaudit] => {}
+
+MSG:
+
+The filename that will be downloaded is splunk-9.0.2.tgz
+
+2022-12-15 15:50:34,254 p=1160 u=user n=ansible | TASK [../roles/splunk : debug] *******************************************************************************
+2022-12-15 15:50:34,289 p=1160 u=user n=ansible | ok: [nemesiaudit] => {}
+
+MSG:
+
+The upgrade file will be downloaded to /tmp/splunk-9.0.2.tgz
+
+2022-12-15 15:50:34,297 p=1160 u=user n=ansible | TASK [../roles/splunk : Download Splunk full package] ********************************************************
+2022-12-15 15:50:34,402 p=1268 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:34,644 p=1268 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:35,065 p=1268 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:53,651 p=1268 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:50:53,653 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "attempts": 1,
+    "changed": true,
+    "checksum_dest": null,
+    "checksum_src": "afccc70d4496bf7722b15955d15f42fbff0f8a8c",
+    "dest": "/tmp/splunk-9.0.2.tgz",
+    "elapsed": 11,
+    "gid": 0,
+    "group": "root",
+    "md5sum": "10cf541607feb6171725c2d17b7fadf9",
+    "mode": "0644",
+    "owner": "root",
+    "size": 600639892,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115834.8089762-1268-137858738550829/tmp7b3ytqur",
+    "state": "file",
+    "status_code": 200,
+    "uid": 0,
+    "url": "http://10.195.193.140/splunk-9.0.2.tgz"
+}
+
+MSG:
+
+OK (600639892 bytes)
+
+2022-12-15 15:50:53,663 p=1160 u=user n=ansible | TASK [../roles/splunk : Unarchive Splunk full package to /opt/splunk] ****************************************
+2022-12-15 15:50:53,796 p=1272 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:50:54,099 p=1272 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:50:54,701 p=1272 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:50:55,557 p=1272 u=user n=paramiko.transport.sftp | [chan 5] Opened sftp connection (server version 3)
+2022-12-15 15:51:42,514 p=1272 u=user n=paramiko.transport.sftp | [chan 5] sftp session closed.
+2022-12-15 15:51:42,518 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "dest": "/opt/splunk",
+    "extract_results": {
+        "cmd": [
+            "/usr/bin/tar",
+            "--extract",
+            "-C",
+            "/opt/splunk",
+            "-z",
+            "--show-transformed-names",
+            "--strip-components=1",
+            "--owner=splunk",
+            "--group=splunk",
+            "-f",
+            "/tmp/splunk-9.0.2.tgz"
+        ],
+        "err": "",
+        "out": "",
+        "rc": 0
+    },
+    "gid": 997,
+    "group": "splunk",
+    "handler": "TgzArchive",
+    "mode": "0755",
+    "owner": "splunk",
+    "size": 4096,
+    "src": "/tmp/splunk-9.0.2.tgz",
+    "state": "directory",
+    "uid": 995
+}
+2022-12-15 15:51:42,537 p=1160 u=user n=ansible | TASK [../roles/splunk : Remove /tmp/splunk-9.0.2.tgz package] ************************************************
+2022-12-15 15:51:42,547 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:42,555 p=1160 u=user n=ansible | TASK [../roles/splunk : Include configure splunk.secret task to standardize splunk.secret] *******************
+2022-12-15 15:51:42,581 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_splunk_secret.yml for nemesiaudit
+2022-12-15 15:51:42,603 p=1160 u=user n=ansible | TASK [../roles/splunk : Install splunk.secret] ***************************************************************
+2022-12-15 15:51:42,692 p=1280 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:42,896 p=1280 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:43,296 p=1280 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:43,906 p=1280 u=user n=paramiko.transport.sftp | [chan 5] Opened sftp connection (server version 3)
+2022-12-15 15:51:44,169 p=1280 u=user n=paramiko.transport.sftp | [chan 7] Opened sftp connection (server version 3)
+2022-12-15 15:51:45,593 p=1280 u=user n=paramiko.transport.sftp | [chan 7] sftp session closed.
+2022-12-15 15:51:45,596 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "checksum": "7b46c6519f2fd8fd1099b7a119c972be1e919ef8",
+    "dest": "/opt/splunk/etc/auth/splunk.secret",
+    "gid": 997,
+    "group": "splunk",
+    "md5sum": "e8dad3165b456c1aa8e3a892632bbecb",
+    "mode": "0644",
+    "owner": "splunk",
+    "size": 426,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115903.0586195-1280-4725936033785/source",
+    "state": "file",
+    "uid": 995
+}
+2022-12-15 15:51:45,604 p=1160 u=user n=ansible | TASK [../roles/splunk : Include configure deployment client task] ********************************************
+2022-12-15 15:51:45,613 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:45,623 p=1160 u=user n=ansible | TASK [../roles/splunk : Include configure user-seed task] ****************************************************
+2022-12-15 15:51:45,642 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_user-seed.yml for nemesiaudit
+2022-12-15 15:51:45,665 p=1160 u=user n=ansible | TASK [../roles/splunk : Check for existing /opt/splunk/etc/passwd] *******************************************
+2022-12-15 15:51:45,755 p=1288 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:45,956 p=1288 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:46,353 p=1288 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:46,929 p=1288 u=user n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an
+unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.12/user_guide/become.html#risks-of-becoming-an-unprivileged-user
+
+2022-12-15 15:51:47,471 p=1288 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:51:47,474 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-15 15:51:47,481 p=1160 u=user n=ansible | TASK [../roles/splunk : Create user-seed.conf file with splunk_admin_username and splunk_admin_password] *****
+2022-12-15 15:51:47,548 p=1292 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:47,760 p=1292 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:48,166 p=1292 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:48,816 p=1292 u=user n=paramiko.transport.sftp | [chan 5] Opened sftp connection (server version 3)
+2022-12-15 15:51:49,129 p=1292 u=user n=paramiko.transport.sftp | [chan 7] Opened sftp connection (server version 3)
+2022-12-15 15:51:50,379 p=1292 u=user n=paramiko.transport.sftp | [chan 7] sftp session closed.
+2022-12-15 15:51:50,382 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "checksum": "89a0271b838833c2c1ba018904a8317def9512ff",
+    "dest": "/opt/splunk/etc/system/local/user-seed.conf",
+    "gid": 997,
+    "group": "splunk",
+    "md5sum": "e8d138fc5ffffbcefee21ca0290a05f3",
+    "mode": "0644",
+    "owner": "splunk",
+    "size": 49,
+    "src": "/home/gandalf/.ansible/tmp/ansible-tmp-1671115907.9261742-1292-144391555148106/source",
+    "state": "file",
+    "uid": 995
+}
+2022-12-15 15:51:50,389 p=1160 u=user n=ansible | TASK [../roles/splunk : Include configure default authentication.conf for AD authentication and admin role mapping] ***
+2022-12-15 15:51:50,398 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:50,405 p=1160 u=user n=ansible | TASK [../roles/splunk : Include custom management port task] *************************************************
+2022-12-15 15:51:50,468 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_custom_mgmt_port.yml for nemesiaudit
+2022-12-15 15:51:50,483 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure custom splunkd management port] ********************************************
+2022-12-15 15:51:50,561 p=1300 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:50,763 p=1300 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:51,154 p=1300 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:51,749 p=1300 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:51:51,751 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "gid": 997,
+    "group": "splunk",
+    "mode": "0644",
+    "owner": "splunk",
+    "path": "/opt/splunk/etc/system/local/web.conf",
+    "size": 40,
+    "state": "file",
+    "uid": 995
+}
+
+MSG:
+
+section and option added
+
+2022-12-15 15:51:51,758 p=1160 u=user n=ansible | TASK [../roles/splunk : Include disable management port task] ************************************************
+2022-12-15 15:51:51,765 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:51,772 p=1160 u=user n=ansible | TASK [../roles/splunk : Include accept license task] *********************************************************
+2022-12-15 15:51:51,794 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/splunk_license_accept.yml for nemesiaudit
+2022-12-15 15:51:51,812 p=1160 u=user n=ansible | TASK [../roles/splunk : Accept Splunk license] ***************************************************************
+2022-12-15 15:51:51,883 p=1308 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:52,079 p=1308 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:52,469 p=1308 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:53,080 p=1308 u=user n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an
+unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.12/user_guide/become.html#risks-of-becoming-an-unprivileged-user
+
+2022-12-15 15:51:55,246 p=1308 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:51:55,249 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "cmd": [
+        "/opt/splunk/bin/splunk",
+        "status",
+        "--accept-license",
+        "--answer-yes",
+        "--no-prompt"
+    ],
+    "delta": "0:00:01.485056",
+    "end": "2022-12-15 15:51:49.483759",
+    "failed_when_result": false,
+    "rc": 3,
+    "start": "2022-12-15 15:51:47.998703"
+}
+
+STDOUT:
+
+
+This appears to be your first time running this version of Splunk.
+splunkd is not running.
+
+
+STDERR:
+
+Copying '/opt/splunk/etc/openldap/ldap.conf.default' to '/opt/splunk/etc/openldap/ldap.conf'.
+Generating RSA private key, 2048 bit long modulus
+...........................+++++
+.............................+++++
+e is 65537 (0x10001)
+writing RSA key
+
+Generating RSA private key, 2048 bit long modulus
+......................+++++
+......................+++++
+e is 65537 (0x10001)
+writing RSA key
+
+Moving '/opt/splunk/share/splunk/search_mrsparkle/modules.new' to '/opt/splunk/share/splunk/search_mrsparkle/modules'.
+
+
+MSG:
+
+non-zero return code
+
+2022-12-15 15:51:55,256 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable boot start] *******************************************************************
+2022-12-15 15:51:55,275 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_splunk_boot.yml for nemesiaudit
+2022-12-15 15:51:55,288 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if Splunk needs to be stopped if boot-start isn't configured as Ansible expects (or boot-start is not configured at all)] ***
+2022-12-15 15:51:55,296 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,309 p=1160 u=user n=ansible | TASK [../roles/splunk : Stop Splunk via command if boot-start needs to be modified or configured] ************
+2022-12-15 15:51:55,336 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,351 p=1160 u=user n=ansible | TASK [../roles/splunk : Stop splunk via initd] ***************************************************************
+2022-12-15 15:51:55,360 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,375 p=1160 u=user n=ansible | TASK [../roles/splunk : Disable boot-start if it needs to be to reconfigured] ********************************
+2022-12-15 15:51:55,395 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,411 p=1160 u=user n=ansible | TASK [../roles/splunk : Ensure init.d file is really gone] ***************************************************
+2022-12-15 15:51:55,428 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,441 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable splunk boot-start via initd] **************************************************
+2022-12-15 15:51:55,457 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:51:55,474 p=1160 u=user n=ansible | TASK [../roles/splunk : Enable splunk boot-start via systemd] ************************************************
+2022-12-15 15:51:55,654 p=1326 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:56,094 p=1326 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:56,752 p=1326 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:57,780 p=1326 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:51:57,784 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "cmd": [
+        "/opt/splunk/bin/splunk",
+        "enable",
+        "boot-start",
+        "-user",
+        "splunk",
+        "-group",
+        "splunk",
+        "-systemd-managed",
+        "1",
+        "-systemd-unit-file-name",
+        "Splunkd",
+        "-create-polkit-rules",
+        "0",
+        "--answer-yes",
+        "--auto-ports",
+        "--no-prompt",
+        "--accept-license"
+    ],
+    "delta": "0:00:00.424093",
+    "end": "2022-12-15 15:51:52.163634",
+    "rc": 0,
+    "start": "2022-12-15 15:51:51.739541"
+}
+
+STDOUT:
+
+Systemd unit file installed at /etc/systemd/system/Splunkd.service.
+Configured as systemd managed service.
+
+2022-12-15 15:51:57,791 p=1160 u=user n=ansible | TASK [../roles/splunk : Update systemd file] *****************************************************************
+2022-12-15 15:51:57,813 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_systemd.yml for nemesiaudit
+2022-12-15 15:51:57,820 p=1160 u=user n=ansible | TASK [../roles/splunk : Update the systemd file for Splunk] **************************************************
+2022-12-15 15:51:57,896 p=1332 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:51:58,102 p=1332 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:51:58,532 p=1332 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:51:59,270 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'LimitNOFILE', 'value': '1024000'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "LimitNOFILE",
+        "value": "1024000"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 816,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option changed
+
+2022-12-15 15:51:59,639 p=1332 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-15 15:52:00,875 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'LimitNPROC', 'value': '512000'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "LimitNPROC",
+        "value": "512000"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 836,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:01,250 p=1332 u=user n=paramiko.transport.sftp | [chan 14] Opened sftp connection (server version 3)
+2022-12-15 15:52:02,091 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'LimitFSIZE', 'value': 'infinity'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "LimitFSIZE",
+        "value": "infinity"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 858,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:02,431 p=1332 u=user n=paramiko.transport.sftp | [chan 20] Opened sftp connection (server version 3)
+2022-12-15 15:52:03,436 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'LimitDATA', 'value': 'infinity'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "LimitDATA",
+        "value": "infinity"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 879,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:03,805 p=1332 u=user n=paramiko.transport.sftp | [chan 26] Opened sftp connection (server version 3)
+2022-12-15 15:52:04,424 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'LimitCORE', 'value': 'infinity'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "LimitCORE",
+        "value": "infinity"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 900,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:04,770 p=1332 u=user n=paramiko.transport.sftp | [chan 32] Opened sftp connection (server version 3)
+2022-12-15 15:52:05,468 p=1332 u=user n=paramiko.transport.sftp | [chan 32] sftp session closed.
+2022-12-15 15:52:05,469 p=1160 u=user n=ansible | changed: [nemesiaudit] => (item={'option': 'TasksMax', 'value': 'infinity'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "option": "TasksMax",
+        "value": "infinity"
+    },
+    "mode": "0644",
+    "owner": "root",
+    "path": "/etc/systemd/system/Splunkd.service",
+    "size": 920,
+    "state": "file",
+    "uid": 0
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:05,477 p=1160 u=user n=ansible | TASK [../roles/splunk : Include post-install tasks] **********************************************************
+2022-12-15 15:52:05,499 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/post_install.yml for nemesiaudit
+2022-12-15 15:52:05,518 p=1160 u=user n=ansible | TASK [../roles/splunk : Touch .ui_login file to disable first-time login prompt] *****************************
+2022-12-15 15:52:05,593 p=1338 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:05,793 p=1338 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:06,297 p=1338 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:07,037 p=1338 u=user n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an
+unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.12/user_guide/become.html#risks-of-becoming-an-unprivileged-user
+
+2022-12-15 15:52:07,730 p=1338 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:07,734 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "dest": "/opt/splunk/etc/.ui_login",
+    "gid": 997,
+    "group": "splunk",
+    "mode": "0644",
+    "owner": "splunk",
+    "size": 0,
+    "state": "file",
+    "uid": 995
+}
+2022-12-15 15:52:07,742 p=1160 u=user n=ansible | TASK [../roles/splunk : Ensure correct ownership for /opt/splunk/etc] ****************************************
+2022-12-15 15:52:07,845 p=1342 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:08,146 p=1342 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:08,606 p=1342 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:09,853 p=1342 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:09,856 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "gid": 997,
+    "group": "splunk",
+    "mode": "0755",
+    "owner": "splunk",
+    "path": "/opt/splunk/etc",
+    "size": 4096,
+    "state": "directory",
+    "uid": 995
+}
+2022-12-15 15:52:09,862 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure cron job to cleanup crash logs older than 7 days] **************************
+2022-12-15 15:52:09,872 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:09,879 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure cron job to cleanup diags older than 30 days] ******************************
+2022-12-15 15:52:09,887 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:09,893 p=1160 u=user n=ansible | TASK [../roles/splunk : Install pstack shell script for troubleshooting purposes] ****************************
+2022-12-15 15:52:09,903 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:09,926 p=1160 u=user n=ansible | TASK [../roles/splunk : Install additional utilities and troubleshooting tools] ******************************
+2022-12-15 15:52:09,946 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:09,957 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure license] *******************************************************************
+2022-12-15 15:52:10,003 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/configure_license.yml for nemesiaudit
+2022-12-15 15:52:10,021 p=1160 u=user n=ansible | TASK [../roles/splunk : Run splunk version command to check currently installed version] *********************
+2022-12-15 15:52:10,064 p=1160 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/check_splunk_version.yml for nemesiaudit
+2022-12-15 15:52:10,073 p=1160 u=user n=ansible | TASK [../roles/splunk : Run splunk version command to check currently installed version] *********************
+2022-12-15 15:52:10,207 p=1358 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:10,419 p=1358 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:10,840 p=1358 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:11,465 p=1358 u=user n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an
+unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.12/user_guide/become.html#risks-of-becoming-an-unprivileged-user
+
+2022-12-15 15:52:12,013 p=1358 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:12,016 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "cmd": [
+        "/opt/splunk/bin/splunk",
+        "version",
+        "--answer-yes",
+        "--auto-ports",
+        "--no-prompt",
+        "--accept-license"
+    ],
+    "delta": "0:00:00.004999",
+    "end": "2022-12-15 15:52:06.395292",
+    "rc": 0,
+    "start": "2022-12-15 15:52:06.390293"
+}
+
+STDOUT:
+
+Splunk 9.0.2 (build 17e00c557dc1)
+
+2022-12-15 15:52:12,023 p=1160 u=user n=ansible | TASK [../roles/splunk : Get Splunk version number only] ******************************************************
+2022-12-15 15:52:12,110 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "splunk_version_release": "9.0.2"
+    },
+    "changed": false
+}
+2022-12-15 15:52:12,117 p=1160 u=user n=ansible | TASK [../roles/splunk : Setting licensing mode based on Splunk version number] *******************************
+2022-12-15 15:52:12,139 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "ansible_facts": {
+        "mode_option": "master_uri"
+    },
+    "changed": false
+}
+2022-12-15 15:52:12,148 p=1160 u=user n=ansible | TASK [../roles/splunk : Create license/enterprise directory] *************************************************
+2022-12-15 15:52:12,168 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:12,175 p=1160 u=user n=ansible | TASK [../roles/splunk : Copy license file] *******************************************************************
+2022-12-15 15:52:12,192 p=1160 u=user n=ansible | TASK [../roles/splunk : Set pass4SymmKey] ********************************************************************
+2022-12-15 15:52:12,204 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:12,211 p=1160 u=user n=ansible | TASK [../roles/splunk : Remove master_uri when using local license] ******************************************
+2022-12-15 15:52:12,251 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:12,267 p=1160 u=user n=ansible | TASK [../roles/splunk : Configure License Group] *************************************************************
+2022-12-15 15:52:12,290 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:12,306 p=1160 u=user n=ansible | TASK [../roles/splunk : Set license master_uri] **************************************************************
+2022-12-15 15:52:12,412 p=1376 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:12,615 p=1376 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:13,035 p=1376 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:13,654 p=1376 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:13,657 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "gid": 997,
+    "group": "splunk",
+    "mode": "0600",
+    "owner": "splunk",
+    "path": "/opt/splunk/etc/system/local/server.conf",
+    "size": 171,
+    "state": "file",
+    "uid": 995
+}
+
+MSG:
+
+section and option added
+
+2022-12-15 15:52:13,663 p=1160 u=user n=ansible | TASK [../roles/splunk : Set pass4SymmKey to match LM] ********************************************************
+2022-12-15 15:52:13,734 p=1380 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:13,941 p=1380 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:14,487 p=1380 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:15,210 p=1380 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:15,213 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "gid": 997,
+    "group": "splunk",
+    "mode": "0600",
+    "owner": "splunk",
+    "path": "/opt/splunk/etc/system/local/server.conf",
+    "size": 226,
+    "state": "file",
+    "uid": 995
+}
+
+MSG:
+
+option added
+
+2022-12-15 15:52:15,220 p=1160 u=user n=ansible | TASK [../roles/splunk : Run splunk version command to check currently installed version] *********************
+2022-12-15 15:52:15,229 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:15,236 p=1160 u=user n=ansible | TASK [../roles/splunk : Checkpoint: Version] *****************************************************************
+2022-12-15 15:52:15,244 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {}
+2022-12-15 15:52:15,256 p=1160 u=user n=ansible | TASK [../roles/splunk : Checkpoint: Package] *****************************************************************
+2022-12-15 15:52:15,267 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {}
+2022-12-15 15:52:15,288 p=1160 u=user n=ansible | TASK [../roles/splunk : Check if Splunk needs to be stopped if we are not at the expected version] ***********
+2022-12-15 15:52:15,316 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:15,329 p=1160 u=user n=ansible | TASK [../roles/splunk : Stop Splunk if not at expected version and splunk is currently running] **************
+2022-12-15 15:52:15,345 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:15,353 p=1160 u=user n=ansible | TASK [../roles/splunk : Upgrade Splunk if not at expected version] *******************************************
+2022-12-15 15:52:15,387 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:15,416 p=1160 u=user n=ansible | RUNNING HANDLER [../roles/splunk : reload systemctl daemon] **************************************************
+2022-12-15 15:52:15,502 p=1396 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:15,708 p=1396 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:16,190 p=1396 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:17,509 p=1396 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:17,512 p=1160 u=user n=ansible | ok: [nemesiaudit] => {
+    "changed": false,
+    "name": null,
+    "status": {}
+}
+2022-12-15 15:52:17,512 p=1160 u=user n=ansible | RUNNING HANDLER [../roles/splunk : start splunk] *************************************************************
+2022-12-15 15:52:17,588 p=1400 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-15 15:52:17,798 p=1400 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-15 15:52:18,217 p=1400 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-15 15:52:20,027 p=1400 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-15 15:52:20,030 p=1160 u=user n=ansible | changed: [nemesiaudit] => {
+    "changed": true,
+    "name": "Splunkd",
+    "state": "started",
+    "status": {
+        "ActiveEnterTimestampMonotonic": "0",
+        "ActiveExitTimestampMonotonic": "0",
+        "ActiveState": "inactive",
+        "After": "system.slice network-online.target sysinit.target systemd-journald.socket basic.target",
+        "AllowIsolate": "no",
+        "AllowedCPUs": "",
+        "AllowedMemoryNodes": "",
+        "AmbientCapabilities": "",
+        "AssertResult": "no",
+        "AssertTimestampMonotonic": "0",
+        "Before": "multi-user.target shutdown.target",
+        "BlockIOAccounting": "no",
+        "BlockIOWeight": "[not set]",
+        "CPUAccounting": "yes",
+        "CPUAffinity": "",
+        "CPUAffinityFromNUMA": "no",
+        "CPUQuotaPerSecUSec": "infinity",
+        "CPUQuotaPeriodUSec": "infinity",
+        "CPUSchedulingPolicy": "0",
+        "CPUSchedulingPriority": "0",
+        "CPUSchedulingResetOnFork": "no",
+        "CPUShares": "1024",
+        "CPUUsageNSec": "[not set]",
+        "CPUWeight": "[not set]",
+        "CacheDirectoryMode": "0755",
+        "CanFreeze": "yes",
+        "CanIsolate": "no",
+        "CanReload": "no",
+        "CanStart": "yes",
+        "CanStop": "yes",
+        "CapabilityBoundingSet": "cap_chown cap_dac_override cap_dac_read_search cap_fowner cap_fsetid cap_kill cap_setgid cap_setuid cap_setpcap cap_linux_immutable cap_net_bind_service cap_net_broadcast cap_net_admin cap_net_raw cap_ipc_lock cap_ipc_owner cap_sys_module cap_sys_rawio cap_sys_chroot cap_sys_ptrace cap_sys_pacct cap_sys_admin cap_sys_boot cap_sys_nice cap_sys_resource cap_sys_time cap_sys_tty_config cap_mknod cap_lease cap_audit_write cap_audit_control cap_setfcap cap_mac_override cap_mac_admin cap_syslog cap_wake_alarm cap_block_suspend cap_audit_read cap_perfmon cap_bpf cap_checkpoint_restore",
+        "CleanResult": "success",
+        "CollectMode": "inactive",
+        "ConditionResult": "no",
+        "ConditionTimestampMonotonic": "0",
+        "ConfigurationDirectoryMode": "0755",
+        "Conflicts": "shutdown.target",
+        "ControlPID": "0",
+        "CoredumpFilter": "0x33",
+        "DefaultDependencies": "yes",
+        "DefaultMemoryLow": "0",
+        "DefaultMemoryMin": "0",
+        "Delegate": "yes",
+        "DelegateControllers": "cpu cpuacct cpuset io blkio memory devices pids bpf-firewall bpf-devices",
+        "Description": "Systemd service file for Splunk, generated by 'splunk enable boot-start'",
+        "DevicePolicy": "auto",
+        "DynamicUser": "no",
+        "EffectiveCPUs": "",
+        "EffectiveMemoryNodes": "",
+        "ExecMainCode": "0",
+        "ExecMainExitTimestampMonotonic": "0",
+        "ExecMainPID": "0",
+        "ExecMainStartTimestampMonotonic": "0",
+        "ExecMainStatus": "0",
+        "ExecStart": "{ path=/opt/splunk/bin/splunk ; argv[]=/opt/splunk/bin/splunk _internal_launch_under_systemd ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "ExecStartEx": "{ path=/opt/splunk/bin/splunk ; argv[]=/opt/splunk/bin/splunk _internal_launch_under_systemd ; flags= ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "ExecStartPost": "{ path=/bin/bash ; argv[]=/bin/bash -c chown -R splunk:splunk /sys/fs/cgroup/system.slice/Splunkd.service ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "ExecStartPostEx": "{ path=/bin/bash ; argv[]=/bin/bash -c chown -R splunk:splunk /sys/fs/cgroup/system.slice/Splunkd.service ; flags= ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+        "FailureAction": "none",
+        "FileDescriptorStoreMax": "0",
+        "FinalKillSignal": "9",
+        "FragmentPath": "/etc/systemd/system/Splunkd.service",
+        "FreezerState": "running",
+        "GID": "[not set]",
+        "Group": "splunk",
+        "GuessMainPID": "yes",
+        "IOAccounting": "no",
+        "IOReadBytes": "18446744073709551615",
+        "IOReadOperations": "18446744073709551615",
+        "IOSchedulingClass": "0",
+        "IOSchedulingPriority": "0",
+        "IOWeight": "[not set]",
+        "IOWriteBytes": "18446744073709551615",
+        "IOWriteOperations": "18446744073709551615",
+        "IPAccounting": "no",
+        "IPEgressBytes": "[no data]",
+        "IPEgressPackets": "[no data]",
+        "IPIngressBytes": "[no data]",
+        "IPIngressPackets": "[no data]",
+        "Id": "Splunkd.service",
+        "IgnoreOnIsolate": "no",
+        "IgnoreSIGPIPE": "yes",
+        "InactiveEnterTimestampMonotonic": "0",
+        "InactiveExitTimestampMonotonic": "0",
+        "JobRunningTimeoutUSec": "infinity",
+        "JobTimeoutAction": "none",
+        "JobTimeoutUSec": "infinity",
+        "KeyringMode": "private",
+        "KillMode": "mixed",
+        "KillSignal": "2",
+        "LimitAS": "infinity",
+        "LimitASSoft": "infinity",
+        "LimitCORE": "infinity",
+        "LimitCORESoft": "infinity",
+        "LimitCPU": "infinity",
+        "LimitCPUSoft": "infinity",
+        "LimitDATA": "infinity",
+        "LimitDATASoft": "infinity",
+        "LimitFSIZE": "infinity",
+        "LimitFSIZESoft": "infinity",
+        "LimitLOCKS": "infinity",
+        "LimitLOCKSSoft": "infinity",
+        "LimitMEMLOCK": "65536",
+        "LimitMEMLOCKSoft": "65536",
+        "LimitMSGQUEUE": "819200",
+        "LimitMSGQUEUESoft": "819200",
+        "LimitNICE": "0",
+        "LimitNICESoft": "0",
+        "LimitNOFILE": "1024000",
+        "LimitNOFILESoft": "1024000",
+        "LimitNPROC": "512000",
+        "LimitNPROCSoft": "512000",
+        "LimitRSS": "infinity",
+        "LimitRSSSoft": "infinity",
+        "LimitRTPRIO": "99",
+        "LimitRTPRIOSoft": "99",
+        "LimitRTTIME": "infinity",
+        "LimitRTTIMESoft": "infinity",
+        "LimitSIGPENDING": "47715",
+        "LimitSIGPENDINGSoft": "47715",
+        "LimitSTACK": "infinity",
+        "LimitSTACKSoft": "8388608",
+        "LoadState": "loaded",
+        "LockPersonality": "no",
+        "LogLevelMax": "-1",
+        "LogRateLimitBurst": "0",
+        "LogRateLimitIntervalUSec": "0",
+        "LogsDirectoryMode": "0755",
+        "MainPID": "0",
+        "ManagedOOMMemoryPressure": "auto",
+        "ManagedOOMMemoryPressureLimitPercent": "0%",
+        "ManagedOOMSwap": "auto",
+        "MemoryAccounting": "yes",
+        "MemoryCurrent": "[not set]",
+        "MemoryDenyWriteExecute": "no",
+        "MemoryHigh": "infinity",
+        "MemoryLimit": "12524531712",
+        "MemoryLow": "0",
+        "MemoryMax": "infinity",
+        "MemoryMin": "0",
+        "MemorySwapMax": "infinity",
+        "MountAPIVFS": "no",
+        "MountFlags": "",
+        "NFileDescriptorStore": "0",
+        "NRestarts": "0",
+        "NUMAMask": "",
+        "NUMAPolicy": "n/a",
+        "Names": "Splunkd.service",
+        "NeedDaemonReload": "no",
+        "Nice": "0",
+        "NoNewPrivileges": "no",
+        "NonBlocking": "no",
+        "NotifyAccess": "none",
+        "OOMPolicy": "continue",
+        "OOMScoreAdjust": "0",
+        "OnFailureJobMode": "replace",
+        "Perpetual": "no",
+        "PrivateDevices": "no",
+        "PrivateMounts": "no",
+        "PrivateNetwork": "no",
+        "PrivateTmp": "no",
+        "PrivateUsers": "no",
+        "ProcSubset": "all",
+        "ProtectClock": "no",
+        "ProtectControlGroups": "no",
+        "ProtectHome": "no",
+        "ProtectHostname": "no",
+        "ProtectKernelLogs": "no",
+        "ProtectKernelModules": "no",
+        "ProtectKernelTunables": "no",
+        "ProtectProc": "default",
+        "ProtectSystem": "no",
+        "RefuseManualStart": "no",
+        "RefuseManualStop": "no",
+        "ReloadResult": "success",
+        "RemainAfterExit": "no",
+        "RemoveIPC": "no",
+        "Requires": "system.slice sysinit.target",
+        "Restart": "always",
+        "RestartForceExitStatus": "52",
+        "RestartKillSignal": "2",
+        "RestartPreventExitStatus": "51",
+        "RestartUSec": "100ms",
+        "RestrictNamespaces": "no",
+        "RestrictRealtime": "no",
+        "RestrictSUIDSGID": "no",
+        "Result": "success",
+        "RootDirectoryStartOnly": "no",
+        "RootHashSignature": "",
+        "RuntimeDirectoryMode": "0755",
+        "RuntimeDirectoryPreserve": "no",
+        "RuntimeMaxUSec": "infinity",
+        "SameProcessGroup": "no",
+        "SecureBits": "0",
+        "SendSIGHUP": "no",
+        "SendSIGKILL": "yes",
+        "Slice": "system.slice",
+        "StandardError": "inherit",
+        "StandardInput": "null",
+        "StandardInputData": "",
+        "StandardOutput": "journal",
+        "StartLimitAction": "none",
+        "StartLimitBurst": "5",
+        "StartLimitIntervalUSec": "10s",
+        "StartupBlockIOWeight": "[not set]",
+        "StartupCPUShares": "[not set]",
+        "StartupCPUWeight": "[not set]",
+        "StartupIOWeight": "[not set]",
+        "StateChangeTimestamp": "Thu 2022-12-15 15:52:11 CET",
+        "StateChangeTimestampMonotonic": "2003046439643",
+        "StateDirectoryMode": "0755",
+        "StatusErrno": "0",
+        "StopWhenUnneeded": "no",
+        "SubState": "dead",
+        "SuccessAction": "none",
+        "SuccessExitStatus": "51 52",
+        "SyslogFacility": "3",
+        "SyslogLevel": "6",
+        "SyslogLevelPrefix": "yes",
+        "SyslogPriority": "30",
+        "SystemCallErrorNumber": "2147483646",
+        "TTYReset": "no",
+        "TTYVHangup": "no",
+        "TTYVTDisallocate": "no",
+        "TasksAccounting": "yes",
+        "TasksCurrent": "[not set]",
+        "TasksMax": "infinity",
+        "TimeoutAbortUSec": "6min",
+        "TimeoutCleanUSec": "infinity",
+        "TimeoutStartFailureMode": "terminate",
+        "TimeoutStartUSec": "1min 30s",
+        "TimeoutStopFailureMode": "terminate",
+        "TimeoutStopUSec": "6min",
+        "TimerSlackNSec": "50000",
+        "Transient": "no",
+        "Type": "simple",
+        "UID": "[not set]",
+        "UMask": "0022",
+        "UnitFilePreset": "enabled",
+        "UnitFileState": "enabled",
+        "User": "splunk",
+        "UtmpMode": "init",
+        "WantedBy": "multi-user.target",
+        "Wants": "network-online.target",
+        "WatchdogSignal": "6",
+        "WatchdogTimestampMonotonic": "0",
+        "WatchdogUSec": "infinity"
+    }
+}
+2022-12-15 15:52:20,031 p=1160 u=user n=ansible | RUNNING HANDLER [../roles/splunk : restart splunk] ***********************************************************
+2022-12-15 15:52:20,045 p=1160 u=user n=ansible | skipping: [nemesiaudit] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-15 15:52:20,057 p=1160 u=user n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-15 15:52:20,057 p=1160 u=user n=ansible | nemesiaudit                : ok=50   changed=17   unreachable=0    failed=0    skipped=47   rescued=0    ignored=0   

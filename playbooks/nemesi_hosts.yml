@@ -1,0 +1,129 @@
+---
+all:
+  hosts:
+#    nemesidx21:
+#      #ansible_host: 10.194.52.143
+#      ansible_host: 10.194.52.79
+#    nemesidx22:
+#      #ansible_host: 10.194.52.144
+#      ansible_host: 10.194.52.80
+#    nemesidx23:
+#      #ansible_host: 10.194.52.145
+#      ansible_host: 10.194.52.81
+#    nemesidx24:
+#      #ansible_host: 10.194.52.146
+#      ansible_host: 10.194.52.82
+#    nemesidx25:
+#      #ansible_host: 10.194.52.147
+#      ansible_host: 10.194.52.83
+#    nemesidx26:
+#      #ansible_host: 10.194.52.148
+#      ansible_host: 10.194.52.84
+#    nemesidx27:
+#      #ansible_host: 10.194.52.149
+#      ansible_host: 10.194.52.85
+#    nemesidx28:
+#      #ansible_host: 10.194.52.150
+#      ansible_host: 10.194.52.86
+#    nemesis21:
+#      #ansible_host: 10.195.193.57
+#      ansible_host: 10.195.193.137
+#    nemesis22:
+#      #ansible_host: 10.195.193.58
+#      ansible_host: 10.195.193.138
+#    nemesis23:
+#      #ansible_host: 10.195.193.59
+#      ansible_host: 10.195.193.139
+    nemesisd21:
+      #ansible_host: 10.194.52.156
+      ansible_host: 10.194.52.87
+#    nemesicm21:
+#      #ansible_host: 10.194.52.151
+#      ansible_host: 10.194.52.88
+    nemesihf21:
+      #ansible_host: 10.194.52.152
+      ansible_host: 10.194.52.89
+    nemesihf22:
+      #ansible_host: 10.194.52.153
+      ansible_host: 10.194.52.90
+    nemesihf23:
+      #ansible_host: 10.194.52.154
+      ansible_host: 10.194.52.91
+#    nemesilb21:
+#      #ansible_host: 10.195.193.60
+#      ansible_host: 10.195.193.140
+#    nemesiaudit:
+#      #ansible_host: 10.194.52.155
+#      ansible_host: 10.194.52.92
+  children:
+    full:
+      children:
+#        licensemaster:
+#          hosts:
+#            nemesisd21:
+#          vars:
+#            splunk_license_file: [ Splunk5M.lic ]
+#            splunk_license_group: Enterprise
+        deploymentserver:
+          hosts:
+            nemesisd21:
+#        dmc:
+#          hosts:
+#            nemesisd21:
+#          vars:
+#            splunk_uri_cm: https://10.194.52.88:8089
+#        shdeployer:
+#          hosts:
+#            nemesisd21:
+#          vars:
+#            target_shc_group_name: nemesis4shc
+#            splunk_shc_target_group: nemesis4shc
+
+#        clustermanager:
+#          hosts:
+#            nemesicm21:
+#          vars:
+#            splunk_license_group: Peer
+
+#        indexer:
+#          children:
+#            nemesis4_idxc:
+#              hosts:
+#                nemesidx21:
+#                nemesidx22:
+#                nemesidx23:
+#                nemesidx24:
+#                nemesidx25:
+#                nemesidx26:
+#                nemesidx27:
+#                nemesidx28:
+#          vars:
+#            splunk_license_group: Peer
+#            splunk_uri_cm: https://10.194.52.88:8089
+
+#        search:
+#          children:
+#            nemesis4shc:
+#              hosts:
+#                nemesis21:
+#                nemesis22:
+#                nemesis23:
+#          vars:
+#            splunk_license_group: Peer
+#            splunk_uri_cm: https://10.194.52.88:8089
+
+        heavyForwarder:
+          hosts:
+            nemesihf21:
+            nemesihf22:
+            nemesihf23:
+
+#        standalone:
+#          hosts:
+#            nemesiaudit:
+#          vars:
+#            splunk_license_group: Peer
+
+      vars:
+        ansible_user: gandalf
+        ansible_become: true

@@ -1,0 +1,50 @@
+- name: Splunk cleanup
+  hosts: all
+  gather_facts: yes
+  become: true
+  tasks:
+    - name: Stop & Disable Splunkd service
+      service:
+        name: Splunkd
+        enabled: no
+        state: stopped
+
+    - name: Remove Splunkd service
+      file:
+        path: /etc/systemd/system/Splunkd.service
+        state: absent
+
+    - name: Remove Splunkd service polkit rule
+      file:
+        path: /etc/polkit-1/localauthority/50-local.d/10-Splunkd.pkla
+        state: absent
+
+    - name: Disable Disable-THP service
+      service:
+        name: disable-thp
+        enabled: no
+        state: stopped
+
+    - name: Remove Disable-THD service
+      file:
+        path: /etc/systemd/system/disable-thp.service
+        state: absent
+
+    - name: Reload Systemctl daemon
+      systemd:
+        daemon_reload: true
+
+    - name: Remove Splunk home
+      file:
+        path: /opt/splunk
+        state: absent
+
+    - name: Remove Splunk user
+      user:
+        name: splunk
+        state: absent
+      
+    - name: Remove Splunk group
+      group:
+        name: splunk
+        state: absent

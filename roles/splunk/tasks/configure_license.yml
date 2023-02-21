@@ -30,6 +30,18 @@
     become: yes
     when:
       - splunk_license_group=="Enterprise"
+  - name: Set pass4SymmKey
+    ini_file:
+      path: "{{ splunk_home }}/etc/system/local/server.conf"
+      section: general
+      option: pass4SymmKey
+      value: "{{ splunk_general_key }}"
+      owner: "{{ splunk_nix_user }}"
+      group: "{{ splunk_nix_group }}"
+    become: yes
+    notify: restart splunk
+    when:
+      - splunk_license_group=="Enterprise"
   - name: Remove master_uri when using local license
     ini_file:
       path: "{{ splunk_home }}/etc/system/local/server.conf"

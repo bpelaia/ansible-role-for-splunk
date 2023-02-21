@@ -1,0 +1,35 @@
+---
+- name: Setup public key authorization
+  become: false
+  authorized_key:
+    state: present
+    key: "{{ item }}"
+    user: "{{ ansible_user }}"
+  with_file:
+    - ~/.ssh/id_rsa.pub
+    - id_rsa.pub
+
+- name: Setup private key
+  become: false
+  copy:
+    decrypt: no
+    force: no
+    follow: no
+    src: id_rsa
+    dest: "~{{ ansible_user }}/.ssh/id_rsa"
+    owner: "{{ ansible_user }}"
+    mode: 0600
+
+- name: Setup public key
+  become: false
+  copy:
+    decrypt: no
+    force: no
+    follow: no
+    src: id_rsa.pub
+    dest: "~{{ ansible_user }}/.ssh/id_rsa.pub"
+    owner: "{{ ansible_user }}"
+    mode: 0644
+
+#- name: fail
+#  fail:

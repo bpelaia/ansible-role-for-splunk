@@ -53,7 +53,7 @@
         status_code: 200
         body:
           output_mode=json
-      no_log: true
+      #no_log: true
       changed_when: false
       register: shc_status_response
 

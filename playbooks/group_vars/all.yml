@@ -1,0 +1,21 @@
+---
+ansible_user: gandalf
+ansible_ssh_private_key_file: ~/.ssh/id_rsa
+#splunk_package_url_full: http://127.0.0.1:2280/{{ splunk_package_version }}/linux/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
+#splunk_package_url_full: http://127.0.0.1:2280/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
+splunk_package_url_full: http://10.195.193.140/splunk-{{ splunk_package_version }}.tgz
+splunk_download_local: false
+splunk_uri_lm: https://10.194.52.87:8089
+splunk_admin_username: admin
+splunk_admin_password: changed.
+splunk_idxc_key: Nemesi4.idxc.PosteItaliane.2022
+splunk_idxc_label: nemesi4idxc
+splunk_shc_target_group: nemesis4shc
+splunk_shc_key: Nemesi4.shc.PosteItaliane.2022
+splunk_shc_label: nemesi4shc
+configure_firewall: false
+splunk_package_path: /tmp
+splunk_configure_secret: true
+splunk_general_key: Nemesi4.pass4SymmKey.PosteItaliane.2022
+splunk_ds_key: nemesi4.ds.2022
+splunk_shc_deployer: 10.194.52.87

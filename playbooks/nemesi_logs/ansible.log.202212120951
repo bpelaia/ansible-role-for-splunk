@@ -1,0 +1,2608 @@
+2022-12-12 09:26:40,439 p=699 u=user n=ansible | Using /home/user/ansible-role-for-splunk-nemesi/playbooks/ansible.cfg as config file
+2022-12-12 09:26:40,440 p=699 u=user n=ansible | [DEPRECATION WARNING]: COMMAND_WARNINGS option, the command warnings feature is being removed. This feature 
+will be removed from ansible-core in version 2.14. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-12-12 09:26:43,944 p=699 u=user n=ansible | PLAY [full] **************************************************************************************************
+2022-12-12 09:26:45,960 p=699 u=user n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: ***************************************************
+2022-12-12 09:26:45,961 p=699 u=user n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-12 09:26:46,100 p=703 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,131 p=704 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,151 p=705 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,152 p=707 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,162 p=706 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,182 p=708 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,208 p=712 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,212 p=710 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,226 p=715 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,245 p=718 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,260 p=721 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,261 p=719 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,266 p=723 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:26:46,470 p=703 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,484 p=704 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,499 p=705 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,501 p=707 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,507 p=706 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,531 p=708 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,553 p=712 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,560 p=710 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,573 p=715 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,592 p=718 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,606 p=719 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,606 p=721 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,610 p=723 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:26:46,641 p=703 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,656 p=704 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,672 p=705 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,672 p=707 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,678 p=706 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,703 p=708 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,723 p=712 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,733 p=710 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,744 p=715 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,764 p=718 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,776 p=721 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,778 p=719 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:46,782 p=723 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:26:47,577 p=703 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,582 p=706 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,584 p=707 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,585 p=704 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,586 p=705 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,590 p=710 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,603 p=708 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,606 p=715 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,612 p=712 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,624 p=718 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,639 p=719 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,642 p=723 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:47,642 p=721 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:26:50,473 p=705 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:50,478 p=699 u=user n=ansible | ok: [nemesis21]
+2022-12-12 09:26:50,918 p=712 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:50,925 p=699 u=user n=ansible | ok: [nemesidx23]
+2022-12-12 09:26:51,167 p=719 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,175 p=699 u=user n=ansible | ok: [nemesidx26]
+2022-12-12 09:26:51,263 p=703 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,271 p=699 u=user n=ansible | ok: [nemesisd21]
+2022-12-12 09:26:51,288 p=708 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,297 p=699 u=user n=ansible | ok: [nemesidx21]
+2022-12-12 09:26:51,297 p=704 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,312 p=699 u=user n=ansible | ok: [nemesicm21]
+2022-12-12 09:26:51,445 p=718 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,448 p=721 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,450 p=699 u=user n=ansible | ok: [nemesidx25]
+2022-12-12 09:26:51,454 p=699 u=user n=ansible | ok: [nemesidx27]
+2022-12-12 09:26:51,605 p=707 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,612 p=699 u=user n=ansible | ok: [nemesis23]
+2022-12-12 09:26:51,699 p=723 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,706 p=699 u=user n=ansible | ok: [nemesidx28]
+2022-12-12 09:26:51,752 p=710 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,758 p=699 u=user n=ansible | ok: [nemesidx22]
+2022-12-12 09:26:51,784 p=715 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:51,807 p=699 u=user n=ansible | ok: [nemesidx24]
+2022-12-12 09:26:52,077 p=706 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:26:52,082 p=699 u=user n=ansible | ok: [nemesis22]
+2022-12-12 09:26:59,370 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : include distribution vars (N)o/(y)es/(c)ontinue: ***********************
+2022-12-12 09:26:59,371 p=699 u=user n=ansible | TASK [../roles/splunk : include distribution vars] ***********************************************************
+2022-12-12 09:26:59,463 p=699 u=user n=ansible | ok: [nemesisd21] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,478 p=699 u=user n=ansible | ok: [nemesicm21] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,480 p=699 u=user n=ansible | ok: [nemesis21] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,497 p=699 u=user n=ansible | ok: [nemesis22] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,587 p=699 u=user n=ansible | ok: [nemesis23] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,588 p=699 u=user n=ansible | ok: [nemesidx21] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,588 p=699 u=user n=ansible | ok: [nemesidx22] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,625 p=699 u=user n=ansible | ok: [nemesidx23] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,626 p=699 u=user n=ansible | ok: [nemesidx24] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,651 p=699 u=user n=ansible | ok: [nemesidx25] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,681 p=699 u=user n=ansible | ok: [nemesidx27] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,685 p=699 u=user n=ansible | ok: [nemesidx26] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:26:59,700 p=699 u=user n=ansible | ok: [nemesidx28] => (item=/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml) => {
+    "ansible_facts": {
+        "firewall_service": "ufw",
+        "global_bashrc": "/etc/bash.bashrc",
+        "linux_packages": [
+            "nload",
+            "iotop",
+            "iftop",
+            "sysstat",
+            "telnet",
+            "tcpdump",
+            "htop",
+            "atop",
+            "lsof",
+            "policycoreutils",
+            "nethogs",
+            "gdb",
+            "dnsutils"
+        ]
+    },
+    "ansible_included_var_files": [
+        "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+    ],
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "/home/user/ansible-role-for-splunk-nemesi/roles/splunk/vars/Debian.yml"
+}
+2022-12-12 09:27:05,017 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Reset value of start_splunk_handler_fired and configure_boot_start (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:05,018 p=699 u=user n=ansible | TASK [../roles/splunk : Reset value of start_splunk_handler_fired and configure_boot_start] ******************
+2022-12-12 09:27:05,071 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,087 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,160 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,191 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,203 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,276 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,292 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,316 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,329 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,365 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,366 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,378 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:05,388 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "ansible_facts": {
+        "configure_boot_start": false,
+        "start_splunk_handler_fired": false
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,380 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Set boot-start method to systemd (N)o/(y)es/(c)ontinue: ****************
+2022-12-12 09:27:07,381 p=699 u=user n=ansible | TASK [../roles/splunk : Set boot-start method to systemd] ****************************************************
+2022-12-12 09:27:07,420 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,496 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,517 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,560 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,579 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,597 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,664 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,683 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,697 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,733 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,733 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,733 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:07,754 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "ansible_facts": {
+        "desired_start_method": "systemd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:08,980 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Set boot-start method to initd (N)o/(y)es/(c)ontinue: ******************
+2022-12-12 09:27:08,981 p=699 u=user n=ansible | TASK [../roles/splunk : Set boot-start method to initd] ******************************************************
+2022-12-12 09:27:09,030 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,057 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,135 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,222 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,242 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,254 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,264 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,310 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,325 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,349 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,350 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,350 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:09,353 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:10,573 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Configure vars for full package (N)o/(y)es/(c)ontinue: *****************
+2022-12-12 09:27:10,574 p=699 u=user n=ansible | TASK [../roles/splunk : Configure vars for full package] *****************************************************
+2022-12-12 09:27:10,627 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,646 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,671 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,750 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,766 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,826 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,852 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,877 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,913 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,946 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,950 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,968 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:10,981 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "ansible_facts": {
+        "splunk_home": "/opt/splunk",
+        "splunk_install_type": "full",
+        "splunk_package_url": "http://10.10.0.50/splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz",
+        "splunk_product": "Splunk",
+        "systemd_unit": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:15,960 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Configure var for splunk systemd service handler (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:15,961 p=699 u=user n=ansible | TASK [../roles/splunk : Configure var for splunk systemd service handler] ************************************
+2022-12-12 09:27:15,993 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,033 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,052 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,077 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,150 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,172 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,197 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,230 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,254 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,284 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,285 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,285 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:16,318 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "ansible_facts": {
+        "splunk_service": "Splunkd"
+    },
+    "changed": false
+}
+2022-12-12 09:27:17,305 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Configure vars for uf package (N)o/(y)es/(c)ontinue: *******************
+2022-12-12 09:27:17,306 p=699 u=user n=ansible | TASK [../roles/splunk : Configure vars for uf package] *******************************************************
+2022-12-12 09:27:17,361 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,374 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,393 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,424 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,480 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,498 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,509 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,527 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,568 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,601 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,602 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,602 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:17,613 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,169 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Setting least priviledged mode (N)o/(y)es/(c)ontinue: ******************
+2022-12-12 09:27:19,170 p=699 u=user n=ansible | TASK [../roles/splunk : Setting least priviledged mode] ******************************************************
+2022-12-12 09:27:19,204 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,226 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,246 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,297 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,320 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,344 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,355 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,393 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,438 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,457 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,458 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,459 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:19,477 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:20,860 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Configure var for splunkforwarder systemd service handler (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:20,861 p=699 u=user n=ansible | TASK [../roles/splunk : Configure var for splunkforwarder systemd service handler] ***************************
+2022-12-12 09:27:20,879 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:20,963 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:20,977 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,006 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,037 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,066 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,081 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,100 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,124 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,149 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,150 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,150 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:21,167 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,808 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Configure var for splunk init.d service handler (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:22,809 p=699 u=user n=ansible | TASK [../roles/splunk : Configure var for splunk init.d service handler] *************************************
+2022-12-12 09:27:22,830 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,867 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,889 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,915 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,945 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:22,987 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,011 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,035 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,100 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,117 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,134 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,134 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:23,149 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:26,501 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Check if Splunk is installed (N)o/(y)es/(c)ontinue: ********************
+2022-12-12 09:27:26,502 p=699 u=user n=ansible | TASK [../roles/splunk : Check if Splunk is installed] ********************************************************
+2022-12-12 09:27:26,656 p=1015 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,673 p=1016 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,723 p=1017 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,731 p=1018 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,743 p=1021 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,767 p=1022 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,804 p=1023 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,816 p=1028 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,818 p=1025 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,833 p=1031 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,846 p=1032 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,855 p=1034 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:26,866 p=1036 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:27:27,039 p=1015 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,060 p=1016 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,079 p=1021 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,099 p=1017 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,099 p=1018 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,141 p=1022 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,188 p=1023 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,201 p=1031 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,201 p=1028 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,201 p=1025 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,218 p=1015 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,225 p=1032 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,237 p=1036 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,239 p=1016 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,239 p=1034 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:27:27,258 p=1021 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,287 p=1018 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,287 p=1017 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,314 p=1022 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,360 p=1023 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,377 p=1031 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,377 p=1028 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,382 p=1025 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,401 p=1032 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,412 p=1036 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,414 p=1034 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:27:27,920 p=1015 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:27,937 p=1016 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:27,941 p=1021 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:27,986 p=1018 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:27,993 p=1022 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:27,994 p=1017 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,054 p=1023 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,054 p=1028 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,061 p=1031 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,078 p=1025 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,105 p=1036 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,110 p=1034 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:28,115 p=1032 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:27:29,919 p=1028 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:29,921 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:29,957 p=1015 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:29,959 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,404 p=1018 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,409 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,441 p=1036 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,445 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,552 p=1016 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,555 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,617 p=1032 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,619 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,660 p=1022 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,662 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,710 p=1017 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,710 p=1031 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,712 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,712 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,718 p=1025 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,720 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,722 p=1023 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,723 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,756 p=1021 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,760 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:30,896 p=1034 u=user n=paramiko.transport.sftp | [chan 2] sftp session closed.
+2022-12-12 09:27:30,899 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+2022-12-12 09:27:32,585 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Check if active boot-start configuration is systemd (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:32,586 p=699 u=user n=ansible | TASK [../roles/splunk : Check if active boot-start configuration is systemd] *********************************
+2022-12-12 09:27:32,607 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,622 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,633 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,650 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,686 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,703 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,741 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,758 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,815 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,835 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,852 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,853 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:32,869 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:33,952 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Set current_start_method var to systemd if systemd is being used for splunk (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:33,953 p=699 u=user n=ansible | TASK [../roles/splunk : Set current_start_method var to systemd if systemd is being used for splunk] *********
+2022-12-12 09:27:33,968 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:33,978 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,017 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,063 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,098 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,111 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,134 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,166 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,190 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,213 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,227 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,228 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:34,252 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:35,871 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Check if active boot-start method is init.d (N)o/(y)es/(c)ontinue: *****
+2022-12-12 09:27:35,872 p=699 u=user n=ansible | TASK [../roles/splunk : Check if active boot-start method is init.d] *****************************************
+2022-12-12 09:27:35,928 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:35,948 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:35,989 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,010 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,055 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,082 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,189 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,206 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,230 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,246 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,270 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,271 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:36,285 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,218 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Set current_start_method to initd if initd is being used for splunk (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:37,219 p=699 u=user n=ansible | TASK [../roles/splunk : Set current_start_method to initd if initd is being used for splunk] *****************
+2022-12-12 09:27:37,262 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,295 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,351 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,381 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,414 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,442 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,456 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,482 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,506 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,540 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,541 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,541 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:37,558 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,539 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : set current_start_method to disabled if boot-start is disabled (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:38,540 p=699 u=user n=ansible | TASK [../roles/splunk : set current_start_method to disabled if boot-start is disabled] **********************
+2022-12-12 09:27:38,570 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,608 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,631 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,657 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,677 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,703 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,783 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,797 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,819 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,839 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,841 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,842 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:38,850 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:40,077 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Set boot-start misconfigured var (N)o/(y)es/(c)ontinue: ****************
+2022-12-12 09:27:40,079 p=699 u=user n=ansible | TASK [../roles/splunk : Set boot-start misconfigured var] ****************************************************
+2022-12-12 09:27:40,096 p=699 u=user n=ansible | ok: [nemesisd21] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,197 p=699 u=user n=ansible | ok: [nemesis21] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,218 p=699 u=user n=ansible | ok: [nemesicm21] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,230 p=699 u=user n=ansible | ok: [nemesis22] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,284 p=699 u=user n=ansible | ok: [nemesis23] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,322 p=699 u=user n=ansible | ok: [nemesidx21] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,368 p=699 u=user n=ansible | ok: [nemesidx22] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,382 p=699 u=user n=ansible | ok: [nemesidx23] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,409 p=699 u=user n=ansible | ok: [nemesidx24] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,436 p=699 u=user n=ansible | ok: [nemesidx26] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,437 p=699 u=user n=ansible | ok: [nemesidx25] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,459 p=699 u=user n=ansible | ok: [nemesidx27] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:40,470 p=699 u=user n=ansible | ok: [nemesidx28] => {
+    "ansible_facts": {
+        "configure_boot_start": true
+    },
+    "changed": false
+}
+2022-12-12 09:27:42,779 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Fail the play if the currently configured boot-start method does match the expected state or boot-start is not enabled (N)o/(y)es/(c)ontinue: ***
+2022-12-12 09:27:42,780 p=699 u=user n=ansible | TASK [../roles/splunk : Fail the play if the currently configured boot-start method does match the expected state or boot-start is not enabled] ***
+2022-12-12 09:27:42,797 p=699 u=user n=ansible | skipping: [nemesisd21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,818 p=699 u=user n=ansible | skipping: [nemesicm21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,846 p=699 u=user n=ansible | skipping: [nemesis21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,903 p=699 u=user n=ansible | skipping: [nemesis22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,930 p=699 u=user n=ansible | skipping: [nemesis23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,965 p=699 u=user n=ansible | skipping: [nemesidx21] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:42,986 p=699 u=user n=ansible | skipping: [nemesidx22] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,001 p=699 u=user n=ansible | skipping: [nemesidx23] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,030 p=699 u=user n=ansible | skipping: [nemesidx24] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,054 p=699 u=user n=ansible | skipping: [nemesidx25] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,074 p=699 u=user n=ansible | skipping: [nemesidx26] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,075 p=699 u=user n=ansible | skipping: [nemesidx27] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:43,105 p=699 u=user n=ansible | skipping: [nemesidx28] => {
+    "changed": false,
+    "skip_reason": "Conditional result was False"
+}
+2022-12-12 09:27:46,186 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Send Slack messages (N)o/(y)es/(c)ontinue: *****************************
+2022-12-12 09:27:49,776 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Include the specified task file (N)o/(y)es/(c)ontinue: *****************
+2022-12-12 09:27:49,778 p=699 u=user n=ansible | TASK [../roles/splunk : Include the specified task file] *****************************************************
+2022-12-12 09:27:50,118 p=699 u=user n=ansible | included: /home/user/ansible-role-for-splunk-nemesi/roles/splunk/tasks/5m_ssh.yml for nemesisd21, nemesicm21, nemesis21, nemesis22, nemesis23, nemesidx21, nemesidx22, nemesidx23, nemesidx24, nemesidx25, nemesidx26, nemesidx27, nemesidx28
+2022-12-12 09:28:59,497 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Setup public key authorization (N)o/(y)es/(c)ontinue: ******************
+2022-12-12 09:28:59,498 p=699 u=user n=ansible | TASK [../roles/splunk : Setup public key authorization] ******************************************************
+2022-12-12 09:28:59,659 p=1346 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,694 p=1347 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,713 p=1348 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,730 p=1349 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,736 p=1350 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,763 p=1352 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,786 p=1354 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,799 p=1357 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,818 p=1360 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,841 p=1361 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,858 p=1364 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,872 p=1368 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:28:59,885 p=1371 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:00,023 p=1346 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,054 p=1347 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,072 p=1348 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,088 p=1349 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,092 p=1350 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,114 p=1352 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,138 p=1354 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,152 p=1357 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,167 p=1360 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,193 p=1346 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,196 p=1361 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,208 p=1364 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,218 p=1368 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,229 p=1347 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,235 p=1371 u=user n=paramiko.transport | Authentication (publickey) failed.
+2022-12-12 09:29:00,245 p=1348 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,259 p=1349 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,264 p=1350 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,287 p=1352 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,310 p=1354 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,322 p=1357 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,338 p=1360 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,368 p=1361 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,383 p=1364 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,390 p=1368 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,407 p=1371 u=user n=paramiko.transport | Authentication (password) successful!
+2022-12-12 09:29:00,849 p=1346 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,906 p=1347 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,909 p=1348 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,921 p=1350 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,922 p=1349 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,949 p=1352 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,969 p=1354 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,974 p=1357 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:00,997 p=1360 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:01,034 p=1361 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:01,047 p=1368 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:01,071 p=1364 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:01,081 p=1371 u=user n=paramiko.transport.sftp | [chan 2] Opened sftp connection (server version 3)
+2022-12-12 09:29:02,865 p=699 u=user n=ansible | changed: [nemesidx24] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:02,996 p=699 u=user n=ansible | changed: [nemesidx26] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:03,564 p=1360 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:03,569 p=699 u=user n=ansible | changed: [nemesidx25] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:03,587 p=699 u=user n=ansible | changed: [nemesidx27] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:03,616 p=699 u=user n=ansible | changed: [nemesidx23] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:03,698 p=1364 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:03,959 p=699 u=user n=ansible | changed: [nemesidx28] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:03,960 p=699 u=user n=ansible | changed: [nemesis21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,072 p=699 u=user n=ansible | changed: [nemesidx22] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,164 p=699 u=user n=ansible | changed: [nemesidx21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,200 p=699 u=user n=ansible | changed: [nemesis23] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,220 p=1361 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,262 p=1368 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,262 p=1357 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,421 p=699 u=user n=ansible | changed: [nemesis22] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,618 p=1371 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,626 p=1348 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,685 p=699 u=user n=ansible | changed: [nemesicm21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,756 p=1354 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,830 p=1360 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:04,831 p=699 u=user n=ansible | changed: [nemesidx24] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,834 p=699 u=user n=ansible | changed: [nemesisd21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ8PR/ClAMSYG15oge8vAbd/1Y8/Chw4i4xEJbJ8TJ0aWc9PRdqWBr6eWsDmpOkw6x7YuNCxhlW2W+7nkhVtdtkmMLurHFwkcjGpHfSYX1BMQydzyH16wDG9gUXbjMdyHhkQbe6X4gAyOIJDPjduoIIk52ogAVE6Cag7yrlZkDC3f87bgjZe01OGGc50aUHIwQuhXsTs9iFAAeL8Bzk+g3Clx7dzQtvHW8ZSR8+lnkAtjJdTbsYLfShxG5lJYzJlkU33umX1Gpp+dbOGg3d7aeBn8vhS7V+y9yPXiWab0rLzsXoF59cKFsDuTwJJb3N3buRkypyqEUBPJV8VFMYe8v pelai@BRUNOP",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:04,890 p=1352 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,938 p=1350 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:04,990 p=1364 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:04,991 p=699 u=user n=ansible | changed: [nemesidx26] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:05,176 p=1349 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:05,443 p=1347 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:05,715 p=1346 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:05,927 p=1357 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:05,929 p=699 u=user n=ansible | changed: [nemesidx23] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,024 p=1361 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,025 p=699 u=user n=ansible | changed: [nemesidx25] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,077 p=1368 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,078 p=699 u=user n=ansible | changed: [nemesidx27] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,300 p=1348 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,301 p=699 u=user n=ansible | changed: [nemesis21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,571 p=1350 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,572 p=699 u=user n=ansible | changed: [nemesis23] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,688 p=1354 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,688 p=699 u=user n=ansible | changed: [nemesidx22] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,889 p=1352 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,890 p=699 u=user n=ansible | changed: [nemesidx21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,936 p=1347 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,938 p=699 u=user n=ansible | changed: [nemesicm21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,976 p=1346 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,977 p=699 u=user n=ansible | changed: [nemesisd21] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:06,977 p=1371 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:06,980 p=699 u=user n=ansible | changed: [nemesidx28] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:07,724 p=1349 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:07,725 p=699 u=user n=ansible | changed: [nemesis22] => (item=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "comment": null,
+    "exclusive": false,
+    "follow": false,
+    "item": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZ2x7vvEVrV9f/uTruuWTC0JH58/fc06ZfeKkpzXibS7JwgZkayLErWPhGbm+u4wUlSVMfcpd9JWhHDVjWt8RpPxrba5fXNbqwBbZCYczD1881fMxzXDxBtOCNEg5i/UspFIsibvlyC6kANjFBMorEndvULo2qJb9PasE0VTmJsAKnY06kG1RJhk27VOY9An5jUb1SdiQ4DzZaAncrtv0k7tJofXNIQoaS+U3uw5A0lY99Izk7gac4ME6aGHy03oca+yBW7h/DYXlmxXgWTs3l+ZKUtZ2ChGOmA3P9z0bMfiNq6S0Z9gs7S40lXiEjZI6DA9NZIhsi5dQhrYXW9wtnXEwzBmfD7nYBGjA6Mng+83AyJoBNrQmkkCQBPxfpXVwcqXiKjhwngQq71ySoSkMS0dDLvLgboTaSNk5RZCr/1BvJtqJdvXHpnxhpFQsi4VbcaAnqjcyYuYecsk6I9sEmKL+wNCivTe4H8wvKDD9CT66UWmIVDpL6mJZybdf0vUs= gandalf@nemesi",
+    "key_options": null,
+    "keyfile": "/home/gandalf/.ssh/authorized_keys",
+    "manage_dir": true,
+    "path": null,
+    "state": "present",
+    "user": "gandalf",
+    "validate_certs": true
+}
+2022-12-12 09:29:10,066 p=699 u=user n=ansible | Perform task: TASK: ../roles/splunk : Setup private key (N)o/(y)es/(c)ontinue: *******************************
+2022-12-12 09:29:10,068 p=699 u=user n=ansible | TASK [../roles/splunk : Setup private key] *******************************************************************
+2022-12-12 09:29:10,207 p=1398 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,225 p=1399 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,261 p=1400 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,265 p=1401 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,275 p=1403 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,286 p=1404 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,313 p=1406 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,320 p=1407 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,334 p=1410 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,342 p=1413 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,357 p=1415 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,360 p=1417 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,372 p=1419 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:29:10,581 p=1398 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,606 p=1399 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,641 p=1400 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,641 p=1403 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,650 p=1401 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,652 p=1404 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,679 p=1406 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,685 p=1407 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,691 p=1410 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,698 p=1413 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,711 p=1415 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,714 p=1417 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:10,728 p=1419 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:29:11,490 p=1398 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,514 p=1399 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,544 p=1400 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,564 p=1403 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,569 p=1404 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,588 p=1407 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,591 p=1401 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,615 p=1406 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,615 p=1410 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,626 p=1417 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,626 p=1413 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,626 p=1415 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:11,646 p=1419 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,083 p=1400 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,451 p=1407 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,522 p=1415 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,613 p=1406 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,623 p=1398 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,684 p=1419 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,728 p=1417 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,735 p=1400 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,765 p=1410 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,875 p=1403 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:13,977 p=1401 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,062 p=1407 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,121 p=1415 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,162 p=1404 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,217 p=1406 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,226 p=1398 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,256 p=1413 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,290 p=1419 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,337 p=1417 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,369 p=1410 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,493 p=1403 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,594 p=1401 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,769 p=1399 u=user n=paramiko.transport.sftp | [chan 6] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,781 p=1404 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:14,818 p=1400 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:14,822 p=699 u=user n=ansible | fatal: [nemesis21]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:14,873 p=1413 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:15,198 p=1407 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,202 p=699 u=user n=ansible | fatal: [nemesidx23]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,309 p=1398 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,311 p=699 u=user n=ansible | fatal: [nemesisd21]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,374 p=1399 u=user n=paramiko.transport.sftp | [chan 8] Opened sftp connection (server version 3)
+2022-12-12 09:29:15,447 p=1415 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,449 p=699 u=user n=ansible | fatal: [nemesidx26]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,545 p=1406 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,547 p=699 u=user n=ansible | fatal: [nemesidx22]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,575 p=1417 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,579 p=699 u=user n=ansible | fatal: [nemesidx27]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,609 p=1419 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,612 p=699 u=user n=ansible | fatal: [nemesidx28]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,649 p=1403 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,652 p=699 u=user n=ansible | fatal: [nemesis23]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,735 p=1410 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,737 p=699 u=user n=ansible | fatal: [nemesidx24]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:15,841 p=1401 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:15,845 p=699 u=user n=ansible | fatal: [nemesis22]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:16,047 p=1404 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:16,050 p=699 u=user n=ansible | fatal: [nemesidx21]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:16,190 p=1413 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:16,194 p=699 u=user n=ansible | fatal: [nemesidx25]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:16,583 p=1399 u=user n=paramiko.transport.sftp | [chan 8] sftp session closed.
+2022-12-12 09:29:16,586 p=699 u=user n=ansible | fatal: [nemesicm21]: FAILED! => {
+    "changed": false,
+    "checksum": "89e08a5a23e7c98850bf8e7f64de019dbdf6161e"
+}
+
+MSG:
+
+Destination directory /root/.ssh does not exist
+
+2022-12-12 09:29:16,588 p=699 u=user n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-12 09:29:16,588 p=699 u=user n=ansible | nemesicm21                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx21                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx22                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx23                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx24                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx25                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx26                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx27                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,589 p=699 u=user n=ansible | nemesidx28                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,590 p=699 u=user n=ansible | nemesis21                  : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,590 p=699 u=user n=ansible | nemesis22                  : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,590 p=699 u=user n=ansible | nemesis23                  : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:29:16,590 p=699 u=user n=ansible | nemesisd21                 : ok=10   changed=1    unreachable=0    failed=1    skipped=11   rescued=0    ignored=0   
+2022-12-12 09:50:42,080 p=2374 u=user n=ansible | [DEPRECATION WARNING]: COMMAND_WARNINGS option, the command warnings feature is being removed. This feature 
+will be removed from ansible-core in version 2.14. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-12-12 09:50:42,301 p=2378 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,328 p=2379 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,330 p=2380 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,340 p=2381 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,364 p=2382 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,371 p=2383 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,393 p=2386 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,396 p=2384 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,405 p=2387 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,407 p=2391 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,426 p=2393 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,431 p=2392 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,456 p=2397 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,468 p=2398 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,475 p=2402 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,498 p=2409 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,500 p=2406 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,505 p=2408 u=user n=paramiko.transport | Connected (version 2.0, client OpenSSH_8.4p1)
+2022-12-12 09:50:42,651 p=2378 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,682 p=2380 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,683 p=2379 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,686 p=2381 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,725 p=2382 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,728 p=2383 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,736 p=2386 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,750 p=2391 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,750 p=2384 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,756 p=2387 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,780 p=2393 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,780 p=2392 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,806 p=2397 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,818 p=2398 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,819 p=2402 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,849 p=2409 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,849 p=2406 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:42,852 p=2408 u=user n=paramiko.transport | Authentication (publickey) successful!
+2022-12-12 09:50:43,487 p=2378 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,535 p=2381 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,539 p=2379 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,540 p=2380 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,579 p=2386 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,581 p=2382 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,593 p=2383 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,597 p=2391 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,610 p=2387 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,611 p=2384 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,621 p=2392 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,654 p=2393 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,665 p=2397 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,668 p=2402 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,674 p=2398 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,709 p=2408 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,718 p=2406 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:43,730 p=2409 u=user n=paramiko.transport.sftp | [chan 3] Opened sftp connection (server version 3)
+2022-12-12 09:50:45,013 p=2378 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,016 p=2374 u=user n=ansible | nemesidx21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,250 p=2406 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,252 p=2374 u=user n=ansible | nemesihf23 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesihf23 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,271 p=2409 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,275 p=2374 u=user n=ansible | nemesiaudit | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesiaudit is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,370 p=2381 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,376 p=2374 u=user n=ansible | nemesidx24 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx24 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,414 p=2379 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,419 p=2374 u=user n=ansible | nemesidx22 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx22 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,437 p=2382 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,438 p=2374 u=user n=ansible | nemesidx25 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx25 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,493 p=2393 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,496 p=2374 u=user n=ansible | nemesisd21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesisd21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,554 p=2398 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,558 p=2374 u=user n=ansible | nemesihf21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesihf21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,588 p=2386 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,588 p=2384 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,589 p=2374 u=user n=ansible | nemesidx28 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx28 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,590 p=2374 u=user n=ansible | nemesidx27 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx27 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,652 p=2397 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,654 p=2383 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,657 p=2374 u=user n=ansible | nemesicm21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesicm21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,657 p=2374 u=user n=ansible | nemesidx26 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx26 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,684 p=2380 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,687 p=2374 u=user n=ansible | nemesidx23 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesidx23 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,715 p=2392 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,715 p=2402 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,716 p=2391 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,717 p=2374 u=user n=ansible | nemesis23 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesis23 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,720 p=2374 u=user n=ansible | nemesis22 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesis22 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,720 p=2374 u=user n=ansible | nemesihf22 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesihf22 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:45,721 p=2387 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:45,724 p=2374 u=user n=ansible | nemesis21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesis21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
+2022-12-12 09:50:46,133 p=2408 u=user n=paramiko.transport.sftp | [chan 3] sftp session closed.
+2022-12-12 09:50:46,137 p=2374 u=user n=ansible | nemesilb21 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong",
+    "warnings": [
+        "Platform linux on host nemesilb21 is using the discovered Python interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}

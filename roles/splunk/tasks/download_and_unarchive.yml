@@ -9,24 +9,27 @@
     msg: "The upgrade file will be downloaded to {{ splunk_package_path }}/{{ splunk_file }}"
 
 - name: "Download Splunk {{ splunk_install_type }} package"
-  become: "{{ splunk_download_local | ternary( false, true ) }}"  # true == false; false == true
+  become: false
+#  become: "{{ splunk_download_local | ternary( false, true ) }}"  # true == false; false == true
   get_url:
     url: "{{ splunk_package_url }}"
     dest: "{{ splunk_package_path }}/{{ splunk_file }}"
-  delegate_to: "{{ splunk_download_local | ternary('localhost', omit) }}"
+#  delegate_to: "{{ splunk_download_local | ternary('localhost', omit) }}"
   register: download_result
   retries: 3
   delay: 10
   until: download_result is success
-  run_once: "{{ splunk_download_local }}"
+#  run_once: "{{ splunk_download_local }}"
 
 - name: "Unarchive Splunk {{ splunk_install_type }} package to {{ splunk_home }}"
   unarchive:
     src: "{{ splunk_package_path }}/{{ splunk_file }}"
-    dest: "{{ splunk_install_path }}"
+    #dest: "{{ splunk_install_path }}"
+    dest: "{{ splunk_home }}"
     owner: "{{ splunk_nix_user }}"
     group: "{{ splunk_nix_group }}"
     remote_src: "{{ splunk_download_local | ternary( false, true ) }}"  # true == false; false == true
+    extra_opts: [--strip-components=1]
   become: true
   notify:
     - start splunk
@@ -36,4 +39,4 @@
   file:
     path: "{{ splunk_package_path }}/{{ splunk_file }}"
     state: absent
-  when: not splunk_download_local
+  when: false and not splunk_download_local

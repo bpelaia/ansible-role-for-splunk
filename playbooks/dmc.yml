@@ -1,0 +1,6 @@
+- hosts:
+    - dmc
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: configure_dmc.yml

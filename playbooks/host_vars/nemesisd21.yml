@@ -1,0 +1,15 @@
+---
+# Example host_vars for a deployment server that is leveraging the configure_serverclass.yml task to manage serverclass.conf
+serverclasses:
+  - serverclass: pt_nemesi_hfw
+    whitelist:
+      - nemesihf21
+      - nemesihf22
+      - nemesihf23
+    apps:
+      - name: pt_tcp_input
+        options:
+          restartSplunkd: 1
+      - name: pt_infrastructure
+        options:
+          restartSplunkd: 1
