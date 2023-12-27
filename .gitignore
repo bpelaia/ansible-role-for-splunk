@@ -1,2 +1,3 @@
 environments/test
 roles/splunk/files/*.lic
+roles/splunk/files/*.License*
