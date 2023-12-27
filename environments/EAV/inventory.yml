@@ -28,12 +28,12 @@ all:
           hosts:
             splunk-cm:
           vars:
-            target_shc_group_name: eav_shc
+            target_shc_group_name: shc
 
         search:
           children:
 #off#            splunk-sh1:
-            eav_shc:
+            shc:
               hosts:
                 splunk-sh1:
                 splunk-sh2:
