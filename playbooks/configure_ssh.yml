@@ -1,0 +1,13 @@
+- hosts:
+    - full
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: 5m_ssh.yml
+
+- hosts:
+    - full
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: 5m_configure_hosts.yml

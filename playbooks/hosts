@@ -1,0 +1,111 @@
+---
+# YAML format inventory with nested groups for variable inheritance
+# Mason Morales, Splunk, Inc.
+# References:
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+# Read this: https://docs.ansible.com/ansible/2.9/plugins/inventory/yaml.html
+# https://www.digitalocean.com/community/tutorials/how-to-manage-multistage-environments-with-ansible
+# ##########################################################################
+all:
+  hosts:
+    splunk.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.58
+    splunk-cm.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.51
+    splunk-idx1.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.52
+    splunk-idx2.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.53
+    splunk-idx3.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.54
+    splunk-sh1.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.55
+      ansible_ssh_common_args: -o ProxyCommand="ssh -p 22 -W %h:%p -q user@10.10.0.56"
+    splunk-sh2.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.56
+    splunk-sh3.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.57
+    splunk-sd.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.50
+    splunk-hf.5minfo.it:
+      ansible_port: 22
+      ansible_host: 10.10.0.59
+  children:
+    full:
+      children:
+        licensemaster:
+          hosts:
+            splunk-sd.5minfo.it:
+          vars:
+            splunk_license_file: [ Splunk5M.lic ]
+            splunk_license_group: Enterprise
+        deploymentserver:
+          hosts:
+            splunk-sd.5minfo.it:
+        dmc:
+          hosts:
+            splunk-sd.5minfo.it:
+          vars:
+            splunk_uri_cm: https://splunk-cm.5minfo.it:8089
+        clustermanager:
+          hosts:
+            splunk-cm.5minfo.it:
+          vars:
+            splunk_license_group: Peer
+        shdeployer:
+          hosts:
+            splunk-sd.5minfo.it:
+          vars:
+            target_shc_group_name: splunk4shc
+            splunk_shc_target_group: splunk4shc
+        indexer:
+          children:
+            splunk_idxc:
+              hosts:
+                splunk-idx1.5minfo.it:
+                splunk-idx2.5minfo.it:
+                splunk-idx3.5minfo.it:
+          vars:
+            splunk_license_group: Peer
+            splunk_uri_cm: https://splunk-cm.5minfo.it:8089
+        search:
+          children:
+            splunk4shc:
+              hosts:
+                splunk-sh1.5minfo.it:
+                splunk-sh2.5minfo.it:
+                splunk-sh3.5minfo.it:
+          vars:
+            splunk_license_group: Peer
+            splunk_uri_cm: https://splunk-cm.5minfo.it:8089
+
+        heavyforwarder:
+          hosts:
+            splunk-hf.5minfo.it:
+
+    #    standalone:
+    #        hosts:
+    #          my-standalone-splunk-server:
+    #          my-other-standalone-splunk-server:
+
+    #uf:
+    #  children:
+
+    #   vmware:
+    #     hosts:
+    #       my-vm-ware-host-[001:100]:
+    #     vars:
+    #       clientName: vmware # Or create a "vmware.yml" file under group_vars and assign clientName there, either works
+
+    #   web:
+    #     hosts:
+    #       my-web-host-[01-05]:

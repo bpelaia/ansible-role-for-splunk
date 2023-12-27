@@ -1,0 +1,91 @@
+---
+# YAML format inventory with nested groups for variable inheritance
+# Mason Morales, Splunk, Inc.
+# References:
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+# Read this: https://docs.ansible.com/ansible/2.9/plugins/inventory/yaml.html
+# https://www.digitalocean.com/community/tutorials/how-to-manage-multistage-environments-with-ansible
+# ##########################################################################
+all:
+  children:
+    tutti:
+      hosts:
+        sh1:
+          ansible_port: 2222
+          ansible_host: 127.0.0.1
+        sh2:
+          ansible_port: 2228
+          ansible_host: 127.0.0.1
+        sh3:
+          ansible_port: 2229
+          ansible_host: 127.0.0.1
+        lm1:
+          ansible_port: 2227
+          ansible_host: 127.0.0.1
+        cm1:
+          ansible_port: 2223
+          ansible_host: 127.0.0.1
+        idx1:
+          ansible_port: 2224
+          ansible_host: 127.0.0.1
+        idx2:
+          ansible_port: 2225
+          ansible_host: 127.0.0.1
+        idx3:
+          ansible_port: 2226
+          ansible_host: 127.0.0.1
+
+    full:
+      children:
+        licensemaster:
+          hosts:
+            lm1:
+        deploymentserver:
+          hosts:
+            lm1:
+        dmc:
+          hosts:
+            lm1:
+        shdeployer:
+          hosts:
+            lm1:
+          vars:
+            #target_shc_group_name: nemesis4_shc
+        indexer:
+          children:
+            nemesis4_shc:
+              hosts:
+                sh1:
+                sh2:
+                sh3:
+        search:
+          children:
+            shc:
+            #nemesis4_shc:
+              hosts:
+                sh1:
+                sh2:
+                sh3:
+
+        #heavyforwarder:
+        #  hosts:
+        #    my-hf-01:
+        #    some-other-hf:
+
+    #    standalone:
+    #        hosts:
+    #          my-standalone-splunk-server:
+    #          my-other-standalone-splunk-server:
+
+    #uf:
+    #  children:
+
+    #   vmware:
+    #     hosts:
+    #       my-vm-ware-host-[001:100]:
+    #     vars:
+    #       clientName: vmware # Or create a "vmware.yml" file under group_vars and assign clientName there, either works
+
+    #   web:
+    #     hosts:
+    #       my-web-host-[01-05]:
