@@ -1,13 +1,13 @@
 ---
 #  This task should be used for fresh installations of Splunk, refer to upgrade_splunk.yml for upgrades
+- name: Install Required Packages
+  include_tasks: prereqs.yml
+
 - name: Block for non-root splunk user setup
   block:
     - name: Add nix splunk group
       group:
         name: "{{ splunk_nix_group }}"
-        # Bruno add
-        system: true
-        # Bruno add
         state: present
         local: "{{ local_os_group }}"
       become: true
@@ -18,15 +18,12 @@
         group: "{{ splunk_nix_group }}"
         home: "{{ splunk_home }}"
         state: present
-        # Bruno add
-        system: true
-        # Bruno add
         shell: /bin/bash
         local: "{{ local_os_user }}"
       become: true
 
-    #- name: Allow splunk user to read /var/log
-    #  include_tasks: configure_facl.yml
+    - name: Allow splunk user to read /var/log
+      include_tasks: configure_facl.yml
 
     - name: Configure .bash_profile and .bashrc for splunk user
       include_tasks: configure_bash.yml

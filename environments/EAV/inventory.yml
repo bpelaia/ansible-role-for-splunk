@@ -1,0 +1,67 @@
+---
+# YAML format inventory with nested groups for variable inheritance
+# Mason Morales, Splunk, Inc.
+# References:
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+# Read this: https://docs.ansible.com/ansible/2.9/plugins/inventory/yaml.html
+# https://www.digitalocean.com/community/tutorials/how-to-manage-multistage-environments-with-ansible
+# ##########################################################################
+all:
+  children:
+
+    full:
+      children:
+
+        licensemaster:
+          hosts:
+            splunk-cm:
+
+        deploymentserver:
+          hosts:
+            splunk-sd:
+
+        dmc:
+          hosts:
+            splunk-cm:
+
+        shdeployer:
+          hosts:
+            splunk-cm:
+          vars:
+            target_shc_group_name: eav_shc
+
+        search:
+          children:
+#off#            splunk-sh1:
+            eav_shc:
+              hosts:
+                splunk-sh1:
+                splunk-sh2:
+                splunk-sh3:
+
+        indexer:
+          hosts:
+            splunk-idx1:
+            splunk-idx2:
+
+        heavyforwarder:
+          hosts:
+            splunk-hf:
+
+#off#        standalone:
+#off#            hosts:
+#off#              my-standalone-splunk-server:
+#off#              my-other-standalone-splunk-server:
+
+#off#    uf:
+#off#      children:
+
+#off#        vmware:
+#off#          hosts:
+#off#            my-vm-ware-host-[001:100]:
+#off#          vars:
+#off#            clientName: vmware # Or create a "vmware.yml" file under group_vars and assign clientName there, either works
+
+#off#        web:
+#off#          hosts:
+#off#            my-web-host-[01-05]:

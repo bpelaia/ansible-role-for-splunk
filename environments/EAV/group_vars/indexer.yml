@@ -1,0 +1,7 @@
+---
+splunk_uri_ds: splunk-sd:8089
+splunk_firewall_ports:
+  - "{{ splunkapi_port }}"
+  - "{{ splunktcpin_port }}"
+  - "{{ splunkhec_port }}"
+#  - "{{ splunkidxcrep_port }}"

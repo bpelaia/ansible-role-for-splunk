@@ -10,22 +10,6 @@
   set_fact:
     mode_value: "{% if splunk_version_release | float < 8.1 %}master{% else %}manager{% endif %}"
 
-- name: Configure index discovery for cluster manager node
-  when: splunk_discovery_enabled == true
-  ini_file:
-    path: "{{ splunk_home }}/etc/system/local/server.conf"
-    section: indexer_discovery
-    option: "{{ item.option }}"
-    value: "{{ item.value }}"
-    mode: 0644
-    owner: "{{ splunk_nix_user }}"
-    group: "{{ splunk_nix_group }}"
-  become: true
-  loop:
-    - { option: "pass4SymmKey", value: "{{ splunk_discovery_key }}" }
-    - { option: "polling_rate", value: "10" }
-    - { option: "indexerWeightByDiskCapacity", value: "false" }
-
 - name: Configure clustering stanza for cluster manager node
   ini_file:
     path: "{{ splunk_home }}/etc/system/local/server.conf"
@@ -39,6 +23,7 @@
   notify: 
     - restart splunk
     - wait for splunkd
+  no_log: true
   loop:
     - { option: "mode", value: "{{ mode_value}}" }
     - { option: "replication_factor", value: "{{ splunk_idxc_rf }}" }
