@@ -1,0 +1,9 @@
+---
+# Example playbook to perform either a splunk installation or upgrade
+- hosts:
+    - all
+    #- splunk-sh1
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: 5m_eav.yml

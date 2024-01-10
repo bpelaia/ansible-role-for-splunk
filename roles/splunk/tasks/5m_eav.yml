@@ -1,0 +1,10 @@
+---
+- name: Set timezone to Europe/Rome
+  timezone:
+    name: Europe/Rome
+
+- name: Update /etc/hosts
+  include_tasks: 5m_configure_hosts.yml
+
+- name: Configure SSH keys
+  include_tasks: 5m_ssh.yml

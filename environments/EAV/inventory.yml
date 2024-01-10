@@ -14,54 +14,49 @@ all:
 
         licensemaster:
           hosts:
-            splunk-cm:
+            splunk-ls:
+              ansible_host: 10.10.254.62
 
         deploymentserver:
           hosts:
-            splunk-sd:
+            splunk-ds:
+              ansible_host: 10.10.254.56
 
         dmc:
           hosts:
-            splunk-cm:
+            splunk-ls:
+              ansible_host: 10.10.254.62
 
         shdeployer:
           hosts:
-            splunk-cm:
+            splunk-shd:
+              ansible_host: 10.10.254.66
           vars:
-            target_shc_group_name: shc
+            target_shc_group_name: eav_shc
 
         search:
           children:
-#off#            splunk-sh1:
-            shc:
+            eav_shc:
               hosts:
                 splunk-sh1:
+                  ansible_host: 10.10.254.63
                 splunk-sh2:
+                  ansible_host: 10.10.254.64
                 splunk-sh3:
+                  ansible_host: 10.10.254.65
 
         indexer:
           hosts:
-            splunk-idx1:
-            splunk-idx2:
+            splunk-indexer1:
+              ansible_host: 10.10.254.60
+            splunk-indexer2:
+              ansible_host: 10.10.254.61
 
         heavyforwarder:
           hosts:
-            splunk-hf:
-
-#off#        standalone:
-#off#            hosts:
-#off#              my-standalone-splunk-server:
-#off#              my-other-standalone-splunk-server:
-
-#off#    uf:
-#off#      children:
-
-#off#        vmware:
-#off#          hosts:
-#off#            my-vm-ware-host-[001:100]:
-#off#          vars:
-#off#            clientName: vmware # Or create a "vmware.yml" file under group_vars and assign clientName there, either works
-
-#off#        web:
-#off#          hosts:
-#off#            my-web-host-[01-05]:
+            splunk-forwarder1:
+              ansible_host: 10.10.254.57
+            splunk-forwarder2:
+              ansible_host: 10.10.254.58
+            splunk-forwarder3:
+              ansible_host: 10.10.254.59

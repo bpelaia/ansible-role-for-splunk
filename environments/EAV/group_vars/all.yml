@@ -1,6 +1,10 @@
 ---
 splunk_uri_lm: https://splunk-cm.5minfo.it:8089
-ansible_user: user
+#splunk_uri_ds: https://splunk-sd.5minfo.it:8089
+ansible_user: splunk
 ansible_ssh_private_key_file: ~/.ssh/id_rsa
-#git_server: ssh://git@mygithost:1234
-#git_key: ~/.ssh/my-git-key
+splunk_create_polkit: 1
+splunk_use_initd: false
+splunk_use_systemd: true
+configure_firewall: true
+firewall_service: "firewalld"

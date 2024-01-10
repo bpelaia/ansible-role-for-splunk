@@ -1,0 +1,74 @@
+# EAV - Verifiche post consegna HOST & VPN
+
+1. Installa Chiavi e aggiungi host al known_hosts
+```
+for i in $(seq 56 66); do ssh-copy-id -i ~/.ssh/id_ed25519.pub splunk@10.10.254.$i; done
+```
+Esito: OK
+
+2. Check CPU:
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i lscpu | grep "^On-lin
+e CPU"; done
+```
+Esito: OK
+
+3. Check FileSystem 1/2 (/opt/splunk)
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i df -h /opt/splunk; done
+```
+Esito: KO - missing mountpoint for /opt/splunk
+
+4. Check FileSystem 2/2 (/mnt/{hotwarm,cold,frozen,thawed})
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i df -h /mnt/{hotwarm,cold,frozen,thawed}; done
+```
+Esito: KO - missing mountpoint for /mnt/{hotwarm,cold,frozen,thawed}
+
+5. Check RAM
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i free -g | grep ^Mem | awk '{print $2}'; done
+```
+Esito: OK
+```
+56: 23
+57: 23
+58: 23
+59: 23
+60: 31
+61: 31
+62: 23
+63: 31
+64: 31
+65: 31
+66: 31
+```
+
+6. Check OS Release
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i lsb_release -d; done
+```
+Esito: OK
+Ubuntu 22.04.3 LTS
+
+7. Check Hostname
+```
+for i in $(seq 56 66); do echo -ne "${i}: "; ssh -i ~/.ssh/id_ed25519 splunk@10.10.254.$i hostname -f; done
+```
+Esito: OK
+```
+56: splunk-ds
+57: splunk-forwarder1
+58: splunk-forwarder2
+59: splunk-forwarder3
+60: splunk-indexer1
+61: splunk-indexer2
+62: splunk-ls
+63: splunk-sh1
+64: splunk-sh2
+65: splunk-sh3
+66: splunk-shd
+```
+
+ansible-playbook -i ../environments/EAV/inventory.yml splunk_install_or_upgrade.yml
+
