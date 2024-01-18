@@ -2,7 +2,7 @@
 #ansible_user: gandalf
 #ansible_password: gandalf
 ansible_user: splunk 
-ansible_ssh_private_key_file: ~/.ssh/id_rsa
+ansible_ssh_private_key_file: ~/.ssh/id_ed25519
 #splunk_uri_lm: https://my_license_master:8089
 #splunk_package_url_full: http://127.0.0.1:2280/{{ splunk_package_version }}/linux/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
 #splunk_package_url_full: http://127.0.0.1:2280/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
@@ -22,7 +22,7 @@ splunk_shc_label: eav_shc
 #desired_start_method: none
 splunk_create_polkit: 1
 configure_firewall: true
-firewall_service: firewalld
+#firewall_service: firewalld
 splunk_package_path: /tmp
 splunk_configure_secret: true
 splunk_general_key: eavGeneralKey
