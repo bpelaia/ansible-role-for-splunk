@@ -23,6 +23,7 @@
         shell: /bin/bash
         local: "{{ local_os_user }}"
       become: true
+      when: ansible_user != 'splunk'
 
     - name: Allow splunk user to read /var/log
       include_tasks: configure_facl.yml
