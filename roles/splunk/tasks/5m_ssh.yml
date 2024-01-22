@@ -6,8 +6,6 @@
     key: "{{ item }}"
     user: "{{ ansible_user }}"
   with_file:
-    - ~/.ssh/id_rsa.pub
-    - ~/.ssh/id_ed25519.pub
     - aldo_ed25519.pub
     - bruno_ed25519.pub
     - id_ed25519.pub
