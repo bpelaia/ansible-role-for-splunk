@@ -43,8 +43,10 @@
       user:
         name: splunk
         state: absent
-      
+      when: ansible_user != splunk
+
     - name: Remove Splunk group
       group:
         name: splunk
         state: absent
+      when: ansible_user != splunk  
