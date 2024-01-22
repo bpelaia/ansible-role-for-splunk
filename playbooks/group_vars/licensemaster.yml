@@ -1,5 +1,5 @@
 ---
-splunk_license_file: [ Splunk.License ]
+splunk_license_file: [ Splunk.License-1st_year.lic ]
 splunk_license_group: Enterprise
 splunk_firewall_ports:
   - "{{ splunkweb_port }}"
