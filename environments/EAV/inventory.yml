@@ -14,7 +14,7 @@ all:
 
         licensemaster:
           hosts:
-            splunk-ls:
+            splunk-lm:
               ansible_host: 10.10.254.62
 
         deploymentserver:
@@ -24,7 +24,7 @@ all:
 
         dmc:
           hosts:
-            splunk-ls:
+            splunk-lm:
               ansible_host: 10.10.254.62
 
         shdeployer:
