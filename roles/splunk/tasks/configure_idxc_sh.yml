@@ -1,6 +1,6 @@
 ---
 - name: Configure index discovery for Search Head node 1/2
-  when: splunk_discovery_enabled == true
+  when: splunk_discovery_enabled == true and splunk_uri_cm != 'undefined'
   ini_file:
     path: "{{ splunk_home }}/etc/system/local/outputs.conf"
     section: "indexer_discovery:{{ splunk_idxc_label }}"
@@ -15,7 +15,7 @@
     - { option: "manager_uri", value: "{{ splunk_uri_cm }}" }
 
 - name: Configure index discovery for Search Head node 2/2
-  when: splunk_discovery_enabled == true
+  when: splunk_discovery_enabled == true and splunk_uri_cm != 'undefined'
   ini_file:
     path: "{{ splunk_home }}/etc/system/local/outputs.conf"
     section: "tcpout:default-autolb-group"
@@ -29,7 +29,7 @@
     - { option: "indexerDiscovery", value: "{{ splunk_idxc_label }}" }
 
 - name: Configure tcpout for Search Head node
-  when: splunk_discovery_enabled == true
+  when: splunk_discovery_enabled == true and splunk_uri_cm != 'undefined' 
   ini_file:
     path: "{{ splunk_home }}/etc/system/local/outputs.conf"
     section: "tcpout"
@@ -43,17 +43,19 @@
     - { option: "defaultGroup", value: "default-autolb-group" }
 
 - name: Configure indexer for Search Head node
-  when: splunk_discovery_enabled == false and splunk_discovery_enabled == true
+  when: splunk_discovery_enabled == false or splunk_uri_cm == 'undefined'
   command: "{{ splunk_home }}/bin/splunk add forward-server {{ item }}:{{ splunk_tcpin_port }} -auth {{ splunk_auth }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
   register: idxc_sh_tcp_output
   changed_when: idxc_sh_tcp_output.rc == 0
   failed_when: idxc_sh_tcp_output.rc != 0
-  loop:
-    - "{{ groups['indexer'] }}"
+  #loop:
+  #  - "{{ groups['indexer'] }}"
+  with_items: "{{ groups['indexer'] }}"
 
 - name: Configure search head to join indexer cluster
+  when: splunk_uri_cm != 'undefined'
   command: "{{ splunk_home }}/bin/splunk edit cluster-config -mode searchhead -manager_uri {{ splunk_uri_cm }} -secret {{ splunk_idxc_key }} -auth {{ splunk_auth }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
