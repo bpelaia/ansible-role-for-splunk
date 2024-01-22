@@ -12,7 +12,7 @@ splunk_download_local: false
 #splunk_uri_ds: lm1:8089
 splunk_uri_lm: https://splunk-ls:8089
 splunk_admin_username: admin
-splunk_admin_password: changed.
+splunk_admin_password: changed.01
 splunk_shc_target_group: eav_shc
 splunk_shc_key: shcKey
 splunk_shc_label: eav_shc
