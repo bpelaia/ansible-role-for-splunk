@@ -34,11 +34,6 @@
       systemd:
         daemon_reload: true
 
-    - name: Remove Splunk home
-      file:
-        path: /opt/splunk
-        state: absent
-
     - name: Remove Splunk user
       user:
         name: splunk
@@ -52,3 +47,9 @@
       when:
         - ansible_user != 'splunk'  
         - ansible_group != 'splunk'  
+
+    - name: Remove Splunk home
+      file:
+        path: /opt/splunk/*
+        state: absent
+
