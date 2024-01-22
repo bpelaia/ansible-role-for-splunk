@@ -2,6 +2,7 @@
   hosts: all
   gather_facts: yes
   become: true
+  ignore_errors: true
   tasks:
     - name: Stop & Disable Splunkd service
       service:
