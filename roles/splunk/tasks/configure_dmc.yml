@@ -12,6 +12,7 @@
   loop: "{{ splunk_dmc_not_indexers_list }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
+  register: peer_add
   no_log: true
   changed_when: peer_add.rc == 0
   failed_when: peer_add.rc != 0 and peer_add.rc != 24
