@@ -50,6 +50,23 @@
 
     - name: Remove Splunk home
       file:
-        path: /opt/splunk/*
+        path: /opt/splunk/{{ item }}
         state: absent
+      with_items:
+        - license-eula.txt
+        - copyright.txt
+        - README-splunk.txt
+        - include
+        - cmake
+        - share
+        - openssl
+        - swidtag
+        - bin
+        - lib
+        - splunk-9.1.2-b6b9c8185839-linux-2.6-x86_64-manifest
+        - .bashrc
+        - .bash_profile
+        - etc
+        - var
+        - quarantined_files
 
