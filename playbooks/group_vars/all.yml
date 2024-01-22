@@ -3,16 +3,19 @@
 #ansible_password: gandalf
 ansible_user: splunk 
 ansible_ssh_private_key_file: ~/.ssh/id_ed25519
-#splunk_uri_lm: https://my_license_master:8089
-#splunk_package_url_full: http://127.0.0.1:2280/{{ splunk_package_version }}/linux/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
-#splunk_package_url_full: http://127.0.0.1:2280/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
-#splunk_package_url_full: http://10.10.0.50/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
 splunk_package_url_full: https://download.splunk.com/products/splunk/releases/{{ splunk_package_version }}/linux/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
 splunk_download_local: false
 #splunk_uri_ds: lm1:8089
 splunk_uri_lm: https://splunk-ls:8089
+splunk_license_group: Peer
 splunk_admin_username: admin
-splunk_admin_password: changed.01
+splunk_admin_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          39613066383865383962633131663564613466633065336338333466373265653337663264633336
+          6139333336653136336133346431653231313466393462300a623766373662643535616531616465
+          61396662663364336436326437663965626139346136663930656531373733636364646162646130
+          6633656130333365350a343630373637623030366464623131363864306166343231373639333566
+          6532
 splunk_shc_target_group: eav_shc
 splunk_shc_key: shcKey
 splunk_shc_label: eav_shc
