@@ -2,3 +2,4 @@ environments/test
 roles/splunk/files/*.lic
 roles/splunk/files/*.License*
 playbooks/ansible.log*
+ansible-vault-password.txt
