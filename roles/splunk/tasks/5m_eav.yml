@@ -1,7 +1,7 @@
 ---
-- name: Set timezone to Europe/Rome
-  timezone:
-    name: Europe/Rome
+##off##- name: Set timezone to Europe/Rome
+##off##  timezone:
+##off##    name: Europe/Rome
 
 - name: Update /etc/hosts
   include_tasks: 5m_configure_hosts.yml
