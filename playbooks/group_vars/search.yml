@@ -1,4 +1,6 @@
 ---
+splunk_shc_uri_list: "{% for h in groups[splunk_shc_target_group] %}https://{{ hostvars[h].inventory_hostname }}:{{ splunkd_port }}{% if not loop.last %},{% endif %}{% endfor %}"
+splunk_shc_target_group: eav_shc
 splunk_firewall_ports:
   - "{{ splunkweb_port }}"
   - "{{ splunkapi_port }}"
