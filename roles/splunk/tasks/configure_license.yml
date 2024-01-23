@@ -61,6 +61,8 @@
 - name: Configure License Peer
   block:
   - name: "Set license {{ mode_option }}"
+    when:
+      - splunk_license_group=="Peer"
     ini_file:
       path: "{{ splunk_home }}/etc/system/local/server.conf"
       section: license
@@ -93,5 +95,5 @@
       - encrypted_secret_value.stdout == "" or (splunk_general_key != decrypted_secret_value.stdout | default(''))
     no_log: true
   when:
-    - splunk_license_group=="Peer"
+    - (splunk_license_group=="Peer" or splunk_license_group=="Enterprise")
     - splunk_install_type=="full"

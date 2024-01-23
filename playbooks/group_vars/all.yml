@@ -30,3 +30,7 @@ splunk_package_path: /tmp
 splunk_configure_secret: true
 splunk_general_key: eavGeneralKey
 splunk_ds_key: eavDSKey
+splunk_idxc_label: undefined
+splunk_discovery_enabled: false
+configure_etc_hosts: True
+configure_customized_outputs: True

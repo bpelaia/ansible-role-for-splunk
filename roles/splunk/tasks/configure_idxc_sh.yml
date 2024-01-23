@@ -55,7 +55,9 @@
   with_items: "{{ groups['indexer'] }}"
 
 - name: Configure search head to join indexer cluster
-  when: splunk_uri_cm != 'undefined'
+  when:
+    - splunk_uri_cm != 'undefined'
+    - configure_customized_outputs != True
   command: "{{ splunk_home }}/bin/splunk edit cluster-config -mode searchhead -manager_uri {{ splunk_uri_cm }} -secret {{ splunk_idxc_key }} -auth {{ splunk_auth }}"
   become: true
   become_user: "{{ splunk_nix_user }}"

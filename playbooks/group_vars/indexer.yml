@@ -6,3 +6,4 @@ splunk_firewall_ports:
   - "{{ splunktcpin_port }}"
   - "{{ splunkhec_port }}"
 #  - "{{ splunkidxcrep_port }}"
+configure_customized_outputs: False

@@ -6,7 +6,7 @@
     req_secret_section: shclustering
     req_secret_option: pass4SymmKey
 
-- name: Configure pass4SymmKey in  shclustering stanza for deployer
+- name: Configure pass4SymmKey in shclustering stanza for deployer
   ini_file:
     path: "{{ splunk_home }}/etc/system/local/server.conf"
     section: shclustering
