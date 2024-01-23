@@ -1,10 +1,108 @@
 ---
-##off##- name: Set timezone to Europe/Rome
-##off##  timezone:
-##off##    name: Europe/Rome
+- name: Set timezone to Europe/Rome
+  timezone:
+    name: Europe/Rome
 
-- name: Update /etc/hosts
-  include_tasks: 5m_configure_hosts.yml
+- name: Update the /etc/hosts file with node name
+  tags: etchostsupdate
+  become: yes
+  become_user: root
+  ansible.builtin.lineinfile:
+    path: "/etc/hosts"
+    regexp: ".*\t{{ hostvars[item]['inventory_hostname']}}"
+    #line: "{{ hostvars[item]['ansible_env'].SSH_CONNECTION.split(' ')[2] }}\t{{ hostvars[item]['ansible_hostname']}}{{ splunk_host_domain }}\t{{ hostvars[item]['ansible_hostname']}}"
+    line: "{{ hostvars[item]['ansible_host'] }}\t{{ hostvars[item]['inventory_hostname']}}"
+    state: present
+    backup: yes
+  register: etchostsupdate
+  when:
+    - ansible_hostname != "{{ item }}"
+    - configure_etc_hosts == True
+  with_items: "{{ groups['full'] }}"
 
 - name: Configure SSH keys
   include_tasks: 5m_ssh.yml
+
+- name: Install or Upgrade Splunk
+  include_tasks: check_splunk.yml
+
+- name: Configure outputs.conf
+  community.general.ini_file:
+    path: "{{ splunk_home }}/etc/system/local/outputs.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: "{{ item.section }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+  with_items:
+    - { section: "indexAndForward", option: "index", value: "false" }
+    - { section: "tcpout", option: "defaultGroup", value: "allIdxes" }
+    - { section: "tcpout", option: "forwardedindex.filter.disable", value: "true" }
+    - { section: "tcpout", option: "indexAndForward", value: "false" }
+    - { section: "tcpout:allIdxes", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }},splunk-indexer2:{{ splunk_tcpin_port }}" }
+    - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }}" }
+    - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:{{ splunk_tcpin_port }}" }
+  become: true
+  notify: restart splunk
+  when:
+    - configure_customized_outputs == True
+    - "'indexer' not in group_names"
+
+- name: Configure custom login content
+  block:
+    - name: Configure custom login content using inventory_hostname
+      ini_file:
+        path: "{{ splunk_home }}/etc/system/local/web.conf"
+        section: settings
+        option: login_content
+        value: "<h1>{{ inventory_hostname }}</h1>"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0644
+      become: true
+      notify: restart splunk
+      when:
+        - inventory_hostname == ansible_host
+    - name: Configure custom login content using both inventory_hostname and ansible_host
+      ini_file:
+        path: "{{ splunk_home }}/etc/system/local/web.conf"
+        section: settings
+        option: login_content
+        value: "<h1>{{ inventory_hostname }} - {{ ansible_host }}</h1>"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0644
+      become: true
+      notify: restart splunk
+      when:
+        - inventory_hostname != ansible_host
+  when:
+    - customize_login_content == True
+
+- name: Enable listen port "{{ splunk_tcpin_port }}"
+  when: "'indexer' in group_names or 'heavyforwarder' in group_names"
+  command: "{{ splunk_home }}/bin/splunk enable listen {{ splunk_tcpin_port }} -auth {{ splunk_auth }}"
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  register: idx_tcp_input_result
+  changed_when: idx_tcp_input_result.rc == 0
+  failed_when: idx_tcp_input_result.rc != 0 and idx_tcp_input_result.rc != 22
+
+- name: Start indexers
+  include_tasks: splunk_start.yml
+
+- name: Pause for 2 minutes to ensure the indexers are up&running
+  pause:
+    minutes: 2
+
+- name: Enable search peers
+  when: "'indexer' not in group_names and '' not in group_names"
+  command: "{{ splunk_home }}/bin/splunk add search-server https://{{ item }}:{{ splunkd_port }} -auth {{ splunk_auth }} -remoteUsername {{ splunk_admin_username }} -remotePassword {{ splunk_admin_password }}"
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  register: peer_add
+  changed_when: peer_add.rc == 0
+  failed_when: peer_add.rc != 0 and peer_add.rc != 24
+  with_items: "{{ groups['indexer'] }}"
+
