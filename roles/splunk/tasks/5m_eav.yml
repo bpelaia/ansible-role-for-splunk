@@ -106,3 +106,40 @@
   failed_when: peer_add.rc != 0 and peer_add.rc != 24
   with_items: "{{ groups['indexer'] }}"
 
+# Add all hosts to the DMC except indexer cluster hosts as per the docs
+- name: Configure systems as search peers to be monitored included indexers
+  command: "{{ splunk_home }}/bin/splunk add search-server https://{{ item }}:{{ splunkd_port }} -auth {{ splunk_auth }} -remoteUsername {{ splunk_admin_username }} -remotePassword {{ splunk_admin_password }}"
+  #loop: "{{ splunk_dmc_not_indexers_list }}"
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  register: peer_add
+  # no_log: true
+  changed_when: peer_add.rc == 0
+  failed_when: peer_add.rc != 0 and peer_add.rc != 24
+  when: "'dmc' in group_names"
+  with_items: "{{ all | difference(groups['dmc'] + groups['licensemaster']) }}"
+
+- name: Create local dir if it doesn't exist
+  ansible.builtin.file:
+    path: "{{ splunk_home }}/etc/apps/splunk_monitoring_console/local"
+    state: directory
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    mode: 0744
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  when: "'dmc' in group_names"
+
+- name: Configure monitoring console in auto mode
+  community.general.ini_file:
+    path: "{{ splunk_home }}/etc/apps/splunk_monitoring_console/local/splunk_monitoring_console_assets.conf"
+    section: 'settings'
+    option: mc_auto_config
+    value: enabled
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    mode: 0644
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  when: "'dmc' in group_names"
+  notify: restart splunk
