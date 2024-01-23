@@ -1,0 +1,31 @@
+---
+# Install Splunk and configure outputs.conf and licensemanager
+- hosts:
+    - all
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: 5m_eav.yml
+# Configure SHD
+- hosts:
+    - shdeployer
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: configure_shc_deployer.yml
+
+# Configure SHC
+- hosts:
+    - eav_shc
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: configure_shc_members.yml
+
+# Configure SHC-Captain
+- hosts:
+    - eav_shc
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: configure_shc_captain.yml

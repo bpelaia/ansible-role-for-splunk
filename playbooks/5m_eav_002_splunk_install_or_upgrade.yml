@@ -1,9 +1,0 @@
----
-# Example playbook to perform either a splunk installation or upgrade
-- hosts:
-    - all
-  roles:
-    - ../roles/splunk
-  serial: 50
-  vars:
-    - deployment_task: check_splunk.yml
