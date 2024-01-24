@@ -3,6 +3,9 @@
   timezone:
     name: Europe/Rome
 
+- name: Set correct domain name
+  include_tasks: 5m_hostname.yml
+
 - name: Update the /etc/hosts file with node name
   tags: etchostsupdate
   become: yes
@@ -11,7 +14,8 @@
     path: "/etc/hosts"
     regexp: ".*\t{{ hostvars[item]['inventory_hostname']}}"
     #line: "{{ hostvars[item]['ansible_env'].SSH_CONNECTION.split(' ')[2] }}\t{{ hostvars[item]['ansible_hostname']}}{{ splunk_host_domain }}\t{{ hostvars[item]['ansible_hostname']}}"
-    line: "{{ hostvars[item]['ansible_host'] }}\t{{ hostvars[item]['inventory_hostname']}}"
+    # line: "{{ hostvars[item]['ansible_host'] }}\t{{ hostvars[item]['inventory_hostname']}}"
+    line: "{{ hostvars[item]['ansible_host'] }}\t{{ hostvars[item]['inventory_hostname']}}\t{{ hostvars[item]['ansible_fqdn'] }}"
     state: present
     backup: yes
   register: etchostsupdate
