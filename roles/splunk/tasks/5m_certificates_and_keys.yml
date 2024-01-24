@@ -1,0 +1,50 @@
+---
+- name: Coping Certificates and Keys
+  become: true
+  become_user: "{{ splunk_nix_user }}"
+  tasks:
+    - name: Create Splunk/Auth/MyCerts directory
+      file:
+        name: "{{ splunk_home }}/etc/auth/mycerts"
+        state: directory
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0700
+
+    - name: Copy instnace private key
+      copy:
+        src: "{{ inventory_hostname }}.key.pem"
+        dest: "{{ splunk_home }}/etc/auth/mycerts/serverPrivate.key"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0600
+
+    - name: Copy instnace certificate 
+      copy:
+        src: "{{ inventory_hostname }}.cert.pem"
+        dest: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0600
+
+    - name: Copy RootCA certificate 
+      copy:
+        src: "ca.cert.pem"
+        dest: "{{ splunk_home }}/etc/auth/mycerts/rootCA.pem"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0600
+
+    - name: Copy IntermediateCA certificate 
+      copy:
+        src: "intermediate.cert.pem"
+        dest: "{{ splunk_home }}/etc/auth/mycerts/intermediateCA.pem"
+        owner: "{{ splunk_nix_user }}"
+        group: "{{ splunk_nix_group }}"
+        mode: 0600
+
+    - name: Prepare certificates bundle
+      command: "cat {{ splunk_home }}/etc/auth/mycerts/{server{Certificate.pem,Private.key},{intermediate,root}CA.pem} > {{ splunk_home }}/etc/auth/mycerts/certsBundle.pem"
+
+    - name: Prepare certificates chain
+      command: "cat {{ splunk_home }}/etc/auth/mycerts/{serverCertificate,{intermediate,root}CA}.pem > {{ splunk_home }}/etc/auth/mycerts/certsChain.pem"
