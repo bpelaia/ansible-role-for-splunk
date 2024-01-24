@@ -132,15 +132,6 @@
   when:
     - customize_login_content == True
 
-- name: Enable listen port "{{ splunk_tcpin_port }}"
-  when: "'indexer' in group_names or 'heavyforwarder' in group_names"
-  command: "{{ splunk_home }}/bin/splunk enable listen {{ splunk_tcpin_port }} -auth {{ splunk_auth }}"
-  become: true
-  become_user: "{{ splunk_nix_user }}"
-  register: idx_tcp_input_result
-  changed_when: idx_tcp_input_result.rc == 0
-  failed_when: idx_tcp_input_result.rc != 0 and idx_tcp_input_result.rc != 22
-
 - name: Configure SSL stanza in inputs.conf
   when: "'indexer' in group_names or 'heavyforwarder' in group_names"
   ini_file:
@@ -148,15 +139,16 @@
     mode: 0644
     owner: "{{ splunk_nix_user }}"
     group: "{{ splunk_nix_group }}"
-    section: SSL
+    section: "{{ item.section }}"
     option: "{{ item.option }}"
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
-    - { option: "sslPassword", value: '""' }
-    - { option: "requireClientCert", value: "true" }
-    - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
+    - { section: "SSL", option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
+    - { section: "SSL", option: "sslPassword", value: '""' }
+    - { section: "SSL", option: "requireClientCert", value: "true" }
+    - { section: "SSL", option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
+    - { section: "splunktcp-ssl://9997", option: "connection_host", value: "ip" }
 
 - name: Start indexers
   include_tasks: splunk_start.yml
