@@ -1,12 +1,11 @@
 ---
-- name: Set Domain name 
+- name: Set hostname
   become: true
-  tasks:
-    - name: Set hostname
-      ansible.builtin.hostname:
-        name: "{{ inventory_hostname }}.eav.local"
+  ansible.builtin.hostname:
+    name: "{{ inventory_hostname }}.eav.local"
 
-    - name: Restart hostname module
-      systemd:
-        name: systemd-hostnamed
-        state: restarted
+- name: Restart hostname module
+  become: true
+  systemd:
+    name: systemd-hostnamed
+    state: restarted
