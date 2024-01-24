@@ -51,17 +51,17 @@
     - { section: "tcpout:allIdxes", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:allIdxes", option: "sslVerifyServerName", value: "true" }
     - { section: "tcpout:allIdxes", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
-    - { section: "tcpout:allIdxes", option: "sslPassword", value: "" }
+    #- { section: "tcpout:allIdxes", option: "sslPassword", value: "" }
     - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }}" }
     - { section: "tcpout:Idx1", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:Idx1", option: "sslVerifyServerName", value: "true" }
     - { section: "tcpout:Idx1", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
-    - { section: "tcpout:Idx1", option: "sslPassword", value: "" }
+    #- { section: "tcpout:Idx1", option: "sslPassword", value: "" }
     - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:{{ splunk_tcpin_port }}" }
     - { section: "tcpout:Idx2", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:Idx2", option: "sslVerifyServerName", value: "true" }
     - { section: "tcpout:Idx2", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
-    - { section: "tcpout:Idx2", option: "sslPassword", value: "" }
+    #- { section: "tcpout:Idx2", option: "sslPassword", value: "" }
   become: true
   notify: restart splunk
   when:
@@ -79,11 +79,11 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { option: "sslRootCAPath", value: "{{ splunk_home }}/etc/auth/mycerts/RootCA.pem" }
-    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { option: "sslRootCAPath", value: "{{ splunk_home }}/etc/auth/mycerts/rootCA.pem" }
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
     - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
     - { option: "sslVerifyServerCert", value: "true" }
-    - { option: "sslPassword", value: ""}
+    #- { option: "sslPassword", value: ""}
 
 - name: Configure settings stanza in web.conf
   ini_file:
@@ -96,10 +96,10 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { option: 'enableSplunkWebSSL', value: 'true' }
-    - { option: 'privKeyPath', value: "{{ splunk_home }}/etc/auth/mycerts/serverPrivate.key" }
-    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
-    #- { option: 'sslPassword', value: '' }
+    - { option: "enableSplunkWebSSL", value: "true" }
+    - { option: "privKeyPath", value: "{{ splunk_home }}/etc/auth/mycerts/serverPrivate.key" }
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsChain.pem" }
+    #- { option: "sslPassword", value: "" }
 
 - name: Configure custom login content
   block:
@@ -153,12 +153,10 @@
     value: "{{ item.value }}"
     state: present
   with_items:
-    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
-    - { option: "sslPassword", value: "" }
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
+    #- { option: "sslPassword", value: "" }
     - { option: "requireClientCert", value: "true" }
     - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
-    #- { option: "sslCommonNameToCheck", value: "{{ common_name }}" }
-    #- { option: "sslAltNameToCheck", value: "{{ sslAltName }}" }
 
 - name: Start indexers
   include_tasks: splunk_start.yml
