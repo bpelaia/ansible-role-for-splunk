@@ -50,17 +50,17 @@
     - { section: "tcpout:allIdxes", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }},splunk-indexer2:{{ splunk_tcpin_port }}" }
     - { section: "tcpout:allIdxes", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:allIdxes", option: "sslVerifyServerName", value: "true" }
-    - { section: "tcpout:allIdxes", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:allIdxes", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
     - { section: "tcpout:allIdxes", option: "sslPassword", value: '""' }
     - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }}" }
     - { section: "tcpout:Idx1", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:Idx1", option: "sslVerifyServerName", value: "true" }
-    - { section: "tcpout:Idx1", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:Idx1", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
     - { section: "tcpout:Idx1", option: "sslPassword", value: '""' }
     - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:{{ splunk_tcpin_port }}" }
     - { section: "tcpout:Idx2", option: "sslVerifyServerCert", value: "true" }
     - { section: "tcpout:Idx2", option: "sslVerifyServerName", value: "true" }
-    - { section: "tcpout:Idx2", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:Idx2", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
     - { section: "tcpout:Idx2", option: "sslPassword", value: '""' }
   become: true
   notify: restart splunk
