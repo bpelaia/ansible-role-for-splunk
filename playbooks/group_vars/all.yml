@@ -1,11 +1,8 @@
 ---
-#ansible_user: gandalf
-#ansible_password: gandalf
 ansible_user: splunk 
 ansible_ssh_private_key_file: ~/.ssh/id_ed25519
 splunk_package_url_full: https://download.splunk.com/products/splunk/releases/{{ splunk_package_version }}/linux/splunk-{{ splunk_package_version }}-{{ build_id }}-Linux-x86_64.tgz
 splunk_download_local: false
-#splunk_uri_ds: lm1:8089
 splunk_uri_lm: https://splunk-lm:8089
 splunk_license_group: Peer
 splunk_admin_username: admin
@@ -19,13 +16,8 @@ splunk_admin_password: !vault |
 splunk_shc_target_group: eav_shc
 splunk_shc_key: shcKey
 splunk_shc_label: eav_shc
-#git_server: ssh://git@mygithost:1234
-#git_key: ~/.ssh/my-git-key
-#git_project: SOMEPROJECT
-#desired_start_method: none
 splunk_create_polkit: 1
 configure_firewall: true
-#firewall_service: firewalld
 splunk_package_path: /tmp
 splunk_configure_secret: true
 splunk_general_key: eavGeneralKey
