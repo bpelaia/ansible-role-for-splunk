@@ -30,6 +30,9 @@
 - name: Install or Upgrade Splunk
   include_tasks: check_splunk.yml
 
+- name: Copy Certificates and keys
+  include_tasks: 5m_certificates_and_keys.yml
+
 - name: Configure outputs.conf
   community.general.ini_file:
     path: "{{ splunk_home }}/etc/system/local/outputs.conf"
@@ -44,12 +47,21 @@
     - { section: "tcpout", option: "defaultGroup", value: "allIdxes" }
     - { section: "tcpout", option: "forwardedindex.filter.disable", value: "true" }
     - { section: "tcpout", option: "indexAndForward", value: "false" }
-    - { section: "tcpout", option: "sslRootCAPath", value: "{{ pathToCA.pem }}"}
-    - { section: "tcpout", option: "clientCert", value: "{{ serverCertPath.pem }}"}
-    - { section: "tcpout", option: "sslPassword", value: "{{ sslPassword }}"}
     - { section: "tcpout:allIdxes", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }},splunk-indexer2:{{ splunk_tcpin_port }}" }
+    - { section: "tcpout:allIdxes", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:allIdxes", option: "sslVerifyServerName", value: "true" }
+    - { section: "tcpout:allIdxes", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:allIdxes", option: "sslPassword", value: "" }
     - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }}" }
+    - { section: "tcpout:Idx1", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:Idx1", option: "sslVerifyServerName", value: "true" }
+    - { section: "tcpout:Idx1", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:Idx1", option: "sslPassword", value: "" }
     - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:{{ splunk_tcpin_port }}" }
+    - { section: "tcpout:Idx2", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:Idx2", option: "sslVerifyServerName", value: "true" }
+    - { section: "tcpout:Idx2", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { section: "tcpout:Idx2", option: "sslPassword", value: "" }
   become: true
   notify: restart splunk
   when:
@@ -66,30 +78,12 @@
     option: "{{ item.option }}"
     value: "{{ item.value }}"
     state: present
-    exclusive: true
   with_items:
-    - { option: 'sslRootCAPath', value: "{{ pathToCA.pem }}" }
-    - { option: 'serverCert', value: '{{ serverCertPath.pem }}'}
-    - { option: 'sslPassword', value: '{{ sslPassword  }}'}
-
-- name: Configure SSL stanza in inputs.conf
-  ini_file:
-    path: "{{ splunk_home }}/etc/system/local/inputs.conf"
-    mode: 0644
-    owner: "{{ splunk_nix_user }}"
-    group: "{{ splunk_nix_group }}"
-    section: SSL
-    option: "{{ item.option }}"
-    value: "{{ item.value }}"
-    state: present
-    exclusive: true
-  with_items:
-    - { option: 'serverCert', value: '{{ bundleCert }}' }
-    - { option: 'sslPassword', value: '' }
-    - { option: 'requireClientCert', value: 'true' }
-    - { option: 'sslVersions', value: '*,-ssl2,-ssl3,-tls1.0,-tls1.1' }
-    - { option: 'sslCommonNameToCheck', value: '{{ common_name }}' }
-    - { option: 'sslAltNameToCheck', value: '{{ sslAltName }}' }
+    - { option: "sslRootCAPath", value: "{{ splunk_home }}/etc/auth/mycerts/RootCA.pem" }
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
+    - { option: "sslVerifyServerCert", value: "true" }
+    - { option: "sslPassword", value: ""}
 
 - name: Configure settings stanza in web.conf
   ini_file:
@@ -101,11 +95,10 @@
     option: "{{ item.option }}"
     value: "{{ item.value }}"
     state: present
-    exclusive: true
   with_items:
     - { option: 'enableSplunkWebSSL', value: 'true' }
-    - { option: 'privKeyPath', value: '{{ privKeyPath }}'}
-    - { option: 'serverCert', value: '{{ bundleCert }}' }
+    - { option: 'privKeyPath', value: "{{ splunk_home }}/etc/auth/mycerts/serverPrivate.key" }
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
     #- { option: 'sslPassword', value: '' }
 
 - name: Configure custom login content
@@ -148,15 +141,34 @@
   changed_when: idx_tcp_input_result.rc == 0
   failed_when: idx_tcp_input_result.rc != 0 and idx_tcp_input_result.rc != 22
 
+- name: Configure SSL stanza in inputs.conf
+  when: "'indexer' in group_names or 'heavyforwarder' in group_names"
+  ini_file:
+    path: "{{ splunk_home }}/etc/system/local/inputs.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: SSL
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem" }
+    - { option: "sslPassword", value: "" }
+    - { option: "requireClientCert", value: "true" }
+    - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
+    #- { option: "sslCommonNameToCheck", value: "{{ common_name }}" }
+    #- { option: "sslAltNameToCheck", value: "{{ sslAltName }}" }
+
 - name: Start indexers
   include_tasks: splunk_start.yml
 
-- name: Pause for 2 minutes to ensure the indexers are up&running
+- name: Pause for 1 minutes to ensure the indexers are up&running
   pause:
-    minutes: 2
+    minutes: 1
 
 - name: Enable search peers
-  when: "'indexer' not in group_names and '' not in group_names"
+  when: "'indexer' not in group_names"
   command: "{{ splunk_home }}/bin/splunk add search-server https://{{ item }}:{{ splunkd_port }} -auth {{ splunk_auth }} -remoteUsername {{ splunk_admin_username }} -remotePassword {{ splunk_admin_password }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
@@ -169,6 +181,7 @@
 - name: Configure systems as search peers to be monitored included indexers
   command: "{{ splunk_home }}/bin/splunk add search-server https://{{ item }}:{{ splunkd_port }} -auth {{ splunk_auth }} -remoteUsername {{ splunk_admin_username }} -remotePassword {{ splunk_admin_password }}"
   #loop: "{{ splunk_dmc_not_indexers_list }}"
+  loop: "{{ query('inventory_hostnames', all:!splunk-lm) }}"
   become: true
   become_user: "{{ splunk_nix_user }}"
   register: peer_add
@@ -176,7 +189,7 @@
   changed_when: peer_add.rc == 0
   failed_when: peer_add.rc != 0 and peer_add.rc != 24
   when: "'dmc' in group_names"
-  with_items: "{{ all | difference(groups['dmc'] + groups['licensemaster']) }}"
+  #with_items: "{{ all | difference(groups['dmc'] + groups['licensemaster']) }}"
 
 - name: Create local dir if it doesn't exist
   ansible.builtin.file:
