@@ -33,6 +33,23 @@
 - name: Copy Certificates and keys
   include_tasks: 5m_certificates_and_keys.yml
 
+- name: Configure Deploymentclient
+    community.general.ini_file:
+    path: "{{ splunk_home }}/etc/system/local/deploymentclient.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: "{{ item.section }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+  with_items:
+    - { section: "deployment-client" }
+    - { section: "target-broker:deploymentServer", option: "targetUri", value: "{{ splunk-ds  }}:8089" }
+  when:
+    - "'deploymentserver' not in group_names"
+    - "'search' not in group_names"
+
+
 - name: Configure outputs.conf
   community.general.ini_file:
     path: "{{ splunk_home }}/etc/system/local/outputs.conf"
