@@ -104,8 +104,8 @@
     - { option: "sslRootCAPath", value: "{{ splunk_home }}/etc/auth/mycerts/rootCA.pem" }
     - { option: "serverCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
     - { option: "sslVersions", value: "*,-ssl2,-ssl3,-tls1.0,-tls1.1" }
-    - { option: "sslVerifyServerCert", value: "true" }
-    - { option: "sslVerifyServerName", value: "true" }
+    - { option: "sslVerifyServerCert", value: "false" }
+    - { option: "sslVerifyServerName", value: "false" }
     - { option: "sslPassword", value: '""' }
 
 - name: Configure settings stanza in web.conf
