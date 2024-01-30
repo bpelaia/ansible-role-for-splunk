@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: splunk-lbhf
   become: true
   vars:
     install_pip_docker: false
