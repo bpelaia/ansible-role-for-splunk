@@ -1,0 +1,143 @@
+---
+- hosts: all
+  become: true
+  vars:
+    install_pip_docker: false
+    container_count: 4
+    default_container_name: docker
+    default_container_image: ubuntu
+    default_container_command: sleep 1
+
+  tasks:
+    - name: Install docker on Debian
+      when:
+        - ansible_os_family == 'Debian'
+      tags:
+        - docker_install
+      block:
+        - name: Install aptitude
+          apt:
+            name: aptitude
+            state: latest
+            update_cache: true
+
+        - name: Install required system packages
+          apt:
+            pkg:
+              - apt-transport-https
+              - ca-certificates
+              - curl
+              - software-properties-common
+              - python3-pip
+              - virtualenv
+              - python3-setuptools
+            state: latest
+            update_cache: true
+
+        - name: Add Docker GPG apt Key
+          apt_key:
+            url: https://download.docker.com/linux/ubuntu/gpg
+            state: present
+
+        - name: Add Docker Repository
+          apt_repository:
+            repo: deb https://download.docker.com/linux/ubuntu jammy stable
+            state: present
+
+        - name: Update apt and install docker-ce
+          apt:
+            name: docker-ce
+            state: latest
+            update_cache: true
+
+    - name: Install python module and create default container
+      when:
+        - install_pip_docker == true
+      block:
+        - name: Install Docker Module for Python
+          pip:
+            name: docker
+
+        - name: Pull default Docker image
+          community.docker.docker_image:
+            name: "{{ default_container_image }}"
+            source: pull
+
+        - name: Create default containers
+          community.docker.docker_container:
+            name: "{{ default_container_name }}{{ item }}"
+            image: "{{ default_container_image }}"
+            command: "{{ default_container_command }}"
+            state: present
+          with_sequence: count={{ container_count }}
+
+    - name: Configure linux OS receive buffer size, SystemD and Docker volume
+      tags:
+        - sc4s_install
+      block:
+        - name: Setting net.core.rmem_default
+          ansible.posix.sysctl:
+            name: net.core.rmem_default
+            value: '17039360'
+            state: present
+
+        - name: Setting net.core.rmem_max
+          ansible.posix.sysctl:
+            name: net.core.rmem_max
+            value: '17039360'
+            state: present
+
+        - name: Setting net.ipv4.ip_forward
+          ansible.posix.sysctl:
+            name: net.ipv4.ip_forward
+            value: '1'
+            state: present
+
+        - name: Copy SystemD template
+          copy:
+            src: sc4s.service
+            dest: /lib/systemd/system/sc4s.service
+            owner: root
+            group: root
+            mode: '0644'
+
+        - name: Create Docker volume
+          docker_volume:
+            name: splunk-sc4s-var
+
+        - name: Create subdirectory "{{ item }}"
+          file:
+            path: "/opt/sc4s/{{ item }}"
+            owner: root
+            group: root
+            mode: '0755'
+            state: directory
+          loop:
+            - local
+            - archive
+            - tls
+
+        - name: Prepearing env_file
+          copy:
+            content: |
+              SC4S_DEST_SPLUNK_HEC_DEFAULT_URL=https://your.splunk.instance:8088
+              SC4S_DEST_SPLUNK_HEC_DEFAULT_TOKEN=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+              #SC4S_DEST_SPLUNK_HEC_WORKERS010
+              #Uncomment the following line if using untrusted SSL certificates
+              SC4S_DEST_SPLUNK_HEC_DEFAULT_TLS_VERIFY=no
+            dest: /opt/sc4s/env_file
+            owner: root
+            group: root
+            mode: '0644'
+
+        - name: Just force systemd to reread configs
+          systemd:
+            daemon_reload: true
+
+        - name: Enable and Start SC4C
+          #ansible.builtin.systemd_service:
+          systemd:
+            name: sc4s
+            enabled: true
+            state: started
+
