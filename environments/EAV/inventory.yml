@@ -60,3 +60,12 @@ all:
               ansible_host: 10.10.254.58
             splunk-forwarder3:
               ansible_host: 10.10.254.59
+            splunk-lbhf:
+              ansible_host: 10.10.254.67
+              ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q -i ~/.ssh/id_ed25519 splunk@10.10.254.57"'
+
+        uf:
+          hosts:
+            splunk-lbshc:
+              ansible_host: 10.10.254.73
+              ansible_ssh_common_args: '-o ProxyCommand="ssh -W %h:%p -q -i ~/.ssh/id_ed25519 splunk@10.10.254.57"'
