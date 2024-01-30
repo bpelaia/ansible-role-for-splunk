@@ -36,8 +36,7 @@ all:
 
         search:
           children:
-#off#            splunk-sh1:
-            shc:
+            eav_shc:
               hosts:
                 splunk-sh1:
                   ansible_host: 10.10.0.55
@@ -57,6 +56,8 @@ all:
           hosts:
             splunk-hf:
               ansible_host: 10.10.0.59
+            splunk-idx3:
+              ansible_host: 10.10.0.54
 
 #off#        standalone:
 #off#            hosts:
