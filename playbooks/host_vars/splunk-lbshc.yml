@@ -1,0 +1,12 @@
+---
+splunk_uri_ds: splunk-lbhf:8089 
+clientName: splunk-lbshc
+splunk_install_path: /opt/splunk
+splunk_install_type: uf
+phoneHomeIntervalInSecs: 300
+splunk_disable_mgmt_port: true
+http_port: {desc: "HTTP", protocol: "tcp", number: 80}
+https_port: {desc: "HTTPS", protocol: "tcp", number: 443}
+splunk_firewall_ports:
+  - "{{ http_port }}"
+  - "{{ https_port }}"
