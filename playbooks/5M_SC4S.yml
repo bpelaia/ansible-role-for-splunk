@@ -120,8 +120,8 @@
         - name: Prepearing env_file
           copy:
             content: |
-              SC4S_DEST_SPLUNK_HEC_DEFAULT_URL=https://your.splunk.instance:8088
-              SC4S_DEST_SPLUNK_HEC_DEFAULT_TOKEN=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+              SC4S_DEST_SPLUNK_HEC_DEFAULT_URL=https://splunk-lbhf:8088
+              SC4S_DEST_SPLUNK_HEC_DEFAULT_TOKEN=b264b122-e424-4ea1-9fb7-0bb03a78cf83
               #SC4S_DEST_SPLUNK_HEC_WORKERS010
               #Uncomment the following line if using untrusted SSL certificates
               SC4S_DEST_SPLUNK_HEC_DEFAULT_TLS_VERIFY=no
