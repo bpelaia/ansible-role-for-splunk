@@ -3,4 +3,4 @@
 splunk_app_deploy_path: /opt/splunk/etc/deployment-apps
 local_apps_path: ../environments/EAV/app_file
 local_apps:
-  - name: eav_httpinput
+  - name: TA-cisco_ios
