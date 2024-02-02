@@ -1,0 +1,51 @@
+---
+- hosts: splunk-lbhf
+  become: true
+  vars:
+    install_pip_docker: false
+
+  tasks:
+    - name: Install docker on Debian
+      when:
+        - ansible_os_family == 'Debian'
+      tags:
+        - ca_trust
+      block:
+        - name: Install aptitude
+          apt:
+            name: aptitude
+            state: latest
+            update_cache: true
+
+        - name: Install required system packages
+          apt:
+            pkg:
+              - apt-transport-https
+              - ca-certificates
+              - curl
+              - wget
+            state: latest
+            update_cache: true
+
+        - name: Create /usr/local/share/ca-certificates
+          file:
+            path: /usr/local/share/ca-certificates
+            owner: root
+            group: root
+            mode: '0755'
+            state: directory
+
+        - name: Copy CA Certificates
+          copy:
+            src: "../roles/splunk/files/{{ item.src }}"
+            dest: "/usr/local/share/ca-certificates/{{ item.dst }}"
+            owner: root
+            group: root
+            mode: '0644'
+          loop:
+            - { src: ca.cert.pem, dst: LocalRootCA.crt }
+            - { src: intermediate.cert.pem, dst: LocalIntermediateCA.crt }
+
+        - name: Update local certificates
+          shell:
+            cmd: update-ca-certificates
