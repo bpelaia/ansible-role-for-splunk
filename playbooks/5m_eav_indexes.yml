@@ -1,0 +1,12 @@
+---
+# Install Splunk and configure outputs.conf and licensemanager
+- hosts:
+    - splunk-ds
+  roles:
+    - ../roles/splunk
+  vars:
+    - deployment_task: 5m_eav_index.yml
+    #- deployment_task: configure_splunk_boot.yml
+    #- deployment_task: configure_firewall.yml
+    #- deployment_task: ttest.yml
+    #- deployment_task: configure_shc_captain.yml
