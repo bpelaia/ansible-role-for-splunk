@@ -1,0 +1,12 @@
+---
+splunk_uri_ds: splunk-ds:8089 
+clientName: splunk-lbhf
+splunk_install_path: /opt/splunk
+splunk_install_type: uf
+#phoneHomeIntervalInSecs: 300
+splunk_disable_mgmt_port: true
+my_lbds_port: {desc: "HTTPS DS", protocol: "tcp", number: 8089}
+my_lbhec_port: {desc: "HTTPS HEC", protocol: "tcp", number: 8088}
+splunk_firewall_ports:
+  - "{{ my_lbds_port }}"
+  - "{{ my_lbhec_port }}"
