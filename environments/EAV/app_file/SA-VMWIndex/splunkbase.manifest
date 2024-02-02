@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "date": "2022-11-12T09:25:09.618420304Z",
+  "hashAlgorithm": "SHA-256",
+  "app": {
+    "id": 5640,
+    "version": "4.0.3",
+    "files": [
+      {
+        "path": "app.manifest",
+        "hash": "c49a7ce034684abce64a3834571fc5ce73fd911972b9b9c99098c8e922582251"
+      },
+      {
+        "path": "default/app.conf",
+        "hash": "891b7d3b7dcfa847450e84622dc444a6593cffa8c304fb628e4b5df073b9c4c6"
+      },
+      {
+        "path": "default/indexes.conf",
+        "hash": "57f611231567618ab42b421d0b830bcc357299f365f74900253218c802023e55"
+      },
+      {
+        "path": "license-eula.rtf",
+        "hash": "8bc3fc5f9908c20081d3569b9d84114bcec6371acc520ee7324abf39e8107c73"
+      },
+      {
+        "path": "license-eula.txt",
+        "hash": "14a0a52e51f8d42465e5bc56d07b6f4ea6e0a159a96fb574410a0de0e700fdba"
+      },
+      {
+        "path": "README.txt",
+        "hash": "52001aed5586c92ef7392d00bf07c14af849319b21965803c9c404b50088f061"
+      },
+      {
+        "path": "static/appIcon_2x.png",
+        "hash": "d7ad6f1263583f5b280b52be4f8806b0d22a4aa6e328a0209212697b6734570c"
+      },
+      {
+        "path": "static/appIcon.png",
+        "hash": "6cb62d7fd2d90e69d66c3e4fbede9692f9d650176a7a9ec06edd4026f1de580a"
+      },
+      {
+        "path": "static/appIconAlt_2x.png",
+        "hash": "d7ad6f1263583f5b280b52be4f8806b0d22a4aa6e328a0209212697b6734570c"
+      },
+      {
+        "path": "static/appIconAlt.png",
+        "hash": "6cb62d7fd2d90e69d66c3e4fbede9692f9d650176a7a9ec06edd4026f1de580a"
+      }
+    ]
+  },
+  "products": [
+    {
+      "platform": "splunk",
+      "product": "enterprise",
+      "versions": [
+        "8.0",
+        "8.1",
+        "8.2",
+        "9.0"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "operatingSystems": [
+        "windows",
+        "linux",
+        "macos",
+        "freebsd",
+        "solaris",
+        "aix"
+      ]
+    },
+    {
+      "platform": "splunk",
+      "product": "cloud",
+      "versions": [
+        "8.0",
+        "8.1",
+        "8.2",
+        "9.0"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "operatingSystems": [
+        "windows",
+        "linux",
+        "macos",
+        "freebsd",
+        "solaris",
+        "aix"
+      ]
+    }
+  ]
+}
