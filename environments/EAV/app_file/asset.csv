@@ -1,0 +1,1297 @@
+﻿ip,mac,nt_host,dns,owner,priority,country,city,Operatingsystem,InfraApp,category
+172.16.96.56,,arcsightcon11,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.100.159,,ArcSightCon12,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.102.62,,ArcSightCon13,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.111.112,,ArcSightCon14,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.190.234,,ArcSightCon15,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.95.101,,ArcSightCon16,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.62,,ArcSightCon17,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.57,,ArcSightCon18,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.61,,ArcSightCon19,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.190.35,,Arcsightcon20,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Applicativo,Log Managemnt
+172.16.96.58,,ArcSightLB01,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.59,,ArcSightLB02,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.68,,ArcSightLog11,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.69,,ArcSightLog12,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.70,,arcsightmc01,,,Low,Italy,Roma,CentOS Linux 7.3,Applicativo,Log Managemnt
+172.16.96.116,,ASSETMGMT,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.122,,BACBPM,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+10.121.254.246,,bridgempc3,,,Low,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Server gestione interna
+172.16.96.121,,bsm1,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.120,,BSM2,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.114,,ddmi,,,Low,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.93.60,,inhdcmp010,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.93.11,,inhdcmp011,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.100.98,,k1000b,,,Medium,Italy,Roma,Linux,Infrastrutturali,Repository update client
+172.16.102.32,,mfldbsgrid01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Database Server
+172.16.102.33,,mfldbsgrid02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Database Server
+172.16.102.22,,mfldb01r01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Database Server
+172.16.102.23,,mfldb01r02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Database Server
+172.16.102.16,,MFLDB02R01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7,Applicativo,Database Server
+172.16.102.17,,MFLDB02R02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7,Applicativo,Database Server
+172.18.22.10,,MFWHPBPM,,,Low,Italy,Roma,Microsoft Windows Server 2008 R2,Applicativo,Progetto monitoraggio applicativo HP
+172.16.93.61,,MGHDCMP010,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.93.12,,MGHDCMP011,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+192.168.201.10,,MGHTSMP-AC5D164,,,Critical,Italy,Roma,Microsoft Windows Server 2003,Applicativo,Database Server
+192.168.201.200,,mghtsmp007,,,High,Italy,Roma,Microsoft Windows Server 2003,Applicativo,Web Server
+172.16.179.6,,MIDRANGE1,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,File Server
+172.16.96.27,,mihcllab001,,,Medium,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Server gestione interna
+172.16.96.20,,mihcmmp001,,,Medium,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Repository update client
+172.16.92.130,,MIHDBMP001,,,Critical,Italy,Roma,Microsoft Windows Server 2003,Applicativo,Database Server
+172.16.92.131,,MIHDBMP002,,,Critical,Italy,Roma,Microsoft Windows Server 2003,Applicativo,Database Server
+172.16.93.62,,MIHDCMP010,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.93.65,,MIHDCMP011,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.93.80,,MIHDCMP012,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.93.81,,MIHDCMP013,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.99.2,,mihdcmp014,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.99.1,,mihdcmp015,,,High,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Domain Controller
+172.16.99.3,,mihfsmp001,,,Medium,Italy,Roma,Microsoft Windows Server 2003,Infrastrutturali,File Server
+172.16.99.4,,mihfsmp002,,,Medium,Italy,Roma,Microsoft Windows Server 2003,Infrastrutturali,File Server
+172.16.95.131,,MIHFSMP003,,,Medium,Italy,Roma,Microsoft Windows Server 2003,Applicativo,File Server
+172.16.95.132,,mihfsmp004,,,Medium,Italy,Roma,Microsoft Windows Server 2003,Infrastrutturali,File Server
+172.16.95.155,,MIHFSMP006,,,Critical,Italy,Roma,Microsoft Windows Server 2012 R2,Applicativo,Database Server
+172.16.100.55,,mihfsmp007,,,Critical,Italy,Roma,Microsoft Windows Server 2003,Applicativo,Application Server/documentale
+172.16.100.142,,mihrsmp003n,,,Critical,Italy,Roma,Microsoft Windows Server 2012 R2,Applicativo,Database Server
+10.121.31.100,,MIURMPCESX000,,,Critical,Italy,Roma,Vmware Esxi 5.5.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.11,,miurmpcesx001,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.12,,miurmpcesx002,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.13,,miurmpcesx003,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.14,,miurmpcesx004,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.20,,miurmpcesx005,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.19,,miurmpcesx006,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.17,,miurmpcesx007,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.16,,miurmpcesx008,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.29,,miurmpcesx009,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.30,,miurmpcesx010,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.31,,miurmpcesx011,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.32,,miurmpcesx012,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.33,,miurmpcesx013,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.34,,miurmpcesx014,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.35,,miurmpcesx015,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.36,,MIURMPCESX016,,,Critical,Italy,Roma,VMware ESXi 6.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.18,,miurmpcesx018,,,Critical,Italy,Roma,Vmware Esxi 5.5,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.101,,MIURMPCESX101,,,Critical,Italy,Roma,VMware ESXi 5.5.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.53,,MIURMPCESX102,,,Critical,Italy,Roma,Vmware Esxi 6.7.0,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.52,,miurmpcesx103,,,Critical,Italy,Roma,Vmware Esxi 5.5,Infrastrutturali,Server per la Virtualizzazione
+10.121.31.51,,miurmpcesx104,,,Critical,Italy,Roma,VMware ESXi 6.7.0,Infrastrutturali,Server per la Virtualizzazione
+172.16.95.230,,MIURSHARE,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Server gestione interna
+172.16.238.3,,MIUSTRM001,,,Critical,Italy,Roma,Microsoft Windows Server 2003 R2,Applicativo,Application Server
+172.16.96.45,,MIVWUMP001,,,Medium,Italy,Roma,Microsoft Windows Server 2012,Infrastrutturali,Repository update client
+172.16.100.20,,MPH01006,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.4,Applicativo,Application Server
+172.16.111.92,,mph01042,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.14,,mph01078,,,Medium,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Batch Server
+172.16.111.15,,MPH01081,,,Medium,Italy,Roma,Red Hat Enterprise Linux 3.4,Applicativo,Batch Server
+172.16.111.91,,mph01096,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.90,,mph01099,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.9,,mph01108,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.111.17,,mph03016,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.4,Applicativo,Application Server
+172.16.111.33,,mph03025,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.13,,mph03028,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.100.13,,MPH03046,,,Medium,Italy,Roma,Red Hat Enterprise Linux 3.4,Applicativo,Web Cache
+172.16.100.12,,MPH03049,,,Medium,Italy,Roma,Red Hat Enterprise Linux 3.4,Applicativo,Web Cache
+172.16.111.36,,mph03090,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.111.35,,mph03099,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.102.144,,mph04060,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.111.44,,mph04096,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.43,,mph04099,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.42,,mph04102,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.34,,mph04105,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.41,,MPH05027,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.111.22,,mph05048,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.21,,mph05051,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.20,,mph05054,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.110.235,,mph06021,,,Medium,Italy,Roma,Red Hat Enterprise Linux 3.8,Infrastrutturali,Server gestione interna
+172.16.111.72,,mph06075,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.73,,mph06078,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.102.85,,mph06081,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.102.84,,mph06090,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.111.89,,mph06108,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.88,,mph06111,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.87,,mph06114,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.47,,mph07108,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.48,,mph07111,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.49,,mph07114,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.54,,mph08105,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.55,,mph08108,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.56,,mph08111,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.57,,mph12006,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.111.61,,mph12018,,,Critical,Italy,Roma,Red Hat Enterprise Linux 3.8,Applicativo,Application Server
+172.16.111.68,,mph12084,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.69,,mph12087,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.102.145,,mph13027,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.111.70,,mph13051,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.71,,mph13054,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.102.132,,mph20034,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.102.130,,mph20036,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.10,Applicativo,Database Server
+172.16.102.140,,MPH34508,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.10,Applicativo,Database Server
+172.16.102.141,,MPH34510,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.10,Applicativo,Database Server
+172.16.102.142,,MPH34512,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.10,Applicativo,Database Server
+172.16.102.143,,mph34514,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.10,Applicativo,Database Server
+172.16.111.118,,mpv20022,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.119,,mpv20023,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.120,,mpv20024,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.121,,mpv20025,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.122,,mpv20026,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.123,,mpv20027,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.124,,mpv20028,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.125,,mpv20029,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.140,,mpv20032,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.141,,mpv20033,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.142,,mpv20034,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.143,,mpv20035,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.144,,mpv20036,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.145,,mpv20037,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.146,,mpv20038,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.147,,mpv20039,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.184,,mpv20099,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.185,,mpv20100,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.186,,mpv20101,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.187,,mpv20102,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.188,,mpv20103,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.189,,mpv20104,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.190,,mpv20105,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.191,,mpv20106,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.204,,mpv20140,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.205,,mpv20141,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.206,,mpv20142,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.207,,mpv20143,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.208,,mpv20144,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.209,,mpv20145,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.210,,mpv20146,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.211,,mpv20147,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.212,,mpv20152,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.213,,mpv20153,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.214,,mpv20154,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.215,,mpv20155,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.216,,mpv20156,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.218,,mpv20158,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.219,,mpv20159,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.220,,mpv20161,,,High,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Web Server
+172.16.111.133,,mpv20170,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.134,,mpv20171,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.135,,mpv20172,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.136,,mpv20173,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.227,,mpv20174,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.228,,mpv20175,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.110.6,,mvlalbelastic001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.7,,mvlalbelastic002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.8,,mvlalbelastic003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.16,,mvlamelastic001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.17,,mvlamelastic002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.18,,mvlamelastic003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.19,,mvlamelastic004,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.102,,mvlamport001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.103,,mvlamport002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.113,,mvlamport003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.114,,mvlamport004,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.121,,mvlamport005,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.122,,mvlamport006,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application server integrato con Server di Autenticazione
+172.16.100.69,,mvlamtc001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.70,,mvlamtc002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.111.223,,mvlasfse01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.224,,mvlasfse02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.240,,mvlasjstudio1,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application Server
+172.16.111.241,,mvlasjstudio2,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application Server
+172.16.111.247,,mvlasjstudio3,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application Server
+172.16.111.248,,mvlasjstudio4,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application Server
+172.16.111.65,,mvlasoms001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,Server gestione interna
+172.16.111.67,,mvlasoms002,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,Server gestione interna
+172.16.111.229,,mvlasoms003,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,Server gestione interna
+172.16.111.230,,mvlasoms004,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,Server gestione interna
+172.16.111.242,,mvlas001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.243,,MVLAS002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.244,,mvlas003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.245,,mvlas004,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.117,,mvlas005,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.114,,mvlas006,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.115,,mvlas007,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.116,,mvlas008,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.16,,mvlas009,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.80,,mvlas010,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.82,,mvlas011,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.84,,mvlas012,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.86,,mvlas013,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.151,,mvlas014,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.94,,mvlas015,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.95,,mvlas016,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.96,,mvlas017,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.153,,mvlas018,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.154,,mvlas019,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.166,,mvlas020,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.167,,mvlas021,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.183,,mvlas022,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Application Server
+172.16.111.194,,mvlas023,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.195,,mvlas024,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.139,,mvlas025,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.111.155,,mvlas026,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.55,,mvlas027,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.56,,mvlas028,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.107,,MVLAS029,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.108,,MVLAS030,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.62,,mvlas031,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.63,,mvlas032,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.68,,mvlas033,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.69,,mvlas034,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.52,,mvlas035,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.53,,mvlas036,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.127,,mvlas037,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.128,,mvlas038,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.129,,mvlas039,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.130,,mvlas040,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.123,,mvlas041,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.124,,mvlas042,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.125,,mvlas043,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.126,,mvlas044,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.48,,mvlas045,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.49,,mvlas046,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.162,,mvlas048,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.161,,mvlas049,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.153,,mvlas050,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.154,,mvlas051,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.155,,mvlas052,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.156,,mvlas053,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.31,,mvlas054,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.32,,mvlas055,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.211,,mvlas056,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.212,,mvlas057,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.183,,mvlas058,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.184,,mvlas059,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.4,,MVLAS060,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.5,,mvlas061,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.111.110,,mvlas062,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.111.113,,mvlas063,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.213,,mvlas064,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.214,,mvlas065,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.20,,mvlas066,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.21,,mvlas067,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.10,,MVLAS068,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.11,,mvlas069,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.22,,mvlas070,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.23,,mvlas071,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.25,,mvlas072,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.26,,mvlas073,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.28,,mvlas074,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.29,,mvlas075,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.30,,mvlas076,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.185,,mvlas077,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.186,,mvlas078,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.189,,mvlas079,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.188,,mvlas080,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.189,,mvlas081,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.218,,mvlas082,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.219,,mvlas083,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.220,,mvlas084,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.221,,mvlas085,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.12,,mvlas086,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.13,,mvlas087,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.145,,MVLAS088,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.146,,mvlas089,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.231,,MVLAS090,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.232,,MVLAS091,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.224,,MVLAS092,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.225,,MVLAS093,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.233,,mvlas094,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.234,,mvlas095,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.226,,mvlas096,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.227,,mvlas097,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.33,,mvlas098,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.34,,mvlas099,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.41,,mvlas100,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.47,,mvlas101,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.168,,mvlas104,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.169,,mvlas105,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.54,,mvlbatch01,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Batch Server
+172.16.56.26,,mvldb2sf01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.11,Applicativo,Database Server
+172.16.190.251,,mvldisp001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Dispatcher
+172.16.190.252,,mvldisp002,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Dispatcher
+172.16.190.231,,mvldisp003,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Dispatcher
+172.16.190.232,,mvldisp004,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Dispatcher
+172.16.110.169,,mvldjport000,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.100,,mvldjport001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.101,,mvldjport002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.60,,mvldjport003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application server integrato con Server di Autenticazione
+172.16.110.61,,mvldjport004,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Application server integrato con Server di Autenticazione
+172.16.100.170,,mvlftp001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Ftp Server
+172.16.100.171,,mvlftp002,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Ftp Server
+172.16.96.47,,MVLFWNAGIOS,,,Medium,Italy,Roma,Debian GNU/Linux 8,Infrastrutturali,Server gestione interna
+172.16.110.157,,mvlintpelastic001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.158,,mvlintpelastic002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.159,,mvlintpelastic003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.132,,mvliolbe01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.133,,mvliolbe02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.134,,mvliolbe03,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.135,,mvliolbe04,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.136,,mvliolbe05,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.137,,mvliolbe06,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.141,,mvliolbe07,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.142,,mvliolbe08,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.125,,mvliolfe01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.126,,mvliolfe02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.128,,mvliolfe03,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.135,,mvliolfe04,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.136,,mvliolfe05,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.100.143,,mvliolfe06,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.111.32,,MVLLAM001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.93.71,,mvlldpm001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.5,Infrastrutturali,LDAP server
+172.16.93.72,,mvlldpm002,,,High,Italy,Roma,Red Hat Enterprise Linux 6.5,Infrastrutturali,LDAP server
+172.16.111.221,,mvlldpm003,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,LDAP server
+172.16.111.222,,mvlldpm004,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,LDAP server
+172.16.110.106,,mvlldpportm001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.110.104,,mvlldpports001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.110.105,,mvlldpports002,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.110.64,,mvlldpports003,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.110.65,,mvlldpports004,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.190.191,,mvlldps001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.190.192,,mvlldps002,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.190.193,,mvlldps003,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,LDAP server
+172.16.110.178,,mvllielastic001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.179,,mvllielastic002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.180,,mvllielastic003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.181,,mvllielastic004,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Application Server
+172.16.110.173,,mvlliport010,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Portal Server Liferay
+172.16.110.174,,mvlliport011,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Portal Server Liferay
+172.16.110.175,,mvlliport012,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Portal Server Liferay
+172.16.110.176,,mvlliport013,,,Critical,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Portal Server Liferay
+172.16.180.101,,mvlmgmt001,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.6,Infrastrutturali,Server gestione interna
+172.16.96.151,,mvlnessus,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,sicurezza
+172.16.111.199,,mvlnfs001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Batch Server
+172.16.111.246,,mvlnfs002,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Batch Server
+172.16.102.70,,mvlnfs003,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Batch Server
+172.16.102.71,,mvlnfs004,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Batch Server
+172.16.190.144,,mvlnfs005,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Web Server
+172.16.190.145,,mvlnfs006,,,High,Italy,Roma,Red Hat Enterprise Linux 6.9,Applicativo,Web Server
+172.16.111.180,,mvlnfs1n1,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Backup Server
+172.16.111.181,,mvlnfs1n2,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Batch Server
+172.16.41.250,,mvlntp001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,NTP Server
+172.16.41.251,,MVLNTP01,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,NTP Server
+172.16.41.252,,MVLNTP02,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,NTP Server
+172.16.41.253,,MVLNTP03,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,NTP Server
+172.16.41.254,,MVLNTP04,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,NTP Server
+172.16.100.107,,mvlpdd01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.1,Applicativo,Application Server
+172.16.100.108,,mvlpdd02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 5.1,Applicativo,Application Server
+172.16.55.11,,mvlprx001,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Proxy di navigazione client
+172.16.55.12,,mvlprx002,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Proxy di navigazione client
+172.16.55.101,,mvlprx003,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,LDAP server
+172.16.180.199,,mvlrend001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.5,Infrastrutturali,Server gestione interna
+172.16.96.194,,mvlrhcds01,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,Repository update client
+172.16.96.193,,mvlrhua01,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,Repository update client
+172.16.96.50,,mvlrsync,,,Low,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,Server gestione interna
+172.16.190.205,,mvlsmtp001,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Mail Server
+172.16.190.206,,mvlsmtp002,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Mail Server
+172.16.190.207,,mvlsmtp003,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Mail Server
+172.16.190.208,,mvlsmtp004,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.9,Infrastrutturali,Mail Server
+172.16.17.23,,mvlsplds01,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Log Managemnt
+172.16.17.21,,mvlsplhfw01,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Log Managemnt
+172.16.17.22,,mvlsplhfw02,,,Low,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Log Managemnt
+172.16.96.11,,MVLSP01,,,Medium,Italy,Roma,Linux,Infrastrutturali,Antivirus
+172.16.190.221,,mvlsymxlog,,,Medium,Italy,Roma,Red Hat Enterprise Linux 7.9,Infrastrutturali,Sicurezza
+10.121.31.150,,MVLVC01,,,High,Italy,Roma,SUSE 11,Infrastrutturali,Server per la Virtualizzazione
+172.16.100.173,,mvlwebport001,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.174,,mvlwebport002,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.104,,mvlwebport003,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.105,,mvlwebport004,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.61,,mvlwebport005,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.62,,mvlwebport006,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.63,,mvlwebport007,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.64,,mvlwebport008,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.223,,mvlwebport009,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.224,,mvlwebport010,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.225,,mvlwebport011,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.226,,mvlwebport012,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.123,,mvlwebport013,,,High,Italy,Roma,Red Hat Enterprise Linux 7.8,Applicativo,Web Server
+172.16.100.124,,mvlwebport014,,,High,Italy,Roma,Red Hat Enterprise Linux 7.8,Applicativo,Web Server
+172.16.100.239,,mvlwebport021,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.240,,mvlwebport022,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.227,,mvlwebport030,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.228,,mvlwebport031,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.229,,mvlwebport032,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.230,,mvlwebport033,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.145,,mvlwebport034,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.146,,mvlwebport035,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.147,,mvlwebport036,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.148,,mvlwebport037,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.150,,mvlwebport040,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.232,,mvlwebport041,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.233,,mvlwebport042,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.234,,mvlwebport043,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.235,,mvlwebport044,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.236,,mvlwebport045,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.237,,mvlwebport046,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.238,,mvlwebport047,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.24,,mvlwebport050,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.25,,mvlwebport051,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.183,,mvlwebport060,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.184,,mvlwebport061,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.133,,mvlwebport070,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.134,,mvlwebport071,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.137,,mvlwebport072,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.138,,mvlwebport073,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.139,,mvlwebport074,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.140,,mvlwebport075,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.141,,mvlwebport076,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.65,,mvlwebport100,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.66,,mvlwebport101,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.67,,mvlwebport102,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.30,,mvlwebport103,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.100.246,,mvlwebport110,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.247,,mvlwebport111,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.248,,mvlwebport112,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.249,,mvlwebport113,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.164,,mvlwebport114,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.165,,mvlwebport115,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.166,,mvlwebport116,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.100.167,,mvlwebport117,,,High,Italy,Roma,Red Hat Enterprise Linux 7.9,Applicativo,Web Server
+172.16.190.235,,MVLWEBS021,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.190.236,,MVLWEBS022,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.190.237,,MVLWEBS023,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.190.238,,MVLWEBS024,,,High,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Web Server
+172.16.110.70,,mvlwelrn01,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.35,,mvlwelrn02,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.57,,mvlwelrn03,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.110.58,,mvlwelrn04,,,Critical,Italy,Roma,Red Hat Enterprise Linux 6.10,Applicativo,Application Server
+172.16.96.10,,MVWAC01,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Antivirus
+172.16.93.24,,MVWADCON01,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Mail Server
+172.16.93.28,,MVWADCON02,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Mail Server
+172.16.93.25,,MVWADFS01,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Mail Server
+172.16.93.26,,MVWADFS02,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Mail Server
+172.16.100.94,,MVWAER01,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Antivirus
+172.16.180.180,,MVWALMATS,,,Medium,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Terminal Server
+172.16.96.9,,MVWAO01,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Antivirus
+172.16.190.21,,MVWEXC01,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Mail Server
+172.16.190.22,,MVWEXC02,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Mail Server
+172.16.100.26,,MVWIVPRO,,,Medium,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Console Intel per gestione remota PDL
+172.16.96.77,,MVWPRINTER01,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.78,,MVWPRINTER02,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.79,,MVWPRINTER03,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.80,,MVWPRINTER04,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.37,,MVWPRINTER05,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.38,,MVWPRINTER06,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.96.39,,MVWPRINTER07,,,Low,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Print Server
+172.16.93.151,,MVWPWD01,,,High,Italy,Roma,Microsoft Windows Server 2012 R2,Applicativo,Web Server
+172.16.110.151,,mvwqlik01,,,Critical,Italy,Roma,Microsoft Windows Server 2012 R2,Applicativo,Application Server
+172.16.111.37,,MVWSAP01,,,Critical,Italy,Roma,Microsoft Windows Server 2008 R2,Applicativo,Application Server
+172.16.96.90,,MVWSCCM01,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Repository update client
+172.16.96.91,,MVWSCCM02,,,Medium,Italy,Roma,Microsoft Windows Server 2016,Infrastrutturali,Repository update client
+10.121.254.253,,MVWSCR01,,,Medium,Italy,Roma,Microsoft Windows Server 2019,Infrastrutturali,Terminal Server
+172.16.96.30,,MVWSTAT001,,,Medium,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Server gestione interna
+172.16.95.48,,mvwsymcops,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Backup Server
+172.16.110.131,,MVWTS01,,,Medium,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Terminal Server
+172.16.200.10,,MVWTS02,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Terminal Server
+172.16.96.53,,MVWVPDB01,,,Critical,Italy,Roma,Microsoft Windows Server 2016,Applicativo,Database Server
+172.16.96.52,,MVWVPMG01,,,High,Italy,Roma,Microsoft Windows Server 2016,Applicativo,Database Server
+172.16.100.92,,MVWWAP01,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Mail Server
+172.16.100.93,,MVWWAP02,,,Medium,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Mail Server
+172.16.110.230,,MVWWEB02,,,High,Italy,Roma,Microsoft Windows Server 2016,Applicativo,Web Server
+172.16.96.126,,NAserver,,,Low,Italy,Roma,Red Hat Enterprise Linux 6.10,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.111,,nnmnps,,,Low,Italy,Roma,Red Hat Enterprise Linux 5.11,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.118,,omdbserver,,,Critical,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Database Server
+172.16.96.110,,OMWIN,,,Low,Italy,Roma,Microsoft Windows Server 2008 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.123,,OPERORCH,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.111.66,,Orsyp,,,Medium,Italy,Roma,Red Hat Enterprise Linux 6.4,Applicativo,Batch Server
+172.16.96.125,,SASERVER,,,Low,Italy,Roma,Red Hat Enterprise Linux 5.11,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.119,,SHR,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.131,,SitescopeNew,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.96.22,,SiteScope1,,,Low,Italy,Roma,Microsoft Windows Server 2012 R2,Infrastrutturali,Sistemi di Monitoraggio
+172.16.95.166,,symcnbmaster,,,Medium,Italy,Roma,Red Hat Enterprise Linux 5,Infrastrutturali,Backup Server
+172.16.95.52 ,,SYMCNBMEDIA001,,,Medium,Italy,Roma,RHEL 7.6 Maipono,Infrastrutturali,Backup Server
+10.121.40.8,,4506-A,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C4506,Infrastrutturali,Apparati di rete MIM
+10.121.40.9,,4506-B,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C4506,Infrastrutturali,Apparati di rete MIM
+10.121.40.10,,4506-C,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C4506,Infrastrutturali,Apparati di rete MIM
+10.121.40.4,,6513-A,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C6513,Infrastrutturali,Apparati di rete MIM
+10.121.40.5,,6513-B,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C6513,Infrastrutturali,Apparati di rete MIM
+172.16.180.240,,MPCED-Pers_RTI-240,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2950T-24,Infrastrutturali,Apparati di rete MIM
+172.16.180.241,,MPCED-Pers_RTI-241,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.242,,MPCED-Pers_RTI-242,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.243,,MPCED-Pers_RTI-243,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.244,,MPCED-Pers_RTI-244,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.245,,MPCED-Pers_RTI-245,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.246,,MPCED-Pers_RTI-246,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.247,,MPCED-Pers_RTI-247,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.248,,MPCED-Pers_RTI-248,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.180.249,,MPCED-Pers_RTI-249,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.179.250,,MPCED-Serv_RTI-250,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2950T-24,Infrastrutturali,Apparati di rete MIM
+172.16.180.251,,MPCED-Pers_RTI-251,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+10.121.40.14,,SW_LAN_BCK_1,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3560E-24TD,Infrastrutturali,Apparati di rete MIM
+10.121.40.13,,SW_LAN_BCK_2,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3560E-24TD,Infrastrutturali,Apparati di rete MIM
+172.16.98.250,,SW_RemoteControle_1,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3548-XL,Infrastrutturali,Apparati di rete MIM
+172.16.98.253,,SW_RemoteControle_2,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3548-XL,Infrastrutturali,Apparati di rete MIM
+172.16.98.251,,SW_RemoteControle_3,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924M-XL,Infrastrutturali,Apparati di rete MIM
+172.16.98.249,,SW_RemoteControle_34-5,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2924-XL,Infrastrutturali,Apparati di rete MIM
+172.16.43.41,,C3560_SRV-FARM_1,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3560G-48TS,Infrastrutturali,Apparati di rete MIM
+172.16.43.42,,C3560_SRV-FARM_2,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C3560G-48TS,Infrastrutturali,Apparati di rete MIM
+10.121.40.11,,SW_SRV_fisici,,,Low,Italia,Roma - Monteporzio,Cisco Catalyst WS-C2970G-24T-E,Infrastrutturali,Apparati di rete MIM
+172.16.96.101,,SW_2_Extreme_Monitoraggi,,,Low,Italia,Roma - Monteporzio,Extreme Summit400-48t,Infrastrutturali,Apparati di rete MIM
+172.16.108.250,,Extreme_NetApp_2,,,Low,Italia,Roma - Monteporzio,Extreme Summit48si,Infrastrutturali,Apparati di rete MIM
+172.16.95.249,,Switch_2_34_BackUp,,,Low,Italia,Roma - Monteporzio,Extreme Summit400-48t,Infrastrutturali,Apparati di rete MIM
+10.121.40.118,,HM032-BIV01-SDX-R00H,,,Low,Italia,Roma - Monteporzio,Citrix Netscaler SDX 15120-25G,Infrastrutturali,Apparati di rete MIM
+10.121.40.119,,HM032-BIV02-SDX-R00H,,,Low,Italia,Roma - Monteporzio,Citrix Netscaler SDX 15120-25G,Infrastrutturali,Apparati di rete MIM
+172.16.92.21,,FortiAnalyzer-800,,,Low,Italia,Roma - Monteporzio,Fortinet FortiLog.800,Infrastrutturali,Apparati di rete MIM
+10.121.40.100,,MPC-IPS_01,,,Low,Italia,Roma - Monteporzio,Checkpoint 6400,Infrastrutturali,Apparati di rete MIM
+10.121.40.101,,MPC-IPS_02,,,Low,Italia,Roma - Monteporzio,Checkpoint 6400,Infrastrutturali,Apparati di rete MIM
+10.121.40.76,,MPC-CKPFW1,,,Low,Italia,Roma - Monteporzio,Checkpoint 7000,Infrastrutturali,Apparati di rete MIM
+10.121.40.77,,MPC-CKPFW2,,,Low,Italia,Roma - Monteporzio,Checkpoint 7000,Infrastrutturali,Apparati di rete MIM
+10.121.40.71,,MIUR_MGMT,,,Low,Italia,Roma - Monteporzio,SMS + log server su VmWare,Infrastrutturali,Apparati di rete MIM
+172.22.74.7,,micdpag007,,,Medium,Italia,Agrigento,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.21.70.7,,micdpba007,,,Medium,Italia,Bari,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.29.66.7,,micdpbg007,,,Medium,Italia,Bergamo,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.19.74.7,,micdpce007,,,Medium,Italia,Caserta,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.20.90.7,,micdpcs007,,,Medium,Italia,Cosenza,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.22.82.7,,micdpct007,,,Medium,Italia,Catania,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.26.70.7,,micdpge007,,,Medium,Italia,Genova,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.21.78.1,,micdple001,,,Medium,Italia,Lecce,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.17.70.7,,micdplt007,,,Medium,Italia,Latina,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.28.78.7,,micdpmi007,,,Medium,Italia,Milano,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.18.70.7,,micdpna007,,,Medium,Italia,Napoli,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.22.70.7,,micdppa007,,,Medium,Italia,Palermo,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.30.78.7,,micdppd007,,,Medium,Italia,Padova,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.17.86.7,,micdppg007,,,Medium,Italia,Perugia,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.20.82.7,,micdprc007,,,Medium,Italia,Reggio Calabria,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.17.62.7,,micdprm007,,,Medium,Italia,Roma,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.19.78.7,,micdpsa007,,,Medium,Italia,Salerno,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.21.82.7,,micdpta007,,,Medium,Italia,Taranto,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.27.70.7,,micdpto007,,,Medium,Italia,Torino,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.31.70.7,,micdpts007,,,Medium,Italia,Trieste,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.30.70.7,,micdpve007,,,Medium,Italia,Venezia (Mestre),Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.17.94.7,,middpan007,,,Medium,Italia,Ancona,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.20.78.7,,middpcz007,,,Medium,Italia,Catanzaro,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.16.238.7,,miudprm007,,,Medium,Italia,Roma,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.16.238.8,,miudprm008,,,Medium,Italia,Roma,Windows Server 2008 R2 Standard,Infrastrutturali,Server periferici
+172.16.214.15,,mihdcmop01,,,Medium,Italia,Roma,Windows Server 2008 R2 Standard,MOP,Server periferici
+172.17.245.250,,EX2200-24T-4G,,,Low,Italia,CED Monte Porzio Catone,Junos,Infrastrutturali,Switch Juniper
+172.17.245.251,,EX2200-24T-4G,,,Low,Italia,CED Monte Porzio Catone,Junos,Infrastrutturali,Switch Juniper
+172.23.82.245,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.23.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.23.82.246,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.30.98.250,,EX2200-24T-4G,,,Low,Italia,CSA 2 DI TREVISO - sede secondaria,Junos,Infrastrutturali,Switch Juniper
+172.22.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI AGRIGENTO,Junos,Infrastrutturali,Switch Juniper
+172.22.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI AGRIGENTO,Junos,Infrastrutturali,Switch Juniper
+172.22.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI AGRIGENTO,Junos,Infrastrutturali,Switch Juniper
+172.22.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI AGRIGENTO,Junos,Infrastrutturali,Switch Juniper
+172.22.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI AGRIGENTO,Junos,Infrastrutturali,Switch Juniper
+172.27.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ALESSANDRIA,Junos,Infrastrutturali,Switch Juniper
+172.27.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ALESSANDRIA,Junos,Infrastrutturali,Switch Juniper
+172.27.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ALESSANDRIA,Junos,Infrastrutturali,Switch Juniper
+172.27.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ALESSANDRIA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.244,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.245,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.243,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.17.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ANCONA,Junos,Infrastrutturali,Switch Juniper
+172.24.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI AREZZO,Junos,Infrastrutturali,Switch Juniper
+172.24.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI AREZZO,Junos,Infrastrutturali,Switch Juniper
+172.24.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI AREZZO,Junos,Infrastrutturali,Switch Juniper
+172.24.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI AREZZO,Junos,Infrastrutturali,Switch Juniper
+172.17.102.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ASCOLI PICENO,Junos,Infrastrutturali,Switch Juniper
+172.17.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ASCOLI PICENO,Junos,Infrastrutturali,Switch Juniper
+172.17.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ASCOLI PICENO,Junos,Infrastrutturali,Switch Juniper
+172.17.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ASCOLI PICENO,Junos,Infrastrutturali,Switch Juniper
+172.27.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ASTI,Junos,Infrastrutturali,Switch Juniper
+172.27.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ASTI,Junos,Infrastrutturali,Switch Juniper
+172.27.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ASTI,Junos,Infrastrutturali,Switch Juniper
+172.27.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ASTI,Junos,Infrastrutturali,Switch Juniper
+172.19.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI AVELLINO,Junos,Infrastrutturali,Switch Juniper
+172.21.70.245,,WS-C2950-24,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.19.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI AVELLINO,Junos,Infrastrutturali,Switch Juniper
+172.19.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI AVELLINO,Junos,Infrastrutturali,Switch Juniper
+172.19.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI AVELLINO,Junos,Infrastrutturali,Switch Juniper
+172.19.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI AVELLINO,Junos,Infrastrutturali,Switch Juniper
+172.21.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.30.74.247,,WS-C2950-24,,,Low,Italia,CSA DI BELLUNO,Junos,Infrastrutturali,Switch Juniper
+172.21.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.240,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.241,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.242,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.21.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI BARI,Junos,Infrastrutturali,Switch Juniper
+172.30.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI BELLUNO,Junos,Infrastrutturali,Switch Juniper
+172.30.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BELLUNO,Junos,Infrastrutturali,Switch Juniper
+172.30.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BELLUNO,Junos,Infrastrutturali,Switch Juniper
+172.30.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BELLUNO,Junos,Infrastrutturali,Switch Juniper
+172.19.66.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BENEVENTO,Junos,Infrastrutturali,Switch Juniper
+172.19.66.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BENEVENTO,Junos,Infrastrutturali,Switch Juniper
+172.19.66.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BENEVENTO,Junos,Infrastrutturali,Switch Juniper
+172.19.66.245,,EX2200-24T-4G,,,Low,Italia,CSA DI BENEVENTO,Junos,Infrastrutturali,Switch Juniper
+172.19.66.247,,EX2200-24T-4G,,,Low,Italia,CSA DI BENEVENTO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.247,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.246,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.29.66.245,,EX2200-24T-4G,,,Low,Italia,CSA DI BERGAMO,Junos,Infrastrutturali,Switch Juniper
+172.27.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BIELLA,Junos,Infrastrutturali,Switch Juniper
+172.27.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BIELLA,Junos,Infrastrutturali,Switch Juniper
+172.27.90.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BIELLA,Junos,Infrastrutturali,Switch Juniper
+172.29.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BRESCIA,Junos,Infrastrutturali,Switch Juniper
+172.29.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI BRESCIA,Junos,Infrastrutturali,Switch Juniper
+172.29.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI BRESCIA,Junos,Infrastrutturali,Switch Juniper
+172.29.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BRESCIA,Junos,Infrastrutturali,Switch Juniper
+172.29.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BRESCIA,Junos,Infrastrutturali,Switch Juniper
+172.21.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI BRINDISI,Junos,Infrastrutturali,Switch Juniper
+172.21.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI BRINDISI,Junos,Infrastrutturali,Switch Juniper
+172.21.86.246,,EX2200-24T-4G,,,Low,Italia,CSA DI BRINDISI,Junos,Infrastrutturali,Switch Juniper
+172.21.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI BRINDISI,Junos,Infrastrutturali,Switch Juniper
+172.21.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI BRINDISI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.23.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI CAGLIARI,Junos,Infrastrutturali,Switch Juniper
+172.22.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CALTANISSETTA,Junos,Infrastrutturali,Switch Juniper
+172.22.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CALTANISSETTA,Junos,Infrastrutturali,Switch Juniper
+172.22.78.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CALTANISSETTA,Junos,Infrastrutturali,Switch Juniper
+172.22.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CALTANISSETTA,Junos,Infrastrutturali,Switch Juniper
+172.22.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CALTANISSETTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.244,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.245,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.19.74.243,,EX2200-24T-4G,,,Low,Italia,CSA DI CASERTA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.242,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.243,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.244,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.245,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.22.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANIA,Junos,Infrastrutturali,Switch Juniper
+172.20.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANZARO,Junos,Infrastrutturali,Switch Juniper
+172.20.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANZARO,Junos,Infrastrutturali,Switch Juniper
+172.20.86.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANZARO,Junos,Infrastrutturali,Switch Juniper
+172.20.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANZARO,Junos,Infrastrutturali,Switch Juniper
+172.20.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CATANZARO,Junos,Infrastrutturali,Switch Juniper
+172.17.122.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CHIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.122.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CHIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.122.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CHIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.122.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CHIETI,Junos,Infrastrutturali,Switch Juniper
+172.29.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI COMO,Junos,Infrastrutturali,Switch Juniper
+172.29.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI COMO,Junos,Infrastrutturali,Switch Juniper
+172.29.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI COMO,Junos,Infrastrutturali,Switch Juniper
+172.29.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI COMO,Junos,Infrastrutturali,Switch Juniper
+172.29.78.246,,EX2200-24T-4G,,,Low,Italia,CSA DI COMO,Junos,Infrastrutturali,Switch Juniper
+172.20.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.248,,EX-2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.244,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.245,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.246,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.243,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.90.247,,EX2200-24T-4G,,,Low,Italia,CSA DI COSENZA,Junos,Infrastrutturali,Switch Juniper
+172.29.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CREMONA,Junos,Infrastrutturali,Switch Juniper
+172.29.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CREMONA,Junos,Infrastrutturali,Switch Juniper
+172.29.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CREMONA,Junos,Infrastrutturali,Switch Juniper
+172.29.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CREMONA,Junos,Infrastrutturali,Switch Juniper
+172.20.98.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CROTONE,Junos,Infrastrutturali,Switch Juniper
+172.20.98.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CROTONE,Junos,Infrastrutturali,Switch Juniper
+172.20.98.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CROTONE,Junos,Infrastrutturali,Switch Juniper
+172.20.98.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CROTONE,Junos,Infrastrutturali,Switch Juniper
+172.27.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI CUNEO,Junos,Infrastrutturali,Switch Juniper
+172.27.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI CUNEO,Junos,Infrastrutturali,Switch Juniper
+172.27.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI CUNEO,Junos,Infrastrutturali,Switch Juniper
+172.27.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI CUNEO,Junos,Infrastrutturali,Switch Juniper
+172.27.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI CUNEO,Junos,Infrastrutturali,Switch Juniper
+172.22.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ENNA,Junos,Infrastrutturali,Switch Juniper
+172.22.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ENNA,Junos,Infrastrutturali,Switch Juniper
+172.22.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ENNA,Junos,Infrastrutturali,Switch Juniper
+172.22.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ENNA,Junos,Infrastrutturali,Switch Juniper
+172.25.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI FERRARA,Junos,Infrastrutturali,Switch Juniper
+172.25.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI FERRARA,Junos,Infrastrutturali,Switch Juniper
+172.25.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI FERRARA,Junos,Infrastrutturali,Switch Juniper
+172.25.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI FERRARA,Junos,Infrastrutturali,Switch Juniper
+172.25.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI FERRARA,Junos,Infrastrutturali,Switch Juniper
+172.21.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI FOGGIA,Junos,Infrastrutturali,Switch Juniper
+172.21.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI FOGGIA,Junos,Infrastrutturali,Switch Juniper
+172.21.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI FOGGIA,Junos,Infrastrutturali,Switch Juniper
+172.21.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI FOGGIA,Junos,Infrastrutturali,Switch Juniper
+172.25.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI FORLI,Junos,Infrastrutturali,Switch Juniper
+172.25.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI FORLI,Junos,Infrastrutturali,Switch Juniper
+172.25.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI FORLI,Junos,Infrastrutturali,Switch Juniper
+172.25.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI FORLI,Junos,Infrastrutturali,Switch Juniper
+172.17.66.251,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.17.66.250,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.17.66.245,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.17.66.246,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.17.66.247,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.17.66.248,,EX2200-24T-4G,,,Low,Italia,CSA DI FROSINONE,Junos,Infrastrutturali,Switch Juniper
+172.26.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.242,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.26.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI GENOVA,Junos,Infrastrutturali,Switch Juniper
+172.31.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI GORIZIA,Junos,Infrastrutturali,Switch Juniper
+172.31.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI GORIZIA,Junos,Infrastrutturali,Switch Juniper
+172.31.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI GORIZIA,Junos,Infrastrutturali,Switch Juniper
+172.31.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI GORIZIA,Junos,Infrastrutturali,Switch Juniper
+172.24.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI GROSSETO,Junos,Infrastrutturali,Switch Juniper
+172.24.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI GROSSETO,Junos,Infrastrutturali,Switch Juniper
+172.24.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI GROSSETO,Junos,Infrastrutturali,Switch Juniper
+172.24.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI GROSSETO,Junos,Infrastrutturali,Switch Juniper
+172.26.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI IMPERIA,Junos,Infrastrutturali,Switch Juniper
+172.26.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI IMPERIA,Junos,Infrastrutturali,Switch Juniper
+172.26.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI IMPERIA,Junos,Infrastrutturali,Switch Juniper
+172.26.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI IMPERIA,Junos,Infrastrutturali,Switch Juniper
+172.17.142.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ISERNIA,Junos,Infrastrutturali,Switch Juniper
+172.17.142.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ISERNIA,Junos,Infrastrutturali,Switch Juniper
+172.17.142.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ISERNIA,Junos,Infrastrutturali,Switch Juniper
+172.17.142.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ISERNIA,Junos,Infrastrutturali,Switch Juniper
+172.17.118.250,,EX2200-24T-4G,,,Low,Italia,CSA DI L AQUILA,Junos,Infrastrutturali,Switch Juniper
+172.17.118.251,,EX2200-24T-4G,,,Low,Italia,CSA DI L AQUILA,Junos,Infrastrutturali,Switch Juniper
+172.17.118.248,,EX2200-24T-4G,,,Low,Italia,CSA DI L AQUILA,Junos,Infrastrutturali,Switch Juniper
+172.26.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LA SPEZIA,Junos,Infrastrutturali,Switch Juniper
+172.26.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LA SPEZIA,Junos,Infrastrutturali,Switch Juniper
+172.26.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LA SPEZIA,Junos,Infrastrutturali,Switch Juniper
+172.17.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LATINA,Junos,Infrastrutturali,Switch Juniper
+172.17.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LATINA,Junos,Infrastrutturali,Switch Juniper
+172.17.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI LATINA,Junos,Infrastrutturali,Switch Juniper
+172.17.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI LATINA,Junos,Infrastrutturali,Switch Juniper
+172.17.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LATINA,Junos,Infrastrutturali,Switch Juniper
+172.21.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.245,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.246,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.244,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.21.78.243,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCE,Junos,Infrastrutturali,Switch Juniper
+172.29.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCO,Junos,Infrastrutturali,Switch Juniper
+172.29.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCO,Junos,Infrastrutturali,Switch Juniper
+172.29.86.246,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCO,Junos,Infrastrutturali,Switch Juniper
+172.29.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCO,Junos,Infrastrutturali,Switch Juniper
+172.29.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LECCO,Junos,Infrastrutturali,Switch Juniper
+172.24.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI LIVORNO,Junos,Infrastrutturali,Switch Juniper
+172.24.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LIVORNO,Junos,Infrastrutturali,Switch Juniper
+172.24.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LIVORNO,Junos,Infrastrutturali,Switch Juniper
+172.24.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LIVORNO,Junos,Infrastrutturali,Switch Juniper
+172.29.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LODI,Junos,Infrastrutturali,Switch Juniper
+172.29.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LODI,Junos,Infrastrutturali,Switch Juniper
+172.29.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LODI,Junos,Infrastrutturali,Switch Juniper
+172.24.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI LUCCA,Junos,Infrastrutturali,Switch Juniper
+172.24.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI LUCCA,Junos,Infrastrutturali,Switch Juniper
+172.24.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI LUCCA,Junos,Infrastrutturali,Switch Juniper
+172.24.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI LUCCA,Junos,Infrastrutturali,Switch Juniper
+172.17.106.247,,EX2200-24T-4G,,,Low,Italia,CSA DI MACERATA,Junos,Infrastrutturali,Switch Juniper
+172.17.106.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MACERATA,Junos,Infrastrutturali,Switch Juniper
+172.17.106.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MACERATA,Junos,Infrastrutturali,Switch Juniper
+172.29.98.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MANTOVA,Junos,Infrastrutturali,Switch Juniper
+172.29.98.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MANTOVA,Junos,Infrastrutturali,Switch Juniper
+172.29.98.246,,EX2200-24T-4G,,,Low,Italia,CSA DI MANTOVA,Junos,Infrastrutturali,Switch Juniper
+172.29.98.247,,EX2200-24T-4G,,,Low,Italia,CSA DI MANTOVA,Junos,Infrastrutturali,Switch Juniper
+172.29.98.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MANTOVA,Junos,Infrastrutturali,Switch Juniper
+172.24.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MASSA CARRARA,Junos,Infrastrutturali,Switch Juniper
+172.24.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MASSA CARRARA,Junos,Infrastrutturali,Switch Juniper
+172.24.90.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MASSA CARRARA,Junos,Infrastrutturali,Switch Juniper
+172.20.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MATERA,Junos,Infrastrutturali,Switch Juniper
+172.20.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MATERA,Junos,Infrastrutturali,Switch Juniper
+172.20.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MATERA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.244,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.245,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.22.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI MESSINA,Junos,Infrastrutturali,Switch Juniper
+172.28.78.240,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.246,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.243,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.245,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.242,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.241,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.28.78.244,,EX2200-24T-4G,,,Low,Italia,CSA DI MILANO,Junos,Infrastrutturali,Switch Juniper
+172.25.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI MODENA,Junos,Infrastrutturali,Switch Juniper
+172.25.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI MODENA,Junos,Infrastrutturali,Switch Juniper
+172.25.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI MODENA,Junos,Infrastrutturali,Switch Juniper
+172.18.70.234,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.249,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.235,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.236,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.237,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.238,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.239,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.240,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.241,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.242,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.18.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI NAPOLI,Junos,Infrastrutturali,Switch Juniper
+172.27.98.248,,EX2200-24T-4G,,,Low,Italia,CSA DI NOVARA,Junos,Infrastrutturali,Switch Juniper
+172.27.98.251,,EX2200-24T-4G,,,Low,Italia,CSA DI NOVARA,Junos,Infrastrutturali,Switch Juniper
+172.27.98.250,,EX2200-24T-4G,,,Low,Italia,CSA DI NOVARA,Junos,Infrastrutturali,Switch Juniper
+172.23.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI NUORO,Junos,Infrastrutturali,Switch Juniper
+172.23.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI NUORO,Junos,Infrastrutturali,Switch Juniper
+172.23.74.246,,EX2200-24T-4G,,,Low,Italia,CSA DI NUORO,Junos,Infrastrutturali,Switch Juniper
+172.23.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI NUORO,Junos,Infrastrutturali,Switch Juniper
+172.23.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI NUORO,Junos,Infrastrutturali,Switch Juniper
+172.23.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ORISTANO,Junos,Infrastrutturali,Switch Juniper
+172.23.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ORISTANO,Junos,Infrastrutturali,Switch Juniper
+172.23.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ORISTANO,Junos,Infrastrutturali,Switch Juniper
+172.30.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.30.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.30.78.244,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.30.78.246,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.30.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.30.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PADOVA,Junos,Infrastrutturali,Switch Juniper
+172.22.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.241,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.242,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.22.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI PALERMO,Junos,Infrastrutturali,Switch Juniper
+172.25.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PARMA,Junos,Infrastrutturali,Switch Juniper
+172.25.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PARMA,Junos,Infrastrutturali,Switch Juniper
+172.25.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PARMA,Junos,Infrastrutturali,Switch Juniper
+172.25.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PARMA,Junos,Infrastrutturali,Switch Juniper
+172.25.86.246,,EX2200-24T-4G,,,Low,Italia,CSA DI PARMA,Junos,Infrastrutturali,Switch Juniper
+172.29.102.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PAVIA,Junos,Infrastrutturali,Switch Juniper
+172.29.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PAVIA,Junos,Infrastrutturali,Switch Juniper
+172.29.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PAVIA,Junos,Infrastrutturali,Switch Juniper
+172.29.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PAVIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.245,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.246,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.86.244,,EX2200-24T-4G,,,Low,Italia,CSA DI PERUGIA,Junos,Infrastrutturali,Switch Juniper
+172.17.110.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PESARO URBINO,Junos,Infrastrutturali,Switch Juniper
+172.17.110.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PESARO URBINO,Junos,Infrastrutturali,Switch Juniper
+172.17.110.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PESARO URBINO,Junos,Infrastrutturali,Switch Juniper
+172.17.126.246,,EX2200-24T-4G,,,Low,Italia,CSA DI PESCARA,Junos,Infrastrutturali,Switch Juniper
+172.17.126.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PESCARA,Junos,Infrastrutturali,Switch Juniper
+172.17.126.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PESCARA,Junos,Infrastrutturali,Switch Juniper
+172.17.126.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PESCARA,Junos,Infrastrutturali,Switch Juniper
+172.25.90.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PIACENZA,Junos,Infrastrutturali,Switch Juniper
+172.25.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PIACENZA,Junos,Infrastrutturali,Switch Juniper
+172.25.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PIACENZA,Junos,Infrastrutturali,Switch Juniper
+172.24.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PISA,Junos,Infrastrutturali,Switch Juniper
+172.24.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PISA,Junos,Infrastrutturali,Switch Juniper
+172.24.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PISA,Junos,Infrastrutturali,Switch Juniper
+172.24.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PISA,Junos,Infrastrutturali,Switch Juniper
+172.24.98.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PISTOIA,Junos,Infrastrutturali,Switch Juniper
+172.24.98.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PISTOIA,Junos,Infrastrutturali,Switch Juniper
+172.24.98.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PISTOIA,Junos,Infrastrutturali,Switch Juniper
+172.31.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PORDENONE,Junos,Infrastrutturali,Switch Juniper
+172.31.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PORDENONE,Junos,Infrastrutturali,Switch Juniper
+172.31.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PORDENONE,Junos,Infrastrutturali,Switch Juniper
+172.31.78.247,,EX2200-24T-4G,,,Low,Italia,CSA DI PORDENONE,Junos,Infrastrutturali,Switch Juniper
+172.20.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI POTENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI POTENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI POTENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI POTENZA,Junos,Infrastrutturali,Switch Juniper
+172.20.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI POTENZA,Junos,Infrastrutturali,Switch Juniper
+172.24.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI PRATO,Junos,Infrastrutturali,Switch Juniper
+172.24.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI PRATO,Junos,Infrastrutturali,Switch Juniper
+172.24.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI PRATO,Junos,Infrastrutturali,Switch Juniper
+172.22.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI RAGUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI RAGUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.102.247,,EX2200-24T-4G,,,Low,Italia,CSA DI RAGUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI RAGUSA,Junos,Infrastrutturali,Switch Juniper
+172.25.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI RAVENNA,Junos,Infrastrutturali,Switch Juniper
+172.25.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI RAVENNA,Junos,Infrastrutturali,Switch Juniper
+172.25.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI RAVENNA,Junos,Infrastrutturali,Switch Juniper
+172.25.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI RAVENNA,Junos,Infrastrutturali,Switch Juniper
+172.25.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI RAVENNA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.243,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.244,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.245,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.82.246,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.25.98.247,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO EMILIA,Junos,Infrastrutturali,Switch Juniper
+172.25.98.248,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO EMILIA,Junos,Infrastrutturali,Switch Juniper
+172.25.98.250,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO EMILIA,Junos,Infrastrutturali,Switch Juniper
+172.25.98.251,,EX2200-24T-4G,,,Low,Italia,CSA DI REGGIO EMILIA,Junos,Infrastrutturali,Switch Juniper
+172.17.74.247,,EX2200-24T-4G,,,Low,Italia,CSA DI RIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.74.248,,EX2200-24T-4G,,,Low,Italia,CSA DI RIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.74.250,,EX2200-24T-4G,,,Low,Italia,CSA DI RIETI,Junos,Infrastrutturali,Switch Juniper
+172.17.74.251,,EX2200-24T-4G,,,Low,Italia,CSA DI RIETI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.245,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.246,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.247,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.25.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI RIMINI,Junos,Infrastrutturali,Switch Juniper
+172.18.66.242,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.244,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.241,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.240,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.245,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.246,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.247,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.243,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.30.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI ROVIGO,Junos,Infrastrutturali,Switch Juniper
+172.30.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI ROVIGO,Junos,Infrastrutturali,Switch Juniper
+172.30.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI ROVIGO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.243,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.244,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.245,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.242,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.240,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.19.78.241,,EX2200-24T-4G,,,Low,Italia,CSA DI SALERNO,Junos,Infrastrutturali,Switch Juniper
+172.23.82.244,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.23.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.23.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.23.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI SASSARI,Junos,Infrastrutturali,Switch Juniper
+172.26.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI SAVONA,Junos,Infrastrutturali,Switch Juniper
+172.26.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI SAVONA,Junos,Infrastrutturali,Switch Juniper
+172.26.82.246,,EX2200-24T-4G,,,Low,Italia,CSA DI SAVONA,Junos,Infrastrutturali,Switch Juniper
+172.26.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SAVONA,Junos,Infrastrutturali,Switch Juniper
+172.26.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI SAVONA,Junos,Infrastrutturali,Switch Juniper
+172.24.106.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SIENA,Junos,Infrastrutturali,Switch Juniper
+172.24.106.251,,EX2200-24T-4G,,,Low,Italia,CSA DI SIENA,Junos,Infrastrutturali,Switch Juniper
+172.18.66.238,,EX2200-24T-4G,,,Low,Italia,CSA DI ROMA,Junos,Infrastrutturali,Switch Juniper
+172.24.106.248,,EX2200-24T-4G,,,Low,Italia,CSA DI SIENA,Junos,Infrastrutturali,Switch Juniper
+172.24.106.245,,EX2200-24T-4G,,,Low,Italia,CSA DI SIENA,Junos,Infrastrutturali,Switch Juniper
+172.22.106.248,,EX2200-24T-4G,,,Low,Italia,CSA DI SIRACUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.106.247,,EX2200-24T-4G,,,Low,Italia,CSA DI SIRACUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.106.246,,EX2200-24T-4G,,,Low,Italia,CSA DI SIRACUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.106.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SIRACUSA,Junos,Infrastrutturali,Switch Juniper
+172.22.106.251,,EX2200-24T,,,Low,Italia,CSA DI SIRACUSA,Junos,Infrastrutturali,Switch Juniper
+172.29.106.248,,EX2200-24T-4G,,,Low,Italia,CSA DI SONDRIO,Junos,Infrastrutturali,Switch Juniper
+172.29.106.251,,EX2200-24T-4G,,,Low,Italia,CSA DI SONDRIO,Junos,Infrastrutturali,Switch Juniper
+172.29.106.250,,EX2200-24T-4G,,,Low,Italia,CSA DI SONDRIO,Junos,Infrastrutturali,Switch Juniper
+172.21.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TARANTO,Junos,Infrastrutturali,Switch Juniper
+172.21.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TARANTO,Junos,Infrastrutturali,Switch Juniper
+172.21.82.246,,EX2200-24T-4G,,,Low,Italia,CSA DI TARANTO,Junos,Infrastrutturali,Switch Juniper
+172.21.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI TARANTO,Junos,Infrastrutturali,Switch Juniper
+172.21.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TARANTO,Junos,Infrastrutturali,Switch Juniper
+172.17.130.247,,EX2200-24T-4G,,,Low,Italia,CSA DI TERAMO,Junos,Infrastrutturali,Switch Juniper
+172.17.130.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TERAMO,Junos,Infrastrutturali,Switch Juniper
+172.17.130.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TERAMO,Junos,Infrastrutturali,Switch Juniper
+172.17.130.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TERAMO,Junos,Infrastrutturali,Switch Juniper
+172.17.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TERNI,Junos,Infrastrutturali,Switch Juniper
+172.17.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TERNI,Junos,Infrastrutturali,Switch Juniper
+172.17.90.246,,EX2200-24T-4G,,,Low,Italia,CSA DI TERNI,Junos,Infrastrutturali,Switch Juniper
+172.17.90.247,,EX2200-24T-4G,,,Low,Italia,CSA DI TERNI,Junos,Infrastrutturali,Switch Juniper
+172.17.90.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TERNI,Junos,Infrastrutturali,Switch Juniper
+172.27.70.244,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.243,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.27.70.242,,EX2200-24T-4G,,,Low,Italia,CSA DI TORINO,Junos,Infrastrutturali,Switch Juniper
+172.22.110.244,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.245,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.246,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.247,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.22.110.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TRAPANI,Junos,Infrastrutturali,Switch Juniper
+172.30.86.250,,EX2200-24T-4G,,,Low,Italia,CSA DI TREVISO,Junos,Infrastrutturali,Switch Juniper
+172.30.86.251,,EX2200-24T-4G,,,Low,Italia,CSA DI TREVISO,Junos,Infrastrutturali,Switch Juniper
+172.30.86.248,,EX2200-24T-4G,,,Low,Italia,CSA DI TREVISO,Junos,Infrastrutturali,Switch Juniper
+172.31.82.247,,EX2200-24T-4G,,,Low,Italia,CSA DI UDINE,Junos,Infrastrutturali,Switch Juniper
+172.31.82.248,,EX2200-24T-4G,,,Low,Italia,CSA DI UDINE,Junos,Infrastrutturali,Switch Juniper
+172.31.82.250,,EX2200-24T-4G,,,Low,Italia,CSA DI UDINE,Junos,Infrastrutturali,Switch Juniper
+172.31.82.251,,EX2200-24T-4G,,,Low,Italia,CSA DI UDINE,Junos,Infrastrutturali,Switch Juniper
+172.29.110.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VARESE,Junos,Infrastrutturali,Switch Juniper
+172.29.110.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VARESE,Junos,Infrastrutturali,Switch Juniper
+172.29.110.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VARESE,Junos,Infrastrutturali,Switch Juniper
+172.29.110.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VARESE,Junos,Infrastrutturali,Switch Juniper
+172.30.70.245,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.30.70.246,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.30.70.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.30.70.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.30.70.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.30.70.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VENEZIA,Junos,Infrastrutturali,Switch Juniper
+172.27.102.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VERBANO - CUSIO - OSSOLA,Junos,Infrastrutturali,Switch Juniper
+172.27.102.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VERBANO - CUSIO - OSSOLA,Junos,Infrastrutturali,Switch Juniper
+172.27.102.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VERBANO - CUSIO - OSSOLA,Junos,Infrastrutturali,Switch Juniper
+172.17.146.250,,3COM 4400SE,,,Low,Italia,FIANO ROMANO,Junos,Infrastrutturali,Switch Juniper
+172.27.102.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VERBANO - CUSIO - OSSOLA,Junos,Infrastrutturali,Switch Juniper
+172.27.106.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VERCELLI,Junos,Infrastrutturali,Switch Juniper
+172.27.106.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VERCELLI,Junos,Infrastrutturali,Switch Juniper
+172.27.106.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VERCELLI,Junos,Infrastrutturali,Switch Juniper
+172.27.106.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VERCELLI,Junos,Infrastrutturali,Switch Juniper
+172.30.90.246,,EX2200-24T-4G,,,Low,Italia,CSA DI VERONA,Junos,Infrastrutturali,Switch Juniper
+172.30.90.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VERONA,Junos,Infrastrutturali,Switch Juniper
+172.30.90.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VERONA,Junos,Infrastrutturali,Switch Juniper
+172.30.90.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VERONA,Junos,Infrastrutturali,Switch Juniper
+172.30.90.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VERONA,Junos,Infrastrutturali,Switch Juniper
+172.20.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VIBO VALENTIA,Junos,Infrastrutturali,Switch Juniper
+172.20.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VIBO VALENTIA,Junos,Infrastrutturali,Switch Juniper
+172.20.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VIBO VALENTIA,Junos,Infrastrutturali,Switch Juniper
+172.20.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VIBO VALENTIA,Junos,Infrastrutturali,Switch Juniper
+172.20.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI VIBO VALENTIA,Junos,Infrastrutturali,Switch Juniper
+172.30.94.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VICENZA,Junos,Infrastrutturali,Switch Juniper
+172.30.94.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VICENZA,Junos,Infrastrutturali,Switch Juniper
+172.30.94.247,,EX2200-24T-4G,,,Low,Italia,CSA DI VICENZA,Junos,Infrastrutturali,Switch Juniper
+172.30.94.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VICENZA,Junos,Infrastrutturali,Switch Juniper
+172.30.94.246,,EX2200-24T-4G,,,Low,Italia,CSA DI VICENZA,Junos,Infrastrutturali,Switch Juniper
+172.17.78.250,,EX2200-24T-4G,,,Low,Italia,CSA DI VITERBO,Junos,Infrastrutturali,Switch Juniper
+172.17.78.251,,EX2200-24T-4G,,,Low,Italia,CSA DI VITERBO,Junos,Infrastrutturali,Switch Juniper
+172.17.78.247,,EX-2200-24T-4G,,,Low,Italia,CSA DI VITERBO,Junos,Infrastrutturali,Switch Juniper
+172.17.78.248,,EX2200-24T-4G,,,Low,Italia,CSA DI VITERBO,Junos,Infrastrutturali,Switch Juniper
+172.29.114.248,,EX2200-24T-4G,,,Low,Italia,CSA di Monza,Junos,Infrastrutturali,Switch Juniper
+172.29.114.250,,EX2200-24T-4G,,,Low,Italia,CSA di Monza,Junos,Infrastrutturali,Switch Juniper
+172.29.114.251,,EX2200-24T-4G,,,Low,Italia,CSA di Monza,Junos,Infrastrutturali,Switch Juniper
+172.29.114.247,,EX2200-24T-4G,,,Low,Italia,CSA di Monza,Junos,Infrastrutturali,Switch Juniper
+172.31.86.250,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - LINGUA ITALIANA,Junos,Infrastrutturali,Switch Juniper
+172.31.86.251,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - LINGUA ITALIANA,Junos,Infrastrutturali,Switch Juniper
+172.31.102.250,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - LINGUA LADINA,Junos,Infrastrutturali,Switch Juniper
+172.31.90.250,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - LINGUA TEDESCA,Junos,Infrastrutturali,Switch Juniper
+172.31.90.251,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - LINGUA TEDESCA,Junos,Infrastrutturali,Switch Juniper
+172.31.94.248,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - PENSIONI,Junos,Infrastrutturali,Switch Juniper
+172.31.94.247,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - PENSIONI,Junos,Infrastrutturali,Switch Juniper
+172.31.94.250,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - PENSIONI,Junos,Infrastrutturali,Switch Juniper
+172.31.94.251,,EX2200-24T-4G,,,Low,Italia,INTENDENZA BOLZANO - PENSIONI,Junos,Infrastrutturali,Switch Juniper
+172.16.214.247,,EX2200-24T-4G,,,Low,Italia,MOP-MPC,Junos,Infrastrutturali,Switch Juniper
+172.16.216.250,,EX2200-24T-4G,,,Low,Italia,MOP-MPC,Junos,Infrastrutturali,Switch Juniper
+172.16.216.251,,EX2200-24T-4G,,,Low,Italia,MOP-MPC,Junos,Infrastrutturali,Switch Juniper
+172.16.214.246,,EX-2200,,,Low,Italia,MOP-MPC,Junos,Infrastrutturali,Switch Juniper
+172.16.214.248,,EX2200-24T-4G,,,Low,Italia,MOP-MPC,Junos,Infrastrutturali,Switch Juniper
+172.16.242.248,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.16.242.247,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.16.242.250,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.16.242.251,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.16.242.249,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.16.242.242,,EX2200-24T-4G,,,Low,Italia,NIEVO,Junos,Infrastrutturali,Switch Juniper
+172.29.144.250,,EX2200-24T-4G,,,Low,Italia,SANSEPOLCRO (solo PO Arezzo),Junos,Infrastrutturali,Switch Juniper
+172.31.98.250,,EX2200-24T-4G,,,Low,Italia,SOVRINTENDENZA SCOLASTICA DI TRENTO,Junos,Infrastrutturali,Switch Juniper
+172.31.98.251,,EX2200-24T-4G,,,Low,Italia,SOVRINTENDENZA SCOLASTICA DI TRENTO,Junos,Infrastrutturali,Switch Juniper
+172.16.127.43,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.188,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.187,,WS-C2960,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.105,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.123,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.34,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.165,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.174,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.102,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.74,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.185,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.182,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.181,,EX2200-2AT-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.180,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.184,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.231,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.252,,EX6200,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.151,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.154,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.141,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.142,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.153,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.236,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.232,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.235,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.144,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.143,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.152,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.253,,EX6200,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.237,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.238,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.233,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.234,,EX4200-48T,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.84,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.61,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.63,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.172,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.53,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.162,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.4,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.126,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.135,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.134,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.133,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.24,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.131,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.31,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.132,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.112,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.54,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.64,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.65,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.5,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.114,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.91,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.96,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.52,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.66,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.93,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.161,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.21,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.111,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.44,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.13,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.56,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.42,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.171,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.62,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.164,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.11,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.12,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.94,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.33,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.104,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.2,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.22,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.41,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.173,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.46,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.101,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.45,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.124,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.92,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.1,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.81,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.163,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.73,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.3,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.122,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.15,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.55,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.51,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.23,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.14,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.71,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.121,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.95,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.85,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.103,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.82,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.125,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.113,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.32,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.72,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.83,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.6,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.35,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.75,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.115,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.16.127.183,,EX2200-24T-4G,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.17.114.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale ABRUZZO,Junos,Infrastrutturali,Switch Juniper
+172.17.114.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale ABRUZZO,Junos,Infrastrutturali,Switch Juniper
+172.17.114.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale ABRUZZO,Junos,Infrastrutturali,Switch Juniper
+172.20.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale BASILICATA,Junos,Infrastrutturali,Switch Juniper
+172.20.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale BASILICATA,Junos,Infrastrutturali,Switch Juniper
+172.20.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale BASILICATA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.20.78.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale CALABRIA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.241,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.240,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.25.66.242,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale EMILIA ROMAGNA,Junos,Infrastrutturali,Switch Juniper
+172.29.114.246,,EX2200-24T-4G,,,Low,Italia,CSA di Monza,Junos,Infrastrutturali,Switch Juniper
+172.30.66.240,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.29.145.250,,EX2200-24T-4G,,,Low,Italia,Pontedera (solo PO Pisa),Junos,Infrastrutturali,Switch Juniper
+172.17.96.245,,EX2200-24T-4G,,,Low,Italia,CED Monte Porzio Catone,Junos,Infrastrutturali,Switch Juniper
+172.30.66.239,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.17.62.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LAZIO,Junos,Infrastrutturali,Switch Juniper
+172.17.62.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LAZIO,Junos,Infrastrutturali,Switch Juniper
+172.28.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.28.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale LOMBARDIA,Junos,Infrastrutturali,Switch Juniper
+172.17.138.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale MOLISE,Junos,Infrastrutturali,Switch Juniper
+172.17.138.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale MOLISE,Junos,Infrastrutturali,Switch Juniper
+172.17.138.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale MOLISE,Junos,Infrastrutturali,Switch Juniper
+172.17.138.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale MOLISE,Junos,Infrastrutturali,Switch Juniper
+172.17.138.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale MOLISE,Junos,Infrastrutturali,Switch Juniper
+172.27.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PIEMONTE,Junos,Infrastrutturali,Switch Juniper
+172.27.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PIEMONTE,Junos,Infrastrutturali,Switch Juniper
+172.27.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PIEMONTE,Junos,Infrastrutturali,Switch Juniper
+172.27.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PIEMONTE,Junos,Infrastrutturali,Switch Juniper
+172.21.66.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.21.66.242,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale PUGLIA,Junos,Infrastrutturali,Switch Juniper
+172.23.70.239,,EX2200-24T-4G,,,Low,Italia,CSA di Cagliari,Junos,Infrastrutturali,Switch Juniper
+172.23.70.238,,EX2200-24T-4G,,,Low,Italia,CSA di Cagliari,Junos,Infrastrutturali,Switch Juniper
+172.23.70.242,,EX2200-24T-4G,,,Low,Italia,CSA di Cagliari,Junos,Infrastrutturali,Switch Juniper
+172.23.70.240,,EX2200-24T-4G,,,Low,Italia,CSA di Cagliari,Junos,Infrastrutturali,Switch Juniper
+172.23.70.241,,EX2200-24T-4G,,,Low,Italia,CSA di Cagliari,Junos,Infrastrutturali,Switch Juniper
+172.22.66.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.22.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale SICILIA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.241,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.240,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.242,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.24.70.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale TOSCANA,Junos,Infrastrutturali,Switch Juniper
+172.30.66.241,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.16.127.186,,WS-C2960,,,Low,Italia,Trastevere,Junos,Infrastrutturali,Switch Juniper
+172.30.66.242,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.247,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.245,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.250,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.251,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.248,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.246,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.244,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.30.66.243,,EX2200-24T-4G,,,Low,Italia,Ufficio Scolastico Regionale VENETO,Junos,Infrastrutturali,Switch Juniper
+172.31.70.245,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.31.70.250,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.31.70.251,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.31.70.246,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.31.70.247,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.31.70.248,,EX2200-24T-4G,,,Low,Italia,USR Friuli Venezia Giulia,Junos,Infrastrutturali,Switch Juniper
+172.18.66.239,,EX2200-24T-4G,,,Low,Italia,CSA di Roma,Junos,Infrastrutturali,Switch Juniper
