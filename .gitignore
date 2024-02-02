@@ -5,3 +5,4 @@ roles/splunk/files/*.pem.disable
 roles/splunk/files/*.key
 playbooks/ansible.log*
 ansible-vault-password.txt
+**/.rsync-filter
