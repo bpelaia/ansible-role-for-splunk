@@ -1,5 +1,6 @@
 ---
 - name: Install .bashrc and .bash_profile files
+  tags: configurebash
   template:
     src: "{{ item.bashtemplate }}"
     dest: "{{ splunk_home }}/{{ item.bashfilepath }}"
