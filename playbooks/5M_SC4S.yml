@@ -124,7 +124,13 @@
               SC4S_DEST_SPLUNK_HEC_DEFAULT_TOKEN=b264b122-e424-4ea1-9fb7-0bb03a78cf83
               #SC4S_DEST_SPLUNK_HEC_WORKERS010
               #Uncomment the following line if using untrusted SSL certificates
-              SC4S_DEST_SPLUNK_HEC_DEFAULT_TLS_VERIFY=no
+              #SC4S_DEST_SPLUNK_HEC_DEFAULT_TLS_VERIFY=no
+              SC4S_SOURCE_STORE_RAWMSG=yes
+              SC4S_DEST_GLOBAL_ALTERNATES=d_hec_debug,d_archive
+              SC4S_DISABLE_DROP_INVALID_CISCO=yes
+              SC4S_DISABLE_DROP_INVALID_VMWARE_VSPHERE=yes
+              SC4S_LISTEN_CISCO_IOS_TCP_PORT=10514
+              SC4S_LISTEN_CISCO_IOS_UDP_PORT=10514
             dest: /opt/sc4s/env_file
             owner: root
             group: root
