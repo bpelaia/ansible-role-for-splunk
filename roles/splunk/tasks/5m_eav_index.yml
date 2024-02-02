@@ -1,0 +1,20 @@
+---
+- name: Create all EAV indexes
+  include_tasks: 5m_eav_index_inner.yml 
+  loop:
+    - { name: 'email', secs: 15780000, archive: true }
+    - { name: 'epav', secs: 15780000, archive: true }
+    - { name: 'netauth', secs: 15780000, archive: true }
+    - { name: 'netdlp', secs: 15780000, archive: true }
+    - { name: 'netdns', secs: 15780000, archive: true }
+    - { name: 'netfw', secs: 15780000, archive: true }
+    - { name: 'netids', secs: 15780000, archive: true }
+    - { name: 'netops', secs: 15780000, archive: true }
+    - { name: 'netwaf', secs: 15780000, archive: true }
+    - { name: 'netproxy', secs: 15780000, archive: true }
+    - { name: 'netipam', secs: 15780000, archive: true }
+    - { name: 'oswinsec', secs: 15780000, archive: true }
+    - { name: 'osnix', secs: 15780000, archive: true }
+    - { name: 'eav_draft', secs: 2592000, archive: false }
+  loop_control:
+    loop_var: index

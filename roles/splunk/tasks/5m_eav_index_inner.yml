@@ -1,0 +1,43 @@
+---
+- name: "Creating index {{ index.name }} in all_indexes app"
+  ini_file:
+    #ignore_spaces: true
+    path: "{{ splunk_home }}/etc/deployment-apps/eav_all_indexes/default/indexes.conf"
+    section: "{{ index.name }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+  notify: reload deployment server
+  loop:
+  - { option: "frozenTimePeriodInSecs", value: "15780000" }
+  - { option: "homePath", value: "$SPLUNK_DB/{{ index.name }}/db" }
+  - { option: "coldPath", value: "$SPLUNK_DB/{{ index.name }}/colddb" }
+  - { option: "thawedPath", value: "$SPLUNK_DB/{{ index.name }}/thaweddb" }
+
+- name: "Creating index {{ index.name }} in indexes app without archiving"
+  ini_file:
+    #ignore_spaces: true
+    path: "{{ splunk_home }}/etc/deployment-apps/eav_indexes/default/indexes.conf"
+    section: "{{ index.name }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+  notify: reload deployment server
+  loop:
+  - { option: "frozenTimePeriodInSecs", value: "{{ index.secs }}" }
+  - { option: "homePath", value: "volume:hotwarm/{{ index.name }}/db" }
+  - { option: "coldPath", value: "volume:cold/{{ index.name }}/colddb" }
+  - { option: "thawedPath", value: "/mnt/thawed/{{ index.name }}/thaweddb" }
+  - { option: "tstatsHomePath", value: "volume:_splunk_summaries/{{ index.name }}/datamodel_summary" }
+  - { option: "enableDataIntegrityControl", value: "true" }
+  - { option: "#repFactor", value: "auto" }
+
+- name: "Configuring index {{ index.name }} in indexes app for archiving"
+  when: index.archive == true
+  ini_file:
+    #ignore_spaces: true
+    path: "{{ splunk_home }}/etc/deployment-apps/eav_indexes/default/indexes.conf"
+    section: "{{ index.name }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+  notify: reload deployment server
+  loop:
+  - { option: "coldToFrozenDir", value: "/mnt/frozen/{{ index.name }}/frozendb" }
