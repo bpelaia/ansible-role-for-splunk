@@ -1,0 +1,6 @@
+---
+# Example host_vars for a deployment server that is leveraging the configure_serverclass.yml task to manage serverclass.conf
+splunk_app_deploy_path: /opt/splunk/etc/deployment-apps
+local_apps_path: ../environments/EAV/app_file
+local_apps:
+  - name: eav_httpinput
