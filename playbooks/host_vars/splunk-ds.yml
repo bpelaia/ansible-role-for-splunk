@@ -4,3 +4,7 @@ splunk_app_deploy_path: /opt/splunk/etc/deployment-apps
 local_apps_path: ../environments/EAV/app_file
 local_apps:
   - name: TA-cisco_ios
+  - name: Splunk_TA_esxilogs
+  - name: Splunk_TA_vcenter
+  - name: SA-VMWIndex
+  - name: eav_indexes
