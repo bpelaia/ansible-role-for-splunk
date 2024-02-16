@@ -1,0 +1,131 @@
+---
+#- name: Set timezone to Europe/Rome
+#  timezone:
+#    name: Europe/Rome
+
+#- name: Set correct domain name
+#  include_tasks: 5m_hostname.yml
+
+#- name: Update the /etc/hosts file with node name
+#  tags: etchostsupdate
+#  become: yes
+#  become_user: root
+#  ansible.builtin.lineinfile:
+#    path: "/etc/hosts"
+#    regexp: ".*\t{{ hostvars[item]['inventory_hostname']}}"
+#    line: "{{ hostvars[item]['ansible_host'] }}\t{{ hostvars[item]['inventory_hostname']}}\t{{ hostvars[item]['ansible_fqdn'] }}"
+#    state: present
+#    backup: yes
+#  register: etchostsupdate
+#  when:
+#    - ansible_hostname != "{{ item }}"
+#    - configure_etc_hosts == True
+#  with_items: "{{ groups['full'] }}"
+
+#- name: Configure SSH keys
+#  include_tasks: 5m_ssh.yml
+
+#- name: Configure outputs.conf
+#  community.general.ini_file:
+#    path: "{{ splunk_home }}/etc/system/local/outputs.conf"
+#    mode: 0644
+#    owner: "{{ splunk_nix_user }}"
+#    group: "{{ splunk_nix_group }}"
+#    section: "{{ item.section }}"
+#    option: "{{ item.option }}"
+#    value: "{{ item.value }}"
+#  with_items:
+#    - { section: "indexAndForward", option: "index", value: "false" }
+#    - { section: "tcpout", option: "defaultGroup", value: "allIdxes" }
+#    - { section: "tcpout", option: "forwardedindex.filter.disable", value: "true" }
+#    - { section: "tcpout", option: "indexAndForward", value: "false" }
+#    - { section: "tcpout:allIdxes", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }},splunk-indexer2:{{ splunk_tcpin_port }}" }
+#    - { section: "tcpout:allIdxes", option: "useSSL", value: "true" }
+#    - { section: "tcpout:allIdxes", option: "sslVerifyServerCert", value: "true" }
+#    - { section: "tcpout:allIdxes", option: "sslVerifyServerName", value: "true" }
+#    #- { section: "tcpout:allIdxes", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
+#    #- { section: "tcpout:allIdxes", option: "sslPassword", value: '""' }
+#    - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:{{ splunk_tcpin_port }}" }
+#    - { section: "tcpout:Idx1", option: "useSSL", value: "true" }
+#    - { section: "tcpout:Idx1", option: "sslVerifyServerCert", value: "true" }
+#    - { section: "tcpout:Idx1", option: "sslVerifyServerName", value: "true" }
+#    #- { section: "tcpout:Idx1", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
+#    #- { section: "tcpout:Idx1", option: "sslPassword", value: '""' }
+#    - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:{{ splunk_tcpin_port }}" }
+#    - { section: "tcpout:Idx2", option: "useSSL", value: "true" }
+#    - { section: "tcpout:Idx2", option: "sslVerifyServerCert", value: "true" }
+#    - { section: "tcpout:Idx2", option: "sslVerifyServerName", value: "true" }
+#    #- { section: "tcpout:Idx2", option: "clientCert", value: "{{ splunk_home }}/etc/auth/mycerts/certsBundle.pem" }
+#    #- { section: "tcpout:Idx2", option: "sslPassword", value: '""' }
+#  become: true
+#  notify: restart splunk
+#  when:
+#    - configure_customized_outputs == True
+#    - "'indexer' not in group_names"
+
+- name: Configure SSL stanza for port 9998 in inputs.conf (on IDX)
+  #when: "'indexer' in group_names or 'heavyforwarder' in group_names"
+  when: "'indexer' in group_names"
+  ini_file:
+    path: "{{ splunk_home }}/etc/system/local/inputs.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: "{{ item.section }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { section: "splunktcp-ssl://9998", option: "connection_host", value: "ip" }
+    - { section: "splunktcp-ssl://9998", option: "requireClientCert", value: "true" }
+    - { section: "splunktcp-ssl://9998", option: "sslCommonNameToCheck", value: "splunk-ds.eav.local,splunk-forwarder1.eav.local,splunk-forwarder2.eav.local,splunk-forwarder3.eav.local,splunk-lbhf.eav.local,splunk-lbshc.eav.local,splunk-lm.eav.local,splunk-shc.eav.local,splunk-shd.eav.local" }
+  #notify: restart splunk
+
+- name: Configure SSL stanza for port 9997 in inputs.conf (on HFW)
+  #when: "'indexer' in group_names or 'heavyforwarder' in group_names"
+  when: "'heavyforwarder' in group_names"
+  ini_file:
+    path: "{{ splunk_home }}/etc/system/local/inputs.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: "{{ item.section }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { section: "splunktcp-ssl://9997", option: "connection_host", value: "ip" }
+    - { section: "splunktcp-ssl://9997", option: "requireClientCert", value: "true" }
+    - { section: "splunktcp-ssl://9997", option: "sslCommonNameToCheck", value: "anyufw" }
+  #notify: restart splunk
+
+- name: Configure tcpout for client certificate
+  #when: "'indexer' in group_names or 'heavyforwarder' in group_names"
+  when: "'indexer' not in group_names"
+  ini_file:
+    path: "{{ splunk_home }}/etc/system/local/outputs.conf"
+    mode: 0644
+    owner: "{{ splunk_nix_user }}"
+    group: "{{ splunk_nix_group }}"
+    section: "{{ item.section }}"
+    option: "{{ item.option }}"
+    value: "{{ item.value }}"
+    state: present
+  with_items:
+    - { section: "tcpout", option: "clientCert", value: "$SPLUNK_HOME/etc/auth/mycerts/certsBundle.pem" }
+    - { section: "tcpout", option: "sslPassword", value: '""' }
+    - { section: "tcpout", option: "defaultGroup", value: "allIdxes" }
+    - { section: "tcpout:allIdxes", option: "server", value: "splunk-indexer1:9998,splunk-indexer2:9998" }
+    - { section: "tcpout:Idx1", option: "server", value: "splunk-indexer1:9998" }
+    - { section: "tcpout:Idx2", option: "server", value: "splunk-indexer2:9998" }
+    - { section: "tcpout:allIdxes", option: "useSSL", value: "true" }
+    - { section: "tcpout:Idx1", option: "useSSL", value: "true" }
+    - { section: "tcpout:Idx2", option: "useSSL", value: "true" }
+    - { section: "tcpout:allIdxes", option: "defaultGroup", value: "allIdxes" }
+    - { section: "tcpout:allIdxes", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:Idx1", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:Idx2", option: "sslVerifyServerCert", value: "true" }
+    - { section: "tcpout:allIdxes", option: "sslVerifyServerName", value: "true" }
+    - { section: "tcpout:Idx1", option: "sslVerifyServerName", value: "true" }
+    - { section: "tcpout:Idx2", option: "sslVerifyServerName", value: "true" }
+  notify: restart splunk
