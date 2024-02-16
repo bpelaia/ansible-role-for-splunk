@@ -1,0 +1,453 @@
+<dashboard version="2" theme="dark">
+    <label>Dashboard Cliente.</label>
+    <description></description>
+    <definition><![CDATA[
+{
+        "dataSources": {
+                "ds_HF4vmlWh": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win source=\"WinEventLog:Security\" EventCode=4624 Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" $user_tok$\n| stats  min(_time) as \"Tempo_minimo\", max(_time) as \"Tempo_massimo\" by Nome_account, Indirizzo_rete_di_origine\n| where Nome_account!=\"-\" \n| eval _time=strftime(_time, \"%y-%m-%d %H:%M:%S\") , Tempo_massimo=strftime(Tempo_massimo, \"%y-%m-%d %H:%M:%S\"), Tempo_minimo=strftime(Tempo_minimo, \"%y-%m-%d %H:%M:%S\")\n| rename _time as \"Data\"| dedup Indirizzo_rete_di_origine \n| fields - count",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Table searchg"
+                },
+                "ds_gunK098w": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win source=\"WinEventLog:Security\" EventCode=4624 Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" $user_tok$ |where Indirizzo_rete_di_origine!=\"-\"\n| stats  min(_time) as \"Tempo_minimo\", max(_time) as \"Tempo_massimo\" by Nome_account, Indirizzo_rete_di_origine\n| where Nome_account!=\"-\" \n| eval _time=strftime(_time, \"%y-%m-%d %H:%M:%S\") , Tempo_massimo=strftime(Tempo_massimo, \"%y-%m-%d %H:%M:%S\"), Tempo_minimo=strftime(Tempo_minimo, \"%y-%m-%d %H:%M:%S\")\n| where Nome_account!=\"-\" \n| rename _time as \"Data\"| dedup Indirizzo_rete_di_origine Nome_account\n| fields - count",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Table searxch"
+                },
+                "ds_XKVFin5i": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win sourcetype=WinEventLog OR (sourcetype=DhcpSrvLog description=\"Aggiornamento del DNS non riuscito\" OR description=\"Aggiornamento del DNS riuscito\" ) \n| eval Ip_host=coalesce(dest_ip, Indirizzo_rete_di_origine) \n| bin _time span=1h \n| fields Ip_host, Nome_account , _time, dest_nt_host, description \n| streamstats values(Nome_account) as \"Nome_account\" by Ip_host, _time \n| stats values(Ip_host) as \"Indirizzo Ip\" by Nome_account, _time, dest_nt_host, description \n| search NOT (Nome_account=\"*$\" OR Nome_account=\"SYSTEM\" OR Nome_account=\"DHCPServiceUser\" OR Nome_account=\"ACCESSO ANONIMO\" OR Nome_account=\"-\") | eval _time=strftime(_time, \"%y-%m-%d %H:%M:%S\")|rename _time as \"Data\" |search Nome_account=$user_tok$",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Table searchxs"
+                },
+                "ds_0ELvhmkO": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win source=\"WinEventLog:Security\"  EventCode=4624 Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\"|stats values(Nome_account) as \"Nome_account\"| mvexpand Nome_account|where Nome_account!=\"-\"",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "d"
+                },
+                "ds_NOEJNIT4": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=\"_audit\" \n| stats count(action) as \"Count\" by action\n| dedup action",
+                                "queryParameters": {
+                                        "earliest": "0"
+                                }
+                        }
+                },
+                "ds_bcViJmgj": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win source=\"WinEventLog:Security\" EventCode=4624 Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" * $user_tok$\n| table Nome_account, Indirizzo_rete_di_origine, _time,ComputerName| mvexpand Nome_account |where Nome_account!=\"-\"  | eval _time=strftime(_time, \"%y-%m-%d %H:%M:%S\") |rename _time as \"Data\"",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Table sfearch"
+                },
+                "ds_iG8GDfxo": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=win source=\"WinEventLog:Security\"  EventCode=4624 Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" body=\"*\" |stats count(Nome_account) by Nome_account, category| where Nome_account!=\"-\"|fields - category |rename count(Nome_account) as \"Totale\" \n\n",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "TOTAL LOGIN ATTEMPTS BY USERS. - Pie chart search"
+                },
+                "ds_w5dQWYjl": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=\"_audit\" info=failed\n| timechart span=1d count(info) by user",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "LOGIN ATTEMPTS FAILED BY USERS. - Area chart search"
+                },
+                "ds_UuBvOb5w": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=\"_audit\" $action_tok$ $user_tok$\n| stats count(action) as \"Count\" by action, user,info, timestamp\n| eval timestamp=strftime(strptime(timestamp,\"%m-%d-%Y %H:%M:%S.%3N\"),\"%d/%m/%Y %H:%M:%S\")\n| sort +timestamp",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Actions by user search"
+                },
+                "ds_oV4NAHNq": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=_audit action=\"search\" search=\"*\" earliest=-565d $user_tok$| rex field=search \"index=(?<index_used>[^\\s]+)\" | stats values(index_used) as index_used by user",
+                                "queryParameters": {
+                                        "earliest": "0"
+                                }
+                        },
+                        "name": "Index_used by user search"
+                },
+                "ds_IFbWpBXy": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=_audit sourcetype=audittrail   $user_tok$| stats earliest(_time) as created, by savedsearch_name, user| eval created=strftime(created,\"%m/%d/%Y %H:%M:%S\")",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Saved search by user and creation time. search"
+                },
+                "ds_vBA5rBMV": {
+                        "type": "ds.search",
+                        "options": {
+                                "query": "index=_audit $user_tok$\n| top limit=10 user by app\n| fields - percent",
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                }
+                        },
+                        "name": "Top 10 app used by users search"
+                },
+                "ds_v4mqKFh3": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=\"wineventlog:security\" Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\"\n $user_tok$|where Indirizzo_rete_di_origine!=\"-\"\n|  eval Descrizione = CASE(Tipo_di_accesso==5, \"Un servizio è stato avviato da Gestione controllo servizi.\", \n    Tipo_di_accesso==3, \"Un utente o un computer connesso a questo computer dalla rete.\",\n    Tipo_di_accesso==10, \"Un utente ha eseguito l'accesso a questo computer in remoto usando Servizi terminal o Desktop remoto.\", Tipo_di_accesso==2, \"Un utente ha eseguito l'accesso al computer.\", Tipo_di_accesso==7, \"Questa workstation è stata sbloccata.\", Tipo_di_accesso==9, \"Un chiamante ha clonato il token corrente e ha specificato nuove credenziali per le connessioni in uscita.\", Tipo_di_accesso==8, \"Un utente ha eseguito l'accesso al computer dalla rete. La password dell'utente è stata passata al pacchetto di autenticazione nel formato non sottoposto a hash. \")| stats values(Tipo_di_accesso) as \"Tipo_di_accesso\", count(Tipo_di_accesso) as \"Totale\" by   Nome_account, Indirizzo_rete_di_origine, Descrizione  \n| eval Data=strftime(_time, \"%y-%m-%d %H:%M:%S\")\n|where Nome_account!=\"-\" \n| fields - _time"
+                        },
+                        "name": "Tipo di accesso."
+                },
+                "ds_xoM0D5Qn": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=\"wineventlog:security\"Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" |search Nome_account = $user_tok$\n| where Indirizzo_rete_di_origine!=\"-\" \n| eval Descrizione = CASE(Tipo_di_accesso==5, \"Un servizio è stato avviato da Gestione controllo servizi.\", \n    Tipo_di_accesso==3, \"Un utente o un computer connesso a questo computer dalla rete.\",\n    Tipo_di_accesso==10, \"Un utente ha eseguito l'accesso a questo computer in remoto usando Servizi terminal o Desktop remoto.\", Tipo_di_accesso==2, \"Un utente ha eseguito l'accesso al computer.\", Tipo_di_accesso==7, \"Questa workstation è stata sbloccata.\", Tipo_di_accesso==9, \"Un chiamante ha clonato il token corrente e ha specificato nuove credenziali per le connessioni in uscita.\", Tipo_di_accesso==8, \"Un utente ha eseguito l'accesso al computer dalla rete. La password dell'utente è stata passata al pacchetto di autenticazione nel formato non sottoposto a hash. \") | stats values(Descrizione) as \"Descrizione\" by Tipo_di_accesso, Nome_account, Indirizzo_rete_di_origine, _time \n| eval Data=strftime(_time, \"%y-%m-%d %H:%M:%S\") \n| where Nome_account!=\"-\" \n| fields - _time"
+                        },
+                        "name": "Ricerca di nuovi account admin."
+                },
+                "ds_9VLtCGSo": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=windows source=\"WinEventLog:Security\" EventCode=1102\r\n| table _time, Nome_account"
+                        },
+                        "name": "Windows Audit log eliminati."
+                },
+                "ds_0CH3SHen": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=\"WinEventLog:Security\" EventCode=4670 Object_Type=\"File\" Security_ID!=\"NT AUTHORITY\\\\SYSTEM\""
+                        },
+                        "name": "Permessi modificati accessi."
+                },
+                "ds_xnWZvlGz": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=\"WinEventLog:Security\" Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\"|stats values(Tipo_di_accesso) by Tipo_di_accesso"
+                        },
+                        "name": "Tipologia"
+                },
+                "ds_ScxkUTN7": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=\"WinEventLog:Security\" Nome_account!=*$ Nome_account!=SYSTEM Nome_account!=DHCPServiceUser Nome_account!=\"ACCESSO ANONIMO\" \n| stats count(eval(action=\"success\")) as successes count(eval(action=\"failure\")) as failures by Nome_account, Nome_workstation\n| where successes>0 AND failures>100"
+                        },
+                        "name": "Ricerca Attacchi Brute force."
+                },
+                "ds_xEcLeaWC": {
+                        "type": "ds.search",
+                        "options": {
+                                "queryParameters": {
+                                        "earliest": "$time.earliest$",
+                                        "latest": "$time.latest$"
+                                },
+                                "query": "index=win source=WinEventLog:Security \n| transaction ID_sicurezza maxspan=180m\n| search EventCode=4720 EventCode=4732\n| table _time, EventCode, ID_sicurezza, Nome_account"
+                        },
+                        "name": "Finding new local Admin Account"
+                }
+        },
+        "visualizations": {
+                "viz_lxZUPK6k": {
+                        "type": "splunk.table",
+                        "options": {
+                                "count": 26,
+                                "dataOverlayMode": "none",
+                                "drilldown": "none",
+                                "showRowNumbers": false,
+                                "showInternalFields": false
+                        },
+                        "dataSources": {
+                                "primary": "ds_gunK098w"
+                        },
+                        "title": "Ip assegnati per utente e durata."
+                },
+                "viz_evUytmfH": {
+                        "type": "splunk.table",
+                        "options": {
+                                "count": 20,
+                                "dataOverlayMode": "none",
+                                "drilldown": "none",
+                                "showRowNumbers": false,
+                                "showInternalFields": false,
+                                "columnFormat": {
+                                        "info": {
+                                                "data": "> table | seriesByName(\"info\") | formatByType(infoColumnNumberConfig)"
+                                        }
+                                }
+                        },
+                        "context": {
+                                "infoColumnNumberConfig": {
+                                        "number": {
+                                                "precision": 1,
+                                                "thousandSeparated": true,
+                                                "unitPosition": "after"
+                                        }
+                                }
+                        },
+                        "dataSources": {
+                                "primary": "ds_bcViJmgj"
+                        },
+                        "showProgressBar": true,
+                        "title": "Login panoramica."
+                },
+                "viz_MXYBraMz": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_v4mqKFh3"
+                        },
+                        "title": "Tipo di accesso per utente.",
+                        "description": "",
+                        "eventHandlers": []
+                },
+                "viz_1kNjkCn8": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_xoM0D5Qn"
+                        },
+                        "title": "Tipo di accessi nel dettaglio."
+                },
+                "viz_JXHHu8xZ": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_9VLtCGSo"
+                        },
+                        "title": "Windows Audit log eliminati."
+                },
+                "viz_DF8CSMCl": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_0CH3SHen"
+                        },
+                        "title": "Permessi modificati accessi."
+                },
+                "viz_WdLQInVD": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_ScxkUTN7"
+                        },
+                        "title": "Ricerca attacchi brute force."
+                },
+                "viz_CrTJ8xIo": {
+                        "type": "splunk.table",
+                        "dataSources": {
+                                "primary": "ds_xEcLeaWC"
+                        },
+                        "title": "Ricerca Admin Account"
+                }
+        },
+        "inputs": {
+                "input_BlO21GKF": {
+                        "type": "input.dropdown",
+                        "options": {
+                                "token": "user_tok",
+                                "items": [
+                                        {
+                                                "label": "All",
+                                                "value": "*"
+                                        }
+                                ],
+                                "defaultValue": ""
+                        },
+                        "title": "Utente",
+                        "dataSources": {
+                                "primary": "ds_0ELvhmkO"
+                        }
+                },
+                "input_ehjYz5O1": {
+                        "type": "input.timerange",
+                        "options": {
+                                "token": "time",
+                                "defaultValue": "-7d@h,now"
+                        },
+                        "title": "Time Picker"
+                }
+        },
+        "layout": {
+                "type": "grid",
+                "options": {
+                        "height": 1500,
+                        "width": 1440
+                },
+                "structure": [
+                        {
+                                "item": "viz_evUytmfH",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 1425,
+                                        "h": 363
+                                }
+                        },
+                        {
+                                "item": "viz_lxZUPK6k",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 363,
+                                        "w": 1425,
+                                        "h": 333
+                                }
+                        },
+                        {
+                                "item": "viz_MXYBraMz",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 696,
+                                        "w": 1440,
+                                        "h": 441
+                                }
+                        },
+                        {
+                                "item": "viz_1kNjkCn8",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 1137,
+                                        "w": 1440,
+                                        "h": 776
+                                }
+                        },
+                        {
+                                "item": "viz_JXHHu8xZ",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 1913,
+                                        "w": 1440,
+                                        "h": 400
+                                }
+                        },
+                        {
+                                "item": "viz_DF8CSMCl",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 2313,
+                                        "w": 1440,
+                                        "h": 400
+                                }
+                        },
+                        {
+                                "item": "viz_WdLQInVD",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 2713,
+                                        "w": 1440,
+                                        "h": 400
+                                }
+                        },
+                        {
+                                "item": "viz_CrTJ8xIo",
+                                "type": "block",
+                                "position": {
+                                        "x": 0,
+                                        "y": 3113,
+                                        "w": 1440,
+                                        "h": 400
+                                }
+                        }
+                ],
+                "globalInputs": [
+                        "input_BlO21GKF",
+                        "input_ehjYz5O1"
+                ]
+        },
+        "title": "Dashboard Cliente.",
+        "description": "",
+        "defaults": {
+                "dataSources": {
+                        "ds.search": {
+                                "options": {
+                                        "queryParameters": {}
+                                }
+                        }
+                },
+                "tokens": {
+                        "default": {
+                                "Tipo_tok": {
+                                        "value": "*"
+                                },
+                                "Nome_account": {
+                                        "value": "*"
+                                }
+                        }
+                }
+        }
+}
+    ]]></definition>
+    <meta type="hiddenElements"><![CDATA[
+{
+        "hideEdit": false,
+        "hideOpenInSearch": false,
+        "hideExport": false
+}
+    ]]></meta>
+</dashboard>
