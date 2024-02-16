@@ -13,6 +13,7 @@
 
     - name: Copy instnace private key
       copy:
+        backup: true
         src: "{{ inventory_hostname }}.key.pem"
         dest: "{{ splunk_home }}/etc/auth/mycerts/serverPrivate.key"
         owner: "{{ splunk_nix_user }}"
@@ -21,6 +22,7 @@
 
     - name: Copy instnace certificate 
       copy:
+        backup: true
         src: "{{ inventory_hostname }}.cert.pem"
         dest: "{{ splunk_home }}/etc/auth/mycerts/serverCertificate.pem"
         owner: "{{ splunk_nix_user }}"
